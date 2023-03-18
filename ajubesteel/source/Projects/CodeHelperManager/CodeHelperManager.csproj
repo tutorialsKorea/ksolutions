@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37AC3413-C30B-4A46-9629-405FCA9F0592}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeHelperManager</RootNamespace>
+    <AssemblyName>CodeHelperManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting.Extensions, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acActual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acActualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acActualForm.Designer.cs">
+      <DependentUpon>acActualForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acField.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acFieldForm.Designer.cs">
+      <DependentUpon>acFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acOpenDrawFile.cs" />
+    <Compile Include="acBillVendor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acVendorCharge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acEmp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acVendorChargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acVendorChargeForm.Designer.cs">
+      <DependentUpon>acVendorChargeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acEmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acEmpForm.Designer.cs">
+      <DependentUpon>acEmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acEst.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acEstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acEstForm.Designer.cs">
+      <DependentUpon>acEstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acItemForm.Designer.cs">
+      <DependentUpon>acItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMachine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMachineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMachineForm.Designer.cs">
+      <DependentUpon>acMachineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMaterial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMaterialForm.Designer.cs">
+      <DependentUpon>acMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMenuList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMenuListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMenuListForm.Designer.cs">
+      <DependentUpon>acMenuListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acORG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acORGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acORGForm.Designer.cs">
+      <DependentUpon>acORGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acParentPart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acParentPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acParentPartForm.Designer.cs">
+      <DependentUpon>acParentPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acParentStdBopPart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acParentStdBopPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acParentStdBopPartForm.Designer.cs">
+      <DependentUpon>acParentStdBopPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPartForm.Designer.cs">
+      <DependentUpon>acPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPlan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPlanForm.Designer.cs">
+      <DependentUpon>acPlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acProc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acProcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acProcForm.Designer.cs">
+      <DependentUpon>acProcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acProd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acProdForm.Designer.cs">
+      <DependentUpon>acProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acProdPartList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acProdPartListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acProdPartListForm.Designer.cs">
+      <DependentUpon>acProdPartListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acProjectForm.Designer.cs">
+      <DependentUpon>acProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acSimulation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acSimulationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acSimulationForm.Designer.cs">
+      <DependentUpon>acSimulationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acStdBop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acStdBopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acStdBopForm.Designer.cs">
+      <DependentUpon>acStdBopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acToolForm.Designer.cs">
+      <DependentUpon>acToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acUserGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acUserGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acUserGroupForm.Designer.cs">
+      <DependentUpon>acUserGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acVendor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acBillVendorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBillVendorForm.Designer.cs">
+      <DependentUpon>acBillVendorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acVendorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acVendorForm.Designer.cs">
+      <DependentUpon>acVendorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acWageRate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acWageRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acWageRateForm.Designer.cs">
+      <DependentUpon>acWageRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acWorkOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acWorkOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acWorkOrderForm.Designer.cs">
+      <DependentUpon>acWorkOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acYpgo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acYpgoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acYpgoForm.Designer.cs">
+      <DependentUpon>acYpgoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="acProcNg.cs" />
+    <Compile Include="acProcNgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acProcNgForm.Designer.cs">
+      <DependentUpon>acProcNgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMold.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMoldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMoldForm.Designer.cs">
+      <DependentUpon>acMoldForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acActualForm.resx">
+      <DependentUpon>acActualForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acFieldForm.resx">
+      <DependentUpon>acFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acVendorChargeForm.resx">
+      <DependentUpon>acVendorChargeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acEmpForm.resx">
+      <DependentUpon>acEmpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acEstForm.resx">
+      <DependentUpon>acEstForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acItemForm.resx">
+      <DependentUpon>acItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMachineForm.resx">
+      <DependentUpon>acMachineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMaterialForm.resx">
+      <DependentUpon>acMaterialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMenuListForm.resx">
+      <DependentUpon>acMenuListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acORGForm.resx">
+      <DependentUpon>acORGForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acParentPartForm.resx">
+      <DependentUpon>acParentPartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acParentStdBopPartForm.resx">
+      <DependentUpon>acParentStdBopPartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPartForm.resx">
+      <DependentUpon>acPartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPlanForm.resx">
+      <DependentUpon>acPlanForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acProcForm.resx">
+      <DependentUpon>acProcForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acProdForm.resx">
+      <DependentUpon>acProdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acProdPartListForm.resx">
+      <DependentUpon>acProdPartListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acProjectForm.resx">
+      <DependentUpon>acProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acSimulationForm.resx">
+      <DependentUpon>acSimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acStdBopForm.resx">
+      <DependentUpon>acStdBopForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acToolForm.resx">
+      <DependentUpon>acToolForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acUserGroupForm.resx">
+      <DependentUpon>acUserGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBillVendorForm.resx">
+      <DependentUpon>acBillVendorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acVendorForm.resx">
+      <DependentUpon>acVendorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acWageRateForm.resx">
+      <DependentUpon>acWageRateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acWorkOrderForm.resx">
+      <DependentUpon>acWorkOrderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acYpgoForm.resx">
+      <DependentUpon>acYpgoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acProcNgForm.resx">
+      <DependentUpon>acProcNgForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMoldForm.resx">
+      <DependentUpon>acMoldForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-apply_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet-group-chat_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-search_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dev20.ControlManager\ControlManager.csproj">
+      <Project>{1044e528-da90-49c5-90c2-a98798e3af00}</Project>
+      <Name>ControlManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_group_chat_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_search_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_apply_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acEmp1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acORG1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbPRJ.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbCVND.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acStdBop1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acProd1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acProject1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbPROD.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbORG.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acVendor1.Properties.Buttons.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

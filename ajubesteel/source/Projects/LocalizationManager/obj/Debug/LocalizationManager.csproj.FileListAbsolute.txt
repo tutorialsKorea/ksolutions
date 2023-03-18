@@ -1,0 +1,14 @@
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\DebugForm\bin\Debug\LocalizationManager.dll
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\DebugForm\bin\Debug\LocalizationManager.pdb
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\LocalizationManager\obj\Debug\LocalizationManager.csprojAssemblyReference.cache
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CoreCompileInputs.cache
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CopyComplete
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\LocalizationManager\obj\Debug\LocalizationManager.dll
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\LocalizationManager\obj\Debug\LocalizationManager.pdb
+D:\ProactiveShop\source\Projects\DebugForm\bin\Debug\LocalizationManager.dll
+D:\ProactiveShop\source\Projects\DebugForm\bin\Debug\LocalizationManager.pdb
+D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.AssemblyReference.cache
+D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CoreCompileInputs.cache
+D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CopyComplete
+D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.dll
+D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.pdb

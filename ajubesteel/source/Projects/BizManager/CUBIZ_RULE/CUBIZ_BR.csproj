@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{181657D9-41B0-4D44-AB05-CFC4E065F776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CUBIZ_BR</RootNamespace>
+    <AssemblyName>CUBIZ_BR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BENE\ENE02A.cs" />
+    <Compile Include="BHIS\HIS04A.cs" />
+    <Compile Include="BHIS\HIS03A.cs" />
+    <Compile Include="BHIS\HIS02A.cs" />
+    <Compile Include="BMAT\MAT01A.cs" />
+    <Compile Include="BMAT\MAT06A.cs" />
+    <Compile Include="BMAT\MAT05A.cs" />
+    <Compile Include="BMAT\MAT04A.cs" />
+    <Compile Include="BMAT\MAT03A.cs" />
+    <Compile Include="BMAT\MAT02A.cs" />
+    <Compile Include="BMAT\MAT07A.cs" />
+    <Compile Include="BMAT\MAT08A.cs" />
+    <Compile Include="BMAT\MAT09A.cs" />
+    <Compile Include="BMCN\MCN01A.cs" />
+    <Compile Include="BHIS\HIS01A.cs" />
+    <Compile Include="BMNT\MNT02A.cs" />
+    <Compile Include="BMNT\MNT04A.cs" />
+    <Compile Include="BMNT\MNT01A.cs" />
+    <Compile Include="BMNT\MNT06A.cs" />
+    <Compile Include="BMNT\MNT11A.cs" />
+    <Compile Include="BMNT\MNT10A.cs" />
+    <Compile Include="BMNT\MNT03A.cs" />
+    <Compile Include="BORD\ORD01A.cs" />
+    <Compile Include="BORD\ORD10A.cs" />
+    <Compile Include="BORD\ORD05A.cs" />
+    <Compile Include="BORD\ORD09A.cs" />
+    <Compile Include="BORD\ORD08A.cs" />
+    <Compile Include="BORD\ORD06A.cs" />
+    <Compile Include="BORD\ORD07A.cs" />
+    <Compile Include="BORD\ORD02A.cs" />
+    <Compile Include="BORD\ORD02C.cs" />
+    <Compile Include="BORD\ORD11A.cs" />
+    <Compile Include="BORD\ORD12A.cs" />
+    <Compile Include="BORD\ORD13A.cs" />
+    <Compile Include="BORD\ORD14A.cs" />
+    <Compile Include="BPLN\PLN21A.cs" />
+    <Compile Include="BQCT\QCT03A.cs" />
+    <Compile Include="BREP\REP03A.cs" />
+    <Compile Include="BREP\REP04A.cs" />
+    <Compile Include="BREP\REP05A.cs" />
+    <Compile Include="BREP\REP06A.cs" />
+    <Compile Include="BREP\REP07A.cs" />
+    <Compile Include="BREP\REP08A.cs" />
+    <Compile Include="BREP\REP22A.cs" />
+    <Compile Include="BSTD\STD28A.cs" />
+    <Compile Include="BPLN\PLN13A.cs" />
+    <Compile Include="BPLN\PLN20A.cs" />
+    <Compile Include="BPLN\PLN.cs" />
+    <Compile Include="BPLN\PLN01B.cs" />
+    <Compile Include="BPLN\PLN04A.cs" />
+    <Compile Include="BPLN\PLN03A.cs" />
+    <Compile Include="BPLN\PLN02A.cs" />
+    <Compile Include="BPLN\PLN01A.cs" />
+    <Compile Include="BPLN\PLN07A.cs" />
+    <Compile Include="BPLN\PLN06A.cs" />
+    <Compile Include="BPLN\PLN05A.cs" />
+    <Compile Include="BPLN\PLN08A.cs" />
+    <Compile Include="BPLN\PLN14A.cs" />
+    <Compile Include="BPLN\PLN15A.cs" />
+    <Compile Include="BPLN\PLN17A.cs" />
+    <Compile Include="BPLN\PLN16A.cs" />
+    <Compile Include="BPLN\PLN18A.cs" />
+    <Compile Include="BPLN\PLN19A.cs" />
+    <Compile Include="BPLN\PLN22A.cs" />
+    <Compile Include="BPLN\PLN23A.cs" />
+    <Compile Include="BPOP\POP08A.cs" />
+    <Compile Include="BPOP\POP03A.cs" />
+    <Compile Include="BPOP\POP04A.cs" />
+    <Compile Include="BPOP\POP07A.cs" />
+    <Compile Include="BPOP\POP06A.cs" />
+    <Compile Include="BPOP\POP05A.cs" />
+    <Compile Include="BPOP\POP01A.cs" />
+    <Compile Include="BPOP\POP20A.cs" />
+    <Compile Include="BPUR\PUR04A.cs" />
+    <Compile Include="BPUR\PUR03A.cs" />
+    <Compile Include="BPUR\PUR02A.cs" />
+    <Compile Include="BPUR\PUR01A.cs" />
+    <Compile Include="BPUR\PUR05A.cs" />
+    <Compile Include="BPUR\PUR10A.cs" />
+    <Compile Include="BPUR\PUR08A.cs" />
+    <Compile Include="BPUR\PUR07A.cs" />
+    <Compile Include="BPUR\PUR06A.cs" />
+    <Compile Include="BQCT\QCT04A.cs" />
+    <Compile Include="BQCT\QCT01B.cs" />
+    <Compile Include="BQCT\QCT01A.cs" />
+    <Compile Include="BQCT\QCT02A.cs" />
+    <Compile Include="BREP\REP02A.cs" />
+    <Compile Include="BREP\REP21A.cs" />
+    <Compile Include="BREP\REP20A.cs" />
+    <Compile Include="BREP\REP19A.cs" />
+    <Compile Include="BREP\REP18A.cs" />
+    <Compile Include="BREP\REP17A.cs" />
+    <Compile Include="BREP\REP01A.cs" />
+    <Compile Include="BSAN\SAN01A.cs" />
+    <Compile Include="BSAN\SAN02A.cs" />
+    <Compile Include="BSAN\SAN04A.cs" />
+    <Compile Include="BSAN\SAN01B.cs" />
+    <Compile Include="BSAN\SAN03A.cs" />
+    <Compile Include="BSAN\SAN05A.cs" />
+    <Compile Include="BSTD\STD60A.cs" />
+    <Compile Include="BSTD\STD51A.cs" />
+    <Compile Include="BSTD\STD15A.cs" />
+    <Compile Include="BSTD\STD16A.cs" />
+    <Compile Include="BSTD\STD45A.cs" />
+    <Compile Include="BSTD\STD44A.cs" />
+    <Compile Include="BSTD\STD07A.cs" />
+    <Compile Include="BSTD\STD23B.cs" />
+    <Compile Include="BSTD\STD23A.cs" />
+    <Compile Include="BSTD\STD05A.cs" />
+    <Compile Include="BSTD\STD24A.cs" />
+    <Compile Include="BSTD\STD25A.cs" />
+    <Compile Include="BSTD\STD27A.cs" />
+    <Compile Include="BSTD\STD26A.cs" />
+    <Compile Include="BSTD\STD43A.cs" />
+    <Compile Include="BSTD\STD42A.cs" />
+    <Compile Include="BSTD\STD41A.cs" />
+    <Compile Include="BSTD\STD50A.cs" />
+    <Compile Include="BSYS\SYS01A.cs" />
+    <Compile Include="BSYS\SYS17A.cs" />
+    <Compile Include="BSYS\SYS13A.cs" />
+    <Compile Include="BSYS\SYS07A.cs" />
+    <Compile Include="BSYS\SYS05A.cs" />
+    <Compile Include="BSYS\SYS11A.cs" />
+    <Compile Include="BSYS\SYS12A.cs" />
+    <Compile Include="BSYS\SYS16B.cs" />
+    <Compile Include="BSYS\SYS16A.cs" />
+    <Compile Include="BSYS\SYS15A.cs" />
+    <Compile Include="BSYS\SYS14A.cs" />
+    <Compile Include="BSYS\SYS18A.cs" />
+    <Compile Include="BSYS\SYS32A.cs" />
+    <Compile Include="BSYS\SYS77A.cs" />
+    <Compile Include="BTOL\TOL05A.cs" />
+    <Compile Include="BTOL\TOL04A.cs" />
+    <Compile Include="BTOL\TOL03A.cs" />
+    <Compile Include="BTOL\TOL02A.cs" />
+    <Compile Include="BTOL\TOL01A.cs" />
+    <Compile Include="BWOR\WOR02A.cs" />
+    <Compile Include="BWOR\WOR03A.cs" />
+    <Compile Include="BWOR\WOR04A.cs" />
+    <Compile Include="BWOR\WOR07A.cs" />
+    <Compile Include="BWOR\WOR08A.cs" />
+    <Compile Include="BWOR\WOR09A.cs" />
+    <Compile Include="BWOR\WOR10A.cs" />
+    <Compile Include="BWOR\WOR12A.cs" />
+    <Compile Include="BWOR\WOR13A.cs" />
+    <Compile Include="BWOR\WOR14A.cs" />
+    <Compile Include="BWOR\WOR15A.cs" />
+    <Compile Include="COMMON\COMMON.cs" />
+    <Compile Include="LSEU\LSEU.cs" />
+    <Compile Include="BSTD\STD01A.cs" />
+    <Compile Include="BSTD\STD06A.cs" />
+    <Compile Include="BSTD\STD13A.cs" />
+    <Compile Include="CTRL\CTRL.cs" />
+    <Compile Include="MAINFORM\MAINFORM.cs" />
+    <Compile Include="BORD\ORD02B.cs" />
+    <Compile Include="BORD\ORD03A.cs" />
+    <Compile Include="BORD\ORD04A.cs" />
+    <Compile Include="BPOP\POP02A.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BSTD\STD02A.cs" />
+    <Compile Include="BSTD\STD04A.cs" />
+    <Compile Include="BSTD\STD09A.cs" />
+    <Compile Include="BSTD\STD10A.cs" />
+    <Compile Include="BSTD\STD14A.cs" />
+    <Compile Include="BSTD\STD20A.cs" />
+    <Compile Include="BSYS\SYS03A.cs" />
+    <Compile Include="BWOR\WOR01A.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Zebra.Printing\Zebra.Printing.csproj">
+      <Project>{0bdea723-914a-4a89-8a00-185cdc157480}</Project>
+      <Name>Zebra.Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizExcute\BizExecute.csproj">
+      <Project>{ff02f467-f287-4293-afdc-33b09648101b}</Project>
+      <Name>BizExecute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CUBIZ_DA\CUBIZ_DA.csproj">
+      <Project>{226022b9-848e-4111-9094-46087918b318}</Project>
+      <Name>CUBIZ_DA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

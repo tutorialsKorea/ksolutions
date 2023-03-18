@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <Server name="Enertork" use="false" userID="active">
+    <ServerIP>211.238.138.160</ServerIP>
+    <DatabaseName>active_ener</DatabaseName>
+    <ServerPort>
+    </ServerPort>
+    <ServerNum>
+    </ServerNum>
+    <Plant>100</Plant>
+    <Language>KR</Language>
+    <Skin>Caramel</Skin>
+    <UserID>active</UserID>
+    <PassWD>cubic</PassWD>
+  </Server>
+  <Server name="active" use="true" userID="active">
+    <ServerIP>211.238.138.160</ServerIP>
+    <DatabaseName>active_ener</DatabaseName>
+    <ServerPort>
+    </ServerPort>
+    <ServerNum>
+    </ServerNum>
+    <Plant>100</Plant>
+    <Language>KR</Language>
+    <Skin>Caramel</Skin>
+    <UserID>active</UserID>
+    <PassWD>cubic</PassWD>
+  </Server>
+</Config>

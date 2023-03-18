@@ -1,0 +1,11 @@
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\bin\Debug\BizExecute.dll
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\bin\Debug\BizExecute.pdb
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csproj.CoreCompileInputs.cache
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\obj\Debug\BizExecute.dll
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\obj\Debug\BizExecute.pdb
+E:\01_source\06_디플러스\new\ProactiveShop(디플러스)\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csprojAssemblyReference.cache
+D:\ProactiveShop\source\Projects\BizManager\BizExcute\bin\Debug\BizExecute.dll
+D:\ProactiveShop\source\Projects\BizManager\BizExcute\bin\Debug\BizExecute.pdb
+D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csproj.CoreCompileInputs.cache
+D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.dll
+D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.pdb

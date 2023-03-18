@@ -1,0 +1,1346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1044E528-DA90-49C5-90C2-A98798E3AF00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlManager</RootNamespace>
+    <AssemblyName>ControlManager</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.Designer.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Charts.Designer.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Charts.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.CodeParser.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Data.Desktop.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Data.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.DataAccess.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.DataAccess.v20.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Images.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Mvvm.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Pdf.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.2.Drawing, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Pdf.v20.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.PivotGrid.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Printing.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.RichEdit.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.RichEdit.v20.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Sparkline.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Utils.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Utils.v20.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.Xpo.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraBars.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraCharts.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraCharts.v20.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraCharts.v20.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2.Web, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraCharts.v20.2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraCharts.v20.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraEditors.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.2.Design, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\Design\DevExpress.XtraEditors.v20.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraGantt.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraGrid.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraLayout.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraNavBar.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraPdfViewer.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraPivotGrid.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraPrinting.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraReports.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraReports.v20.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraRichEdit.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.2.Design, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\Design\DevExpress.XtraRichEdit.v20.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraScheduler.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraScheduler.v20.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraScheduler.v20.2.Core.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraScheduler.v20.2.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraScheduler.v20.2.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraSpellChecker.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraSpreadsheet.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraTreeList.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Program Files (x86)\DevExpress 20.2\Components\Bin\Framework\DevExpress.XtraVerticalGrid.v20.2.dll</HintPath>
+    </Reference>
+    <Reference Include="PlexityHide.GTP">
+      <HintPath>C:\Program Files (x86)\plexityHide AB\GTP.NET 3.0.8.18\Assemblies\CLR20\WindowsForms\PlexityHide.GTP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acAdvBandGridView\acAdvBandGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewApperance.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.Designer.cs">
+      <DependentUpon>acAdvBandGridViewFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewMask.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.Designer.cs">
+      <DependentUpon>acAdvBandGridViewMaskEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewStyleBox.Designer.cs">
+      <DependentUpon>acAdvBandGridViewStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfig.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.Designer.cs">
+      <DependentUpon>acAdvBandGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.Designer.cs">
+      <DependentUpon>acAdvBandGridViewUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.Designer.cs">
+      <DependentUpon>acAdvBandGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSerializationBinder.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandPaintHelper.cs" />
+    <Compile Include="acAlert\acAlert.cs" />
+    <Compile Include="acAlert\acAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acAlert\acAlertForm.designer.cs">
+      <DependentUpon>acAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridView.cs" />
+    <Compile Include="acBandGridView\acBandGridViewApperance.cs" />
+    <Compile Include="acBandGridView\acBandGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewFilterEditor.designer.cs">
+      <DependentUpon>acBandGridViewFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewMask.cs" />
+    <Compile Include="acBandGridView\acBandGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewMaskEditor.designer.cs">
+      <DependentUpon>acBandGridViewMaskEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewStyleBox.designer.cs">
+      <DependentUpon>acBandGridViewStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfig.cs" />
+    <Compile Include="acBandGridView\acBandGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigLoadEditor.designer.cs">
+      <DependentUpon>acBandGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigManager.designer.cs">
+      <DependentUpon>acBandGridViewUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigSaveEditor.designer.cs">
+      <DependentUpon>acBandGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBandGridView\acBandGridViewUserConfigSerializationBinder.cs" />
+    <Compile Include="acBandGridView\acBandPaintHelper.cs" />
+    <Compile Include="acDocumentManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acBaseControl\BaseFullScreenMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBaseControl\BaseFullScreenMenu.Designer.cs">
+      <DependentUpon>BaseFullScreenMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBaseControl\BaseMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acBaseControl\BaseMenu.Designer.cs">
+      <DependentUpon>BaseMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBaseControl\BaseMenuDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acBaseControl\BaseMenuDialog.Designer.cs">
+      <DependentUpon>BaseMenuDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acBizError.cs" />
+    <Compile Include="acChartControl\acChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartControl.Designer.cs">
+      <DependentUpon>acChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfig.cs" />
+    <Compile Include="acChartControl\acChartUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfigLoadEditor.Designer.cs">
+      <DependentUpon>acChartUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfigManager.Designer.cs">
+      <DependentUpon>acChartUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartUserConfigSaveEditor.Designer.cs">
+      <DependentUpon>acChartUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartBarSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartBarSeriesEditor.Designer.cs">
+      <DependentUpon>acChartBarSeriesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartLineSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartLineSeriesEditor.Designer.cs">
+      <DependentUpon>acChartLineSeriesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartDoughnutSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartDoughnutSeriesEditor.Designer.cs">
+      <DependentUpon>acChartDoughnutSeriesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartControlSimpleDiagramStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartControlSimpleDiagramStyleBox.Designer.cs">
+      <DependentUpon>acChartControlSimpleDiagramStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acChartControl\acChartControlXYDiagramStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acChartControl\acChartControlXYDiagramStyleBox.Designer.cs">
+      <DependentUpon>acChartControlXYDiagramStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acCheckedListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acCheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acChecker.cs" />
+    <Compile Include="acColorEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acConfig\acSysConfig.cs" />
+    <Compile Include="acConfig\acMenuConfig.cs" />
+    <Compile Include="acConfig\acEmpConfig.cs" />
+    <Compile Include="acConvert.cs" />
+    <Compile Include="acDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acDateEditInstantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acDateEditInstantForm.Designer.cs">
+      <DependentUpon>acDateEditInstantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acDesCrypt.cs" />
+    <Compile Include="acDockManager.cs" />
+    <Compile Include="acDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acException.cs" />
+    <Compile Include="acGridLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMail.cs" />
+    <Compile Include="acMessageBox\acMessageBoxYesNoCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxYesNoCan.Designer.cs">
+      <DependentUpon>acMessageBoxYesNoCan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPassWord.cs" />
+    <Compile Include="acFile.cs" />
+    <Compile Include="acFontDialogEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acForm\acForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acForm\acFormUserConfigSerializationBinder.cs" />
+    <Compile Include="acForm\acFormUserConfig.cs" />
+    <Compile Include="acFTP.cs" />
+    <Compile Include="acGantt\acGanttUserConfig.cs" />
+    <Compile Include="acGantt\acGanttUserConfigSerializationBinder.cs" />
+    <Compile Include="acGantt\acGantt.cs" />
+    <Compile Include="acGraphics.cs" />
+    <Compile Include="acGridView\acGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewFilterEditor.Designer.cs">
+      <DependentUpon>acGridViewFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigSerializationBinder.cs" />
+    <Compile Include="acGridView\acGridView.cs" />
+    <Compile Include="acGridView\acGridViewApperance.cs" />
+    <Compile Include="acGridView\acGridViewUserConfig.cs" />
+    <Compile Include="acGridView\acGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigManager.Designer.cs">
+      <DependentUpon>acGridViewUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigLoadEditor.Designer.cs">
+      <DependentUpon>acGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGridView\acGridViewMask.cs">
+    </Compile>
+    <Compile Include="acGridView\acGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewMaskEditor.Designer.cs">
+      <DependentUpon>acGridViewMaskEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewUserConfigSaveEditor.Designer.cs">
+      <DependentUpon>acGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGridView\acGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewStyleBox.Designer.cs">
+      <DependentUpon>acGridViewStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acKey.cs" />
+    <Compile Include="acMachineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acMachineControl.designer.cs">
+      <DependentUpon>acMachineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMachineControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMachineControlForm.Designer.cs">
+      <DependentUpon>acMachineControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMntMachine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acMntMachine.designer.cs">
+      <DependentUpon>acMntMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxHelp.Designer.cs">
+      <DependentUpon>acMessageBoxHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acInput.cs" />
+    <Compile Include="acMessageBox\acMessageBoxBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxBarcode.Designer.cs">
+      <DependentUpon>acMessageBoxBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxParameterYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxParameterYesNo.Designer.cs">
+      <DependentUpon>acMessageBoxParameterYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxError2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxError2.Designer.cs">
+      <DependentUpon>acMessageBoxError2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxNotify.Designer.cs">
+      <DependentUpon>acMessageBoxNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPrinter.cs" />
+    <Compile Include="acRadioComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acRichEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acToolTip.cs" />
+    <Compile Include="acTrackBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTimeSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListFilterEditor.Designer.cs">
+      <DependentUpon>acTreeListFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListMask.cs" />
+    <Compile Include="acTreeList\acTreeListUserConfig.cs" />
+    <Compile Include="acTreeList\acTreeListUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigLoadEditor.Designer.cs">
+      <DependentUpon>acTreeListUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigManager.Designer.cs">
+      <DependentUpon>acTreeListUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigSaveEditor.Designer.cs">
+      <DependentUpon>acTreeListUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListUserConfigSerializationBinder.cs" />
+    <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEditUserConfig.cs" />
+    <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEditUserConfigSerializationBinder.cs" />
+    <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acValidationRule.cs" />
+    <Compile Include="acLoadableMcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acLoadableMcForm.Designer.cs">
+      <DependentUpon>acLoadableMcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acReportHelper.cs" />
+    <Compile Include="acWeekDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acWeekDate.Designer.cs">
+      <DependentUpon>acWeekDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Interface\IBase.cs" />
+    <Compile Include="Interface\IBaseContainer.cs" />
+    <Compile Include="Interface\IBaseHelp.cs" />
+    <Compile Include="Interface\IBaseMenu.cs" />
+    <Compile Include="acLayoutControl\acLayoutControlGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLayoutControl\acLayoutControlItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLayoutControl\acSimpleLabelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMenuItem.cs" />
+    <Compile Include="acLabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLayoutControl\acLayoutControl.cs" />
+    <Compile Include="acLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMenuCheckItem.cs" />
+    <Compile Include="acMessageBox\acMessageBox.cs" />
+    <Compile Include="acMessageBox\acMessageBoxYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxYesNo.Designer.cs">
+      <DependentUpon>acMessageBoxYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxConfirm.Designer.cs">
+      <DependentUpon>acMessageBoxConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxGridConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxGridConfirm.Designer.cs">
+      <DependentUpon>acMessageBoxGridConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxGridYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxGridYesNo.Designer.cs">
+      <DependentUpon>acMessageBoxGridYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acNetWork.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridMaskEditor.Designer.cs">
+      <DependentUpon>acPivotGridMaskEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfig.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.Designer.cs">
+      <DependentUpon>acPivotGridUserConfigLoadEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigManager.Designer.cs">
+      <DependentUpon>acPivotGridUserConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.Designer.cs">
+      <DependentUpon>acPivotGridUserConfigSaveEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigSerializationBinder.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridStyleBox.Designer.cs">
+      <DependentUpon>acPivotGridStyleBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPivotGridControl\acPivotGridControl.cs" />
+    <Compile Include="acPopupContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acResource\acResource.cs" />
+    <Compile Include="acSimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acSplitContainerControl\acSplitContainerControlUserConfig.cs" />
+    <Compile Include="acSplitContainerControl\acSplitContainerControlUserConfigSerializationBinder.cs" />
+    <Compile Include="acSplitContainerControl\acSplitContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acStdCodes.cs" />
+    <Compile Include="acTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeList.cs" />
+    <Compile Include="acVerticalGrid\acVerticalGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxError.Designer.cs">
+      <DependentUpon>acMessageBoxError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IBaseEditControl.cs" />
+    <Compile Include="Interface\IBaseViewControl.cs" />
+    <Compile Include="Interface\IControl.cs" />
+    <Compile Include="Interface\IMainControl.cs" />
+    <Compile Include="acMachineInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acMachineInfo.designer.cs">
+      <DependentUpon>acMachineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegexEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="acDateNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QControl\QGridViewExportTo.cs" />
+    <Compile Include="QControl\QProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QControl\QProgress.Designer.cs">
+      <DependentUpon>QProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QControl\QGridViewBestFitColumns.cs" />
+    <Compile Include="QControl\QThread.cs" />
+    <Compile Include="QControl\QTreeListExportTo.cs" />
+    <Compile Include="acInfo.cs" />
+    <Compile Include="QControl\QPivotGridExportTo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="Scrollinfo.cs" />
+    <Compile Include="WIN32API.cs" />
+    <Compile Include="acCodeGeneratorEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLoadableMcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPartSpecTypePopupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPartSpecTypePopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acPartSpecTypePopupForm.Designer.cs">
+      <DependentUpon>acPartSpecTypePopupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acStdEmps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.resx">
+      <DependentUpon>acAdvBandGridViewFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.resx">
+      <DependentUpon>acAdvBandGridViewMaskEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewStyleBox.resx">
+      <DependentUpon>acAdvBandGridViewStyleBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.resx">
+      <DependentUpon>acAdvBandGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.resx">
+      <DependentUpon>acAdvBandGridViewUserConfigManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.resx">
+      <DependentUpon>acAdvBandGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAlert\acAlertForm.resx">
+      <DependentUpon>acAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewFilterEditor.resx">
+      <DependentUpon>acBandGridViewFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewMaskEditor.resx">
+      <DependentUpon>acBandGridViewMaskEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewStyleBox.resx">
+      <DependentUpon>acBandGridViewStyleBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewUserConfigLoadEditor.resx">
+      <DependentUpon>acBandGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewUserConfigManager.resx">
+      <DependentUpon>acBandGridViewUserConfigManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBandGridView\acBandGridViewUserConfigSaveEditor.resx">
+      <DependentUpon>acBandGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBaseControl\BaseFullScreenMenu.resx">
+      <DependentUpon>BaseFullScreenMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBaseControl\BaseMenu.resx">
+      <DependentUpon>BaseMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acBaseControl\BaseMenuDialog.resx">
+      <DependentUpon>BaseMenuDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartUserConfigLoadEditor.resx">
+      <DependentUpon>acChartUserConfigLoadEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartUserConfigManager.resx">
+      <DependentUpon>acChartUserConfigManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartUserConfigSaveEditor.resx">
+      <DependentUpon>acChartUserConfigSaveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartBarSeriesEditor.resx">
+      <DependentUpon>acChartBarSeriesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartLineSeriesEditor.resx">
+      <DependentUpon>acChartLineSeriesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartDoughnutSeriesEditor.resx">
+      <DependentUpon>acChartDoughnutSeriesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartControlSimpleDiagramStyleBox.resx">
+      <DependentUpon>acChartControlSimpleDiagramStyleBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acChartControl\acChartControlXYDiagramStyleBox.resx">
+      <DependentUpon>acChartControlXYDiagramStyleBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acDateEditInstantForm.resx">
+      <DependentUpon>acDateEditInstantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acForm\acForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewFilterEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewUserConfigManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewUserConfigManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewUserConfigLoadEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewUserConfigLoadEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewMaskEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewMaskEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewUserConfigSaveEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewUserConfigSaveEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acGridView\acGridViewStyleBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acGridViewStyleBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMachineControl.resx">
+      <DependentUpon>acMachineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMachineControlForm.resx">
+      <DependentUpon>acMachineControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxYesNoCan.resx">
+      <DependentUpon>acMessageBoxYesNoCan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMntMachine.resx">
+      <DependentUpon>acMntMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxYesNo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>acMessageBoxYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxError.resx">
+      <DependentUpon>acMessageBoxError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxConfirm.resx">
+      <DependentUpon>acMessageBoxConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxGridConfirm.resx">
+      <DependentUpon>acMessageBoxGridConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxGridYesNo.resx">
+      <DependentUpon>acMessageBoxGridYesNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxHelp.resx">
+      <DependentUpon>acMessageBoxHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxBarcode.resx">
+      <DependentUpon>acMessageBoxBarcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxParameterYesNo.resx">
+      <DependentUpon>acMessageBoxParameterYesNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxError2.resx">
+      <DependentUpon>acMessageBoxError2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMessageBox\acMessageBoxNotify.resx">
+      <DependentUpon>acMessageBoxNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPivotGridControl\acPivotGridMaskEditor.resx">
+      <DependentUpon>acPivotGridMaskEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.resx">
+      <DependentUpon>acPivotGridUserConfigLoadEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPivotGridControl\acPivotGridUserConfigManager.resx">
+      <DependentUpon>acPivotGridUserConfigManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.resx">
+      <DependentUpon>acPivotGridUserConfigSaveEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPivotGridControl\acPivotGridStyleBox.resx">
+      <DependentUpon>acPivotGridStyleBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acLoadableMcForm.resx">
+      <DependentUpon>acLoadableMcForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acReport.resx">
+      <DependentUpon>acReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acMachineInfo.resx">
+      <DependentUpon>acMachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acTreeList\acTreeListFilterEditor.resx">
+      <DependentUpon>acTreeListFilterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acTreeList\acTreeListUserConfigLoadEditor.resx">
+      <DependentUpon>acTreeListUserConfigLoadEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acTreeList\acTreeListUserConfigManager.resx">
+      <DependentUpon>acTreeListUserConfigManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acTreeList\acTreeListUserConfigSaveEditor.resx">
+      <DependentUpon>acTreeListUserConfigSaveEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acWeekDate.resx">
+      <DependentUpon>acWeekDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QControl\QProgress.resx">
+      <DependentUpon>QProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPartSpecTypePopupForm.resx">
+      <DependentUpon>acPartSpecTypePopupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjustcol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-graphics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save-as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-symbolic-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\html.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-desktop-locale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mergecell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-justify-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-justify-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-justify-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_decreaseindent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enumList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-warning_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet-group-chat_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-search_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save-close_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-print_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-system_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbnail_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-properties_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-x-generic_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tooloptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser-download_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-home_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font-x-generic_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_excel_table_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-important_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-yes_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-no_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-apply_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_excel_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-find-replace_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_contract_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_expand_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_redo_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wand_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_refresh_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfield_rename_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-delete_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-browser_x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_question_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color_swatchx_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_lowercase_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_refresh_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_blue_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftp_mc_trans_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-next_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-previous_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-browser_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_data_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_key_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjustcol_star_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_side_boxesx_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignjustify_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zebra.Printing\Zebra.Printing.csproj">
+      <Project>{0bdea723-914a-4a89-8a00-185cdc157480}</Project>
+      <Name>Zebra.Printing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\alert_close.png" />
+    <Content Include="Resources\alert_error.png" />
+    <Content Include="Resources\alert_info.png" />
+    <Content Include="Resources\alert_success.png" />
+    <Content Include="Resources\alert_warning.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6DF5EEC-7775-4ADA-B376-3E38EB647F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REP</RootNamespace>
+    <AssemblyName>REP</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataVisualization.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Design.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Drawing, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2.Design, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=35.3.40.1000, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\GemBox Software\GemBox.Spreadsheet Professional 3.5\Bin\NET30\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\MailKit.3.1.1\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\MimeKit.3.1.1\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerAgentMulti, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\ServerAgentMulti.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Zebra.Printing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Zebra.Printing\bin\Debug\Zebra.Printing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REP01A\REP01A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP01A\REP01A_M0A.Designer.cs">
+      <DependentUpon>REP01A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP02A\REP02A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP02A\REP02A_M0A.Designer.cs">
+      <DependentUpon>REP02A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP03A\REP03A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP03A\REP03A_M0A.Designer.cs">
+      <DependentUpon>REP03A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP04A\REP04A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP04A\REP04A_M0A.Designer.cs">
+      <DependentUpon>REP04A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP05A\REP05A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP05A\REP05A_M0A.Designer.cs">
+      <DependentUpon>REP05A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP06A\REP06A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP06A\REP06A_D1A.Designer.cs">
+      <DependentUpon>REP06A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP06A\REP06A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP06A\REP06A_D0A.Designer.cs">
+      <DependentUpon>REP06A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP06A\REP06A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP06A\REP06A_M0A.Designer.cs">
+      <DependentUpon>REP06A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP07A\REP07A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP07A\REP07A_M0A.Designer.cs">
+      <DependentUpon>REP07A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP08A\REP08A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP08A\REP08A_M0A.Designer.cs">
+      <DependentUpon>REP08A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP11A\REP11A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP11A\REP11A_M0A.Designer.cs">
+      <DependentUpon>REP11A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP12A\REP12A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP12A\REP12A_M0A.Designer.cs">
+      <DependentUpon>REP12A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP13A\REP13A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP13A\REP13A_M0A.Designer.cs">
+      <DependentUpon>REP13A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP14A\REP14A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP14A\REP14A_M0A.Designer.cs">
+      <DependentUpon>REP14A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP18A\REP18A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP18A\REP18A_M0A.Designer.cs">
+      <DependentUpon>REP18A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP21A\REP21A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP21A\REP21A_M0A.Designer.cs">
+      <DependentUpon>REP21A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP20A\REP20A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP20A\REP20A_M0A.Designer.cs">
+      <DependentUpon>REP20A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP19A\REP19A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP19A\REP19A_M0A.Designer.cs">
+      <DependentUpon>REP19A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP17A\REP17A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP17A\REP17A_M0A.Designer.cs">
+      <DependentUpon>REP17A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP15A\REP15A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP15A\REP15A_M0A.Designer.cs">
+      <DependentUpon>REP15A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP16A\REP16A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP16A\REP16A_M0A.Designer.cs">
+      <DependentUpon>REP16A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP22A\REP22A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP22A\REP22A_D0A.Designer.cs">
+      <DependentUpon>REP22A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP22A\REP22A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP22A\REP22A_D1A.Designer.cs">
+      <DependentUpon>REP22A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REP22A\REP22A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REP22A\REP22A_M0A.Designer.cs">
+      <DependentUpon>REP22A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttachFileManager\AttachFileManager.csproj">
+      <Project>{B6176B23-2BA2-4B8D-8880-EA47DEEC8DF5}</Project>
+      <Name>AttachFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\CUBIZ_RULE\CUBIZ_BR.csproj">
+      <Project>{181657d9-41b0-4d44-ab05-cfc4e065f776}</Project>
+      <Name>CUBIZ_BR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelperManager\CodeHelperManager.csproj">
+      <Project>{37AC3413-C30B-4A46-9629-405FCA9F0592}</Project>
+      <Name>CodeHelperManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dev20.ControlManager\ControlManager.csproj">
+      <Project>{1044e528-da90-49c5-90c2-a98798e3af00}</Project>
+      <Name>ControlManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportManager\ReportManager.csproj">
+      <Project>{24235D77-189C-4B4C-801E-E535D815B3C1}</Project>
+      <Name>ReportManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="REP01A\REP01A_M0A.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>REP01A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP02A\REP02A_M0A.resx">
+      <DependentUpon>REP02A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP03A\REP03A_M0A.resx">
+      <DependentUpon>REP03A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP04A\REP04A_M0A.resx">
+      <DependentUpon>REP04A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP05A\REP05A_M0A.resx">
+      <DependentUpon>REP05A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP06A\REP06A_D1A.resx">
+      <DependentUpon>REP06A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP06A\REP06A_D0A.resx">
+      <DependentUpon>REP06A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP06A\REP06A_M0A.resx">
+      <DependentUpon>REP06A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP07A\REP07A_M0A.resx">
+      <DependentUpon>REP07A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP08A\REP08A_M0A.resx">
+      <DependentUpon>REP08A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP11A\REP11A_M0A.resx">
+      <DependentUpon>REP11A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP12A\REP12A_M0A.resx">
+      <DependentUpon>REP12A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP13A\REP13A_M0A.resx">
+      <DependentUpon>REP13A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP14A\REP14A_M0A.resx">
+      <DependentUpon>REP14A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP18A\REP18A_M0A.resx">
+      <DependentUpon>REP18A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP21A\REP21A_M0A.resx">
+      <DependentUpon>REP21A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP20A\REP20A_M0A.resx">
+      <DependentUpon>REP20A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP19A\REP19A_M0A.resx">
+      <DependentUpon>REP19A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP17A\REP17A_M0A.resx">
+      <DependentUpon>REP17A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP15A\REP15A_M0A.resx">
+      <DependentUpon>REP15A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP16A\REP16A_M0A.resx">
+      <DependentUpon>REP16A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP22A\REP22A_D0A.resx">
+      <DependentUpon>REP22A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP22A\REP22A_D1A.resx">
+      <DependentUpon>REP22A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP22A\REP22A_M0A.resx">
+      <DependentUpon>REP22A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_data_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_part_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_plant_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_stock_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_sub_task_table_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_new_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjustcol_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjustcol_start_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda_check_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignjustify_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aobottom_all_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aocenterv_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aocenterv_all_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_access_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_side_boxesx_x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_graphics_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_system_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval_return_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_contract_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_expand_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_refresh_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_key_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_key_1xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser_download_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_stock_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_edit_x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_ypgo_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkedclipboard_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cogwheel_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color_swatchx_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_add_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_error_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_go_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_delete_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_lock_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_ok_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_ok_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day_pencil_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deb_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_apply_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_no_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_ok_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_warning_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_warning_3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_yes_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display_save_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_excel_table_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_open_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_open_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_print_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_print_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_properties_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_save_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_save_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_save_as_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_save_close_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_in_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive_hdd_refresh_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duplicate_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_clear_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_copy_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_cut_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_due_date_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find_replace_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find_replace_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_paste_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_paste_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_paste_check_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_paste_copy_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_paste_redo_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_redo_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_redo2_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_undo_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_undo_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-lock_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem_readonly_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem_readonly_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem_symbolic_link_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem_system_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enumList_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enumList_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\est_copy_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel_import_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation_sign_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finish_icon_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_blue_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_green_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_red_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_open_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_x_generic_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_decreaseindent_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_justify_center_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_justify_left_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_justify_right_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftp_mc_trans_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_display_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_down_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_next_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_previous_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_up_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk_copy_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_browser_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_browser_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_browser_3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\html_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox_plus_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_group_chat_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_add_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_confirm_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_delete_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_edit_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magic_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_attachment_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mat_out_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media_record_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mergecell_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus_sign_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money2_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money2_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_window_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtodo_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\object_align_horizontal_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oecost_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_sign_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_data_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\os_balju_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\os_request_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pack_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_copy_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_excel_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_paste_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\part_proc_update_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_sign_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_desktop_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_desktop_font_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_desktop_locale_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_system_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_search_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_sign_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_sign_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request2_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resource_all_change_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schduling_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectnodes_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Service Manager_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_simulation_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape_link_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape_link_add_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape_selected_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_error_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_question_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_remove_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_tick_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_warning_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_warning_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smlt_money_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\std_bop_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\std_plan_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_create_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_delete_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_edit_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_ypgo_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_refresh_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_search_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_refresh_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templates_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_lowercase_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_x_changelog_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_x_generic_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfield_rename_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbnail_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool_give_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool_give_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool_return_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool_return_cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tooloptions_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_home_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_trash_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_trash_full__cancel_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_display_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wand_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workorder_lock_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find_1x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_delete_2x.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

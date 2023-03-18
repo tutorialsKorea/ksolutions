@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E5C6783-D833-4024-9FC5-7D8ACA49C1DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HIS</RootNamespace>
+    <AssemblyName>HIS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttachFileManager\AttachFileManager.csproj">
+      <Project>{b6176b23-2ba2-4b8d-8880-ea47deec8df5}</Project>
+      <Name>AttachFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\CUBIZ_RULE\CUBIZ_BR.csproj">
+      <Project>{181657d9-41b0-4d44-ab05-cfc4e065f776}</Project>
+      <Name>CUBIZ_BR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelperManager\CodeHelperManager.csproj">
+      <Project>{37ac3413-c30b-4a46-9629-405fca9f0592}</Project>
+      <Name>CodeHelperManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dev20.ControlManager\ControlManager.csproj">
+      <Project>{1044e528-da90-49c5-90c2-a98798e3af00}</Project>
+      <Name>ControlManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GemBox.Spreadsheet, Version=35.3.30.1092, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL" />
+    <Reference Include="PlexityHide.GTP, Version=3.0.8.19, Culture=neutral, PublicKeyToken=56c4486a92e3ee5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\plexityHide AB\GTP.NET 3.0.8.18\Assemblies\CLR20\WindowsForms\PlexityHide.GTP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_delete_2x.png" />
+    <None Include="Resources\edit_find_1x3.png" />
+    <None Include="Resources\edit_find_1x2.png" />
+    <None Include="Resources\edit_find_1x1.png" />
+    <None Include="Resources\mail_attachment_2x.png" />
+    <None Include="Resources\magic_2x.png" />
+    <None Include="Resources\lock_edit_1x.png" />
+    <None Include="Resources\lock_2x.png" />
+    <None Include="Resources\lock_1x.png" />
+    <None Include="Resources\list_delete_2x.png" />
+    <None Include="Resources\list_confirm_2x.png" />
+    <None Include="Resources\list_add_2x.png" />
+    <None Include="Resources\lightning_2x.png" />
+    <None Include="Resources\layout_1x.png" />
+    <None Include="Resources\keyboard_1x.png" />
+    <None Include="Resources\internet_group_chat_1x.png" />
+    <None Include="Resources\inbox_plus_2x.png" />
+    <None Include="Resources\html_1x.png" />
+    <None Include="Resources\help_browser_3x.png" />
+    <None Include="Resources\help_browser_2x.png" />
+    <None Include="Resources\help_browser_1x.png" />
+    <None Include="Resources\gtk_copy_2x.png" />
+    <None Include="Resources\go_up_2x.png" />
+    <None Include="Resources\go_previous_1x.png" />
+    <None Include="Resources\go_next_1x.png" />
+    <None Include="Resources\go_down_2x.png" />
+    <None Include="Resources\full_display_2x.png" />
+    <None Include="Resources\ftp_mc_trans_1x.png" />
+    <None Include="Resources\format_justify_right_1x.png" />
+    <None Include="Resources\format_justify_left_1x.png" />
+    <None Include="Resources\format_justify_center_1x.png" />
+    <None Include="Resources\format_decreaseindent_1x.png" />
+    <None Include="Resources\font_x_generic_1x.png" />
+    <None Include="Resources\folder_open_2x.png" />
+    <None Include="Resources\flag_red_1x.png" />
+    <None Include="Resources\flag_green_1x.png" />
+    <None Include="Resources\flag_blue_1x.png" />
+    <None Include="Resources\flag_1x.png" />
+    <None Include="Resources\Finish_icon_2x.png" />
+    <None Include="Resources\exclamation_sign_2x.png" />
+    <None Include="Resources\excel_import_2x.png" />
+    <None Include="Resources\est_copy_2x.png" />
+    <None Include="Resources\enumList_2x.png" />
+    <None Include="Resources\enumList_1x.png" />
+    <None Include="Resources\emblem_system_1x.png" />
+    <None Include="Resources\emblem_symbolic_link_1x.png" />
+    <None Include="Resources\emblem_readonly_2x.png" />
+    <None Include="Resources\emblem_readonly_1x.png" />
+    <None Include="Resources\edit-lock_2x.png" />
+    <None Include="Resources\edit_undo_2x.png" />
+    <None Include="Resources\edit_undo_1x.png" />
+    <None Include="Resources\edit_redo2_1x.png" />
+    <None Include="Resources\edit_redo_1x.png" />
+    <None Include="Resources\edit_paste_redo_2x.png" />
+    <None Include="Resources\edit_paste_copy_2x.png" />
+    <None Include="Resources\edit_paste_check_2x.png" />
+    <None Include="Resources\edit_paste_2x.png" />
+    <None Include="Resources\edit_paste_1x.png" />
+    <None Include="Resources\edit_find_replace_2x.png" />
+    <None Include="Resources\edit_find_replace_1x.png" />
+    <None Include="Resources\edit_find_1x.png" />
+    <None Include="Resources\edit_due_date_2x.png" />
+    <None Include="Resources\edit_cut_1x.png" />
+    <None Include="Resources\edit_copy_2x.png" />
+    <None Include="Resources\edit_clear_2x.png" />
+    <None Include="Resources\edit_2x.png" />
+    <None Include="Resources\edit_1x.png" />
+    <None Include="Resources\duplicate_2x.png" />
+    <None Include="Resources\drive_hdd_refresh_2x.png" />
+    <None Include="Resources\download_1x.png" />
+    <None Include="Resources\door_in_cancel_2x.png" />
+    <None Include="Resources\document_save_close_2x.png" />
+    <None Include="Resources\document_save_as_1x.png" />
+    <None Include="Resources\document_save_2x.png" />
+    <None Include="Resources\document_save_1x.png" />
+    <None Include="Resources\document_properties_1x.png" />
+    <None Include="Resources\document_print_2x.png" />
+    <None Include="Resources\document_print_1x.png" />
+    <None Include="Resources\document_open_2x.png" />
+    <None Include="Resources\document_open_1x.png" />
+    <None Include="Resources\document_new_2x.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\document_1x.png" />
+    <None Include="Resources\doc_excel_table_1x.png" />
+    <None Include="Resources\display_save_2x.png" />
+    <None Include="Resources\dialog_yes_2x.png" />
+    <None Include="Resources\dialog_warning_3x.png" />
+    <None Include="Resources\dialog_warning_1x.png" />
+    <None Include="Resources\dialog_ok_1x.png" />
+    <None Include="Resources\dialog_no_2x.png" />
+    <None Include="Resources\dialog_apply_2x.png" />
+    <None Include="Resources\delivery_2x.png" />
+    <None Include="Resources\delivery_1x.png" />
+    <None Include="Resources\deb_2x.png" />
+    <None Include="Resources\day_pencil_2x.png" />
+    <None Include="Resources\day_ok_cancel_2x.png" />
+    <None Include="Resources\day_ok_2x.png" />
+    <None Include="Resources\day_lock_2x.png" />
+    <None Include="Resources\day_delete_2x.png" />
+    <None Include="Resources\day_cancel_2x.png" />
+    <None Include="Resources\date_go_1x.png" />
+    <None Include="Resources\date_error_1x.png" />
+    <None Include="Resources\date_add_1x.png" />
+    <None Include="Resources\date_1x.png" />
+    <None Include="Resources\color_swatchx_1x.png" />
+    <None Include="Resources\cogwheel_1x.png" />
+    <None Include="Resources\checkedclipboard_cancel_2x.png" />
+    <None Include="Resources\change_ypgo_2x.png" />
+    <None Include="Resources\cell_edit_x1.png" />
+    <None Include="Resources\cancel_stock_2x.png" />
+    <None Include="Resources\cancel_1x.png" />
+    <None Include="Resources\browser_download_1x.png" />
+    <None Include="Resources\book_key_1xx.png" />
+    <None Include="Resources\book_key_1x.png" />
+    <None Include="Resources\arrow_refresh_1x.png" />
+    <None Include="Resources\arrow_expand_1x.png" />
+    <None Include="Resources\arrow_contract_1x.png" />
+    <None Include="Resources\approval_return_2x.png" />
+    <None Include="Resources\appointment_1x.png" />
+    <None Include="Resources\applications_system_1x.png" />
+    <None Include="Resources\applications_graphics_1x.png" />
+    <None Include="Resources\application_side_boxesx_x1.png" />
+    <None Include="Resources\app_access_2x.png" />
+    <None Include="Resources\aocenterv_all_2x.png" />
+    <None Include="Resources\aocenterv_2x.png" />
+    <None Include="Resources\aobottom_all_2x.png" />
+    <None Include="Resources\wrench_1x.png" />
+    <None Include="Resources\workorder_lock_1x.png" />
+    <None Include="Resources\wand_1x.png" />
+    <None Include="Resources\video_display_2x.png" />
+    <None Include="Resources\user_trash_full__cancel_2x.png" />
+    <None Include="Resources\user_trash_2x.png" />
+    <None Include="Resources\user_home_1x.png" />
+    <None Include="Resources\txt_1x.png" />
+    <None Include="Resources\tooloptions_1x.png" />
+    <None Include="Resources\tool_return_cancel_2x.png" />
+    <None Include="Resources\tool_return_2x.png" />
+    <None Include="Resources\tool_give_cancel_2x.png" />
+    <None Include="Resources\tool_give_2x.png" />
+    <None Include="Resources\tick_2x.png" />
+    <None Include="Resources\tick_1x.png" />
+    <None Include="Resources\thumbnail_1x.png" />
+    <None Include="Resources\textfield_rename_1x.png" />
+    <None Include="Resources\text_x_generic_1x.png" />
+    <None Include="Resources\text_x_changelog_2x.png" />
+    <None Include="Resources\text_lowercase_1x.png" />
+    <None Include="Resources\templates_1x.png" />
+    <None Include="Resources\table_refresh_1x.png" />
+    <None Include="Resources\system_search_2x.png" />
+    <None Include="Resources\system_refresh_2x.png" />
+    <None Include="Resources\suggestion_1x.png" />
+    <None Include="Resources\stop_ypgo_2x.png" />
+    <None Include="Resources\stock_edit_2x.png" />
+    <None Include="Resources\stock_delete_2x.png" />
+    <None Include="Resources\stock_create_2x.png" />
+    <None Include="Resources\std_plan_2x.png" />
+    <None Include="Resources\std_bop_2x.png" />
+    <None Include="Resources\smlt_money_2x.png" />
+    <None Include="Resources\sign_warning_2x.png" />
+    <None Include="Resources\sign_warning_1x.png" />
+    <None Include="Resources\sign_tick_1x.png" />
+    <None Include="Resources\sign_remove_1x.png" />
+    <None Include="Resources\sign_question_1x.png" />
+    <None Include="Resources\sign_error_1x.png" />
+    <None Include="Resources\sign.png" />
+    <None Include="Resources\shape_selected_2x.png" />
+    <None Include="Resources\shape_link_add_2x.png" />
+    <None Include="Resources\shape_link_2x.png" />
+    <None Include="Resources\set_simulation_2x.png" />
+    <None Include="Resources\Service Manager_1x.png" />
+    <None Include="Resources\selectnodes_2x.png" />
+    <None Include="Resources\schduling_2x.png" />
+    <None Include="Resources\resource_all_change_2x.png" />
+    <None Include="Resources\request2_2x.png" />
+    <None Include="Resources\request_cancel_2x.png" />
+    <None Include="Resources\remove_sign_2x.png" />
+    <None Include="Resources\remove_sign_1x.png" />
+    <None Include="Resources\reload_2x.png" />
+    <None Include="Resources\refresh_search_2x.png" />
+    <None Include="Resources\refresh_1x.png" />
+    <None Include="Resources\printer_1x.png" />
+    <None Include="Resources\preferences_system_1x.png" />
+    <None Include="Resources\preferences_system.png" />
+    <None Include="Resources\preferences_desktop_locale_1x.png" />
+    <None Include="Resources\preferences_desktop_font_2x.png" />
+    <None Include="Resources\preferences_desktop_2x.png" />
+    <None Include="Resources\plus_sign_2x.png" />
+    <None Include="Resources\pdf_1x.png" />
+    <None Include="Resources\part_proc_update_2x.png" />
+    <None Include="Resources\panel_1x.png" />
+    <None Include="Resources\page_paste_2x.png" />
+    <None Include="Resources\page_excel_1x.png" />
+    <None Include="Resources\page_copy_2x.png" />
+    <None Include="Resources\pack_cancel_2x.png" />
+    <None Include="Resources\os_request_1x.png" />
+    <None Include="Resources\os_balju_1x.png" />
+    <None Include="Resources\open_data_2x.png" />
+    <None Include="Resources\ok_sign_2x.png" />
+    <None Include="Resources\oecost_2x.png" />
+    <None Include="Resources\object_align_horizontal_2x.png" />
+    <None Include="Resources\newtodo_2x.png" />
+    <None Include="Resources\new_window_1x.png" />
+    <None Include="Resources\money2_cancel_2x.png" />
+    <None Include="Resources\money2_2x.png" />
+    <None Include="Resources\money_1x.png" />
+    <None Include="Resources\minus_sign_2x.png" />
+    <None Include="Resources\mergecell_1x.png" />
+    <None Include="Resources\media_record_2x.png" />
+    <None Include="Resources\mat_out_2x.png" />
+    <None Include="Resources\mail_attachment_3x.png" />
+    <None Include="Resources\add_1x.png" />
+    <None Include="Resources\add_data_2x.png" />
+    <None Include="Resources\add_part_2x.png" />
+    <None Include="Resources\add_plant_2x.png" />
+    <None Include="Resources\add_stock_2x.png" />
+    <None Include="Resources\add_sub_task_table_2x.png" />
+    <None Include="Resources\address_book_new_2x.png" />
+    <None Include="Resources\adjustcol_1x.png" />
+    <None Include="Resources\adjustcol_start_1x.png" />
+    <None Include="Resources\agenda_check_2x.png" />
+    <None Include="Resources\alignjustify_1x.png" />
+    <Content Include="Resources\aobottom_all.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\sign_tick_x16.png" />
+    <None Include="Resources\set_simulation_x22.png" />
+    <None Include="Resources\edit_x22.png" />
+    <None Include="Resources\edit_x16.png" />
+    <None Include="Resources\document-new.png" />
+    <None Include="Resources\dialog-ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HIS01A\HIS01A_D2A.resx">
+      <DependentUpon>HIS01A_D2A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS01A\HIS01A_D1A.resx">
+      <DependentUpon>HIS01A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS03A\HIS03A_D2A.resx">
+      <DependentUpon>HIS03A_D2A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS04A\HIS04A_D1A.resx">
+      <DependentUpon>HIS04A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS04A\HIS04A_D0A.resx">
+      <DependentUpon>HIS04A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS04A\HIS04B_M0A.resx">
+      <DependentUpon>HIS04B_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS04A\HIS04A_M0A.resx">
+      <DependentUpon>HIS04A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS03A\HIS03A_D1A.resx">
+      <DependentUpon>HIS03A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS03A\HIS03A_D0A.resx">
+      <DependentUpon>HIS03A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS03A\HIS03A_M0A.resx">
+      <DependentUpon>HIS03A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS02A\HIS02A_D0A.resx">
+      <DependentUpon>HIS02A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS02A\HIS02A_M0A.resx">
+      <DependentUpon>HIS02A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS01A\HIS01A_D0A.resx">
+      <DependentUpon>HIS01A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIS01A\HIS01A_M0A.resx">
+      <DependentUpon>HIS01A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HIS01A\HIS01A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_D2A.Designer.cs">
+      <DependentUpon>HIS01A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_D1A.Designer.cs">
+      <DependentUpon>HIS01A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D2A.Designer.cs">
+      <DependentUpon>HIS03A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_D1A.Designer.cs">
+      <DependentUpon>HIS04A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_D0A.Designer.cs">
+      <DependentUpon>HIS04A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS04A\HIS04B_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HIS04A\HIS04B_M0A.Designer.cs">
+      <DependentUpon>HIS04B_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HIS04A\HIS04A_M0A.Designer.cs">
+      <DependentUpon>HIS04A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D1A.Designer.cs">
+      <DependentUpon>HIS03A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_D0A.Designer.cs">
+      <DependentUpon>HIS03A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HIS03A\HIS03A_M0A.Designer.cs">
+      <DependentUpon>HIS03A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS02A\HIS02A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS02A\HIS02A_D0A.Designer.cs">
+      <DependentUpon>HIS02A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS02A\HIS02A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HIS02A\HIS02A_M0A.Designer.cs">
+      <DependentUpon>HIS02A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_D0A.Designer.cs">
+      <DependentUpon>HIS01A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HIS01A\HIS01A_M0A.Designer.cs">
+      <DependentUpon>HIS01A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

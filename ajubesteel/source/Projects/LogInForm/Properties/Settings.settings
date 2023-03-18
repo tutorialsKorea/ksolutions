@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LogInForm.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PLANT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DATABASE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">active_deplus</Value>
+    </Setting>
+    <Setting Name="LANG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KR</Value>
+    </Setting>
+    <Setting Name="SKIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="USER_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">active</Value>
+    </Setting>
+    <Setting Name="PASS_WORD" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ProactiveMES</Value>
+    </Setting>
+    <Setting Name="VERSION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.0.0.138</Value>
+    </Setting>
+    <Setting Name="SERVER_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.219.111</Value>
+    </Setting>
+    <Setting Name="SAVE_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DEV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LOGINFORM_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LogInForm_V2</Value>
+    </Setting>
+    <Setting Name="MENU_LOCATION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">V2</Value>
+    </Setting>
+    <Setting Name="API_URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://192.168.10.4:7863/api/QueryApi</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

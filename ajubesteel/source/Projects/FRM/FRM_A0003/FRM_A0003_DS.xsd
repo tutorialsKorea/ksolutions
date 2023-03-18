@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FRM_A0003_DS" targetNamespace="http://tempuri.org/FRM_A0003_DS.xsd" xmlns:mstns="http://tempuri.org/FRM_A0003_DS.xsd" xmlns="http://tempuri.org/FRM_A0003_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FRM_A0003_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="FRM_A0003_DS" msprop:Generator_UserDSName="FRM_A0003_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="D" msprop:Generator_TableClassName="DDataTable" msprop:Generator_RowEvArgName="DRowChangeEvent" msprop:Generator_TableVarName="tableD" msprop:Generator_TablePropName="D" msprop:Generator_RowDeletingName="DRowDeleting" msprop:Generator_RowChangingName="DRowChanging" msprop:Generator_RowEvHandlerName="DRowChangeEventHandler" msprop:Generator_RowDeletedName="DRowDeleted" msprop:Generator_UserTableName="D" msprop:Generator_RowChangedName="DRowChanged" msprop:Generator_RowClassName="DRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_UserColumnName="DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PART_NAME" msprop:Generator_ColumnVarNameInTable="columnPART_NAME" msprop:Generator_ColumnPropNameInRow="PART_NAME" msprop:Generator_ColumnPropNameInTable="PART_NAMEColumn" msprop:Generator_UserColumnName="PART_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PART_CODE" msprop:Generator_ColumnVarNameInTable="columnPART_CODE" msprop:Generator_ColumnPropNameInRow="PART_CODE" msprop:Generator_ColumnPropNameInTable="PART_CODEColumn" msprop:Generator_UserColumnName="PART_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="B_MAT_SPEC" msprop:Generator_ColumnVarNameInTable="columnB_MAT_SPEC" msprop:Generator_ColumnPropNameInRow="B_MAT_SPEC" msprop:Generator_ColumnPropNameInTable="B_MAT_SPECColumn" msprop:Generator_UserColumnName="B_MAT_SPEC" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:long" minOccurs="0" />
+              <xs:element name="UNIT_COST" msprop:Generator_ColumnVarNameInTable="columnUNIT_COST" msprop:Generator_ColumnPropNameInRow="UNIT_COST" msprop:Generator_ColumnPropNameInTable="UNIT_COSTColumn" msprop:Generator_UserColumnName="UNIT_COST" type="xs:long" minOccurs="0" />
+              <xs:element name="AMT" msprop:Generator_ColumnVarNameInTable="columnAMT" msprop:Generator_ColumnPropNameInRow="AMT" msprop:Generator_ColumnPropNameInTable="AMTColumn" msprop:Generator_UserColumnName="AMT" type="xs:long" minOccurs="0" />
+              <xs:element name="SCOMMENT" msprop:Generator_ColumnVarNameInTable="columnSCOMMENT" msprop:Generator_ColumnPropNameInRow="SCOMMENT" msprop:Generator_ColumnPropNameInTable="SCOMMENTColumn" msprop:Generator_UserColumnName="SCOMMENT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="M" msprop:Generator_TableClassName="MDataTable" msprop:Generator_RowEvArgName="MRowChangeEvent" msprop:Generator_TableVarName="tableM" msprop:Generator_TablePropName="M" msprop:Generator_RowDeletingName="MRowDeleting" msprop:Generator_RowChangingName="MRowChanging" msprop:Generator_RowEvHandlerName="MRowChangeEventHandler" msprop:Generator_RowDeletedName="MRowDeleted" msprop:Generator_UserTableName="M" msprop:Generator_RowChangedName="MRowChanged" msprop:Generator_RowClassName="MRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VEN_NAME" msprop:Generator_ColumnVarNameInTable="columnVEN_NAME" msprop:Generator_ColumnPropNameInRow="VEN_NAME" msprop:Generator_ColumnPropNameInTable="VEN_NAMEColumn" msprop:Generator_UserColumnName="VEN_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_BIZ_NO" msprop:Generator_ColumnVarNameInTable="columnVEN_BIZ_NO" msprop:Generator_ColumnPropNameInRow="VEN_BIZ_NO" msprop:Generator_ColumnPropNameInTable="VEN_BIZ_NOColumn" msprop:Generator_UserColumnName="VEN_BIZ_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnVEN_ADDRESS" msprop:Generator_ColumnPropNameInRow="VEN_ADDRESS" msprop:Generator_ColumnPropNameInTable="VEN_ADDRESSColumn" msprop:Generator_UserColumnName="VEN_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_TEL_FAX" msprop:Generator_ColumnVarNameInTable="columnVEN_TEL_FAX" msprop:Generator_ColumnPropNameInRow="VEN_TEL_FAX" msprop:Generator_ColumnPropNameInTable="VEN_TEL_FAXColumn" msprop:Generator_UserColumnName="VEN_TEL_FAX" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_CEO" msprop:Generator_ColumnVarNameInTable="columnVEN_CEO" msprop:Generator_ColumnPropNameInRow="VEN_CEO" msprop:Generator_ColumnPropNameInTable="VEN_CEOColumn" msprop:Generator_UserColumnName="VEN_CEO" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_CONDITIONS" msprop:Generator_ColumnVarNameInTable="columnVEN_CONDITIONS" msprop:Generator_ColumnPropNameInRow="VEN_CONDITIONS" msprop:Generator_ColumnPropNameInTable="VEN_CONDITIONSColumn" msprop:Generator_UserColumnName="VEN_CONDITIONS" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_PRODUCTS" msprop:Generator_ColumnVarNameInTable="columnVEN_PRODUCTS" msprop:Generator_ColumnPropNameInRow="VEN_PRODUCTS" msprop:Generator_ColumnPropNameInTable="VEN_PRODUCTSColumn" msprop:Generator_UserColumnName="VEN_PRODUCTS" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_EMAIL" msprop:Generator_ColumnVarNameInTable="columnVEN_EMAIL" msprop:Generator_ColumnPropNameInRow="VEN_EMAIL" msprop:Generator_ColumnPropNameInTable="VEN_EMAILColumn" msprop:Generator_UserColumnName="VEN_EMAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_CHARGE_EMP" msprop:Generator_ColumnVarNameInTable="columnVEN_CHARGE_EMP" msprop:Generator_ColumnPropNameInRow="VEN_CHARGE_EMP" msprop:Generator_ColumnPropNameInTable="VEN_CHARGE_EMPColumn" msprop:Generator_UserColumnName="VEN_CHARGE_EMP" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_CHARGE_TEL" msprop:Generator_ColumnVarNameInTable="columnVEN_CHARGE_TEL" msprop:Generator_ColumnPropNameInRow="VEN_CHARGE_TEL" msprop:Generator_ColumnPropNameInTable="VEN_CHARGE_TELColumn" msprop:Generator_UserColumnName="VEN_CHARGE_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_CHARGE_HP" msprop:Generator_ColumnVarNameInTable="columnVEN_CHARGE_HP" msprop:Generator_ColumnPropNameInRow="VEN_CHARGE_HP" msprop:Generator_ColumnPropNameInTable="VEN_CHARGE_HPColumn" msprop:Generator_UserColumnName="VEN_CHARGE_HP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,933 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC7C284D-DAE3-4C4F-9EC4-9CC444C1D71A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ORD</RootNamespace>
+    <AssemblyName>ORD</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Design.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataVisualization.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2.Design, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Reporting, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=35.3.30.1092, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PlexityHide.GTP">
+      <HintPath>C:\Program Files (x86)\plexityHide AB\GTP.NET 3.0.8.18\Assemblies\CLR20\WindowsForms\PlexityHide.GTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SYS">
+      <HintPath>..\SYS\obj\Debug\SYS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WOR">
+      <HintPath>..\WOR\obj\Debug\WOR.dll</HintPath>
+    </Reference>
+    <Reference Include="Zebra.Printing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Zebra.Printing\bin\Debug\Zebra.Printing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.Designer.cs">
+      <DependentUpon>ORD01A_M0A_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A.Designer.cs">
+      <DependentUpon>ORD01A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D5A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D5A.designer.cs">
+      <DependentUpon>ORD02A_D5A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D1A.Designer.cs">
+      <DependentUpon>ORD02A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D4A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D4A.Designer.cs">
+      <DependentUpon>ORD02A_D4A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_M0A.Designer.cs">
+      <DependentUpon>ORD02A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D2A.Designer.cs">
+      <DependentUpon>ORD02A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D3A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D3A.Designer.cs">
+      <DependentUpon>ORD02A_D3A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D6A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D6A.Designer.cs">
+      <DependentUpon>ORD02A_D6A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D0A.Designer.cs">
+      <DependentUpon>ORD04A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D3A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D3A.Designer.cs">
+      <DependentUpon>ORD04A_D3A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D2A.Designer.cs">
+      <DependentUpon>ORD04A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D1A.Designer.cs">
+      <DependentUpon>ORD04A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\acOneButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D7A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D7A.Designer.cs">
+      <DependentUpon>ORD05A_D7A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D6A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D6A.Designer.cs">
+      <DependentUpon>ORD05A_D6A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D5A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D5A.Designer.cs">
+      <DependentUpon>ORD05A_D5A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D4A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D4A.Designer.cs">
+      <DependentUpon>ORD05A_D4A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D3A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D3A.Designer.cs">
+      <DependentUpon>ORD05A_D3A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D2A .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D2A .Designer.cs">
+      <DependentUpon>ORD05A_D2A .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.Designer.cs">
+      <DependentUpon>ORD10A_D3A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.Designer.cs">
+      <DependentUpon>ORD10A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.Designer.cs">
+      <DependentUpon>ORD10A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.Designer.cs">
+      <DependentUpon>ORD10A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_D0A.Designer.cs">
+      <DependentUpon>ORD03A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_M0A.Designer.cs">
+      <DependentUpon>ORD03A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_M0A.Designer.cs">
+      <DependentUpon>ORD04A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\acTwoButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D0A.Designer.cs">
+      <DependentUpon>ORD05A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D1A.Designer.cs">
+      <DependentUpon>ORD05A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_M0A.Designer.cs">
+      <DependentUpon>ORD05A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\frmPictureEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\frmPictureEdit.designer.cs">
+      <DependentUpon>frmPictureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D0A.designer.cs">
+      <DependentUpon>ORD06A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D1A.designer.cs">
+      <DependentUpon>ORD06A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_M0A.Designer.cs">
+      <DependentUpon>ORD06A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD08A%28ST관리%29\ORD08A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD08A%28ST관리%29\ORD08A_M0A.designer.cs">
+      <DependentUpon>ORD08A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD07A%28모델관리%29\ORD07A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD07A%28모델관리%29\ORD07A_M0A.designer.cs">
+      <DependentUpon>ORD07A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD09A%28매출현황%29\ORD09A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD09A%28매출현황%29\ORD09A_M0A.designer.cs">
+      <DependentUpon>ORD09A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.Designer.cs">
+      <DependentUpon>ORD10A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.Designer.cs">
+      <DependentUpon>ORD13A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.designer.cs">
+      <DependentUpon>ORD15A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD14A_M0A\ORD14A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD14A_M0A\ORD14A_M0A.designer.cs">
+      <DependentUpon>ORD14A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D1A.Designer.cs">
+      <DependentUpon>ORD26A_D1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D0A.Designer.cs">
+      <DependentUpon>ORD26A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_M0A.Designer.cs">
+      <DependentUpon>ORD26A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D2A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D2A.Designer.cs">
+      <DependentUpon>ORD26A_D2A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D3A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D3A.Designer.cs">
+      <DependentUpon>ORD26A_D3A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D4A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D4A.Designer.cs">
+      <DependentUpon>ORD26A_D4A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.Designer.cs">
+      <DependentUpon>ORD12A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.Designer.cs">
+      <DependentUpon>ORD11A_M0A.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttachFileManager\AttachFileManager.csproj">
+      <Project>{B6176B23-2BA2-4B8D-8880-EA47DEEC8DF5}</Project>
+      <Name>AttachFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelperManager\CodeHelperManager.csproj">
+      <Project>{37AC3413-C30B-4A46-9629-405FCA9F0592}</Project>
+      <Name>CodeHelperManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dev20.ControlManager\ControlManager.csproj">
+      <Project>{1044e528-da90-49c5-90c2-a98798e3af00}</Project>
+      <Name>ControlManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POP\POP.csproj">
+      <Project>{1090360b-9952-4bda-a380-c4c9b9537c6c}</Project>
+      <Name>POP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportManager\ReportManager.csproj">
+      <Project>{24235D77-189C-4B4C-801E-E535D815B3C1}</Project>
+      <Name>ReportManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ORD01A_M0A_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD01A%28매출목표%29\ORD01A_M0A.resx">
+      <DependentUpon>ORD01A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D5A.resx">
+      <DependentUpon>ORD02A_D5A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D1A.resx">
+      <DependentUpon>ORD02A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D4A.resx">
+      <DependentUpon>ORD02A_D4A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_M0A.resx">
+      <DependentUpon>ORD02A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D2A.resx">
+      <DependentUpon>ORD02A_D2A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D3A.resx">
+      <DependentUpon>ORD02A_D3A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD02A%28수주관리%29\ORD02A_D6A.resx">
+      <DependentUpon>ORD02A_D6A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD04A%28출하현황%29\ORD04A_D0A.resx">
+      <DependentUpon>ORD04A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD04A%28출하현황%29\ORD04A_D3A.resx">
+      <DependentUpon>ORD04A_D3A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD04A%28출하현황%29\ORD04A_D2A.resx">
+      <DependentUpon>ORD04A_D2A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD04A%28출하현황%29\ORD04A_D1A.resx">
+      <DependentUpon>ORD04A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D7A.resx">
+      <DependentUpon>ORD05A_D7A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D6A.resx">
+      <DependentUpon>ORD05A_D6A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D5A.resx">
+      <DependentUpon>ORD05A_D5A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D4A.resx">
+      <DependentUpon>ORD05A_D4A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D3A.resx">
+      <DependentUpon>ORD05A_D3A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D2A .resx">
+      <DependentUpon>ORD05A_D2A .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.resx">
+      <DependentUpon>ORD10A_D3A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.resx">
+      <DependentUpon>ORD10A_D2A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.resx">
+      <DependentUpon>ORD10A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.resx">
+      <DependentUpon>ORD10A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD03A%28출하대상%29\ORD03A_D0A.resx">
+      <DependentUpon>ORD03A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD03A%28출하대상%29\ORD03A_M0A.resx">
+      <DependentUpon>ORD03A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD04A%28출하현황%29\ORD04A_M0A.resx">
+      <DependentUpon>ORD04A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D0A.resx">
+      <DependentUpon>ORD05A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_D1A.resx">
+      <DependentUpon>ORD05A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD05A%28마감현황%29\ORD05A_M0A.resx">
+      <DependentUpon>ORD05A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD06A%28AS보고서%29\frmPictureEdit.resx">
+      <DependentUpon>frmPictureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD06A%28AS보고서%29\ORD06A_D0A.resx">
+      <DependentUpon>ORD06A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD06A%28AS보고서%29\ORD06A_D1A.resx">
+      <DependentUpon>ORD06A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD06A%28AS보고서%29\ORD06A_M0A.resx">
+      <DependentUpon>ORD06A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD08A%28ST관리%29\ORD08A_M0A.resx">
+      <DependentUpon>ORD08A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD07A%28모델관리%29\ORD07A_M0A.resx">
+      <DependentUpon>ORD07A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD09A%28매출현황%29\ORD09A_M0A.resx">
+      <DependentUpon>ORD09A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.resx">
+      <DependentUpon>ORD10A_D1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.resx">
+      <DependentUpon>ORD13A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.resx">
+      <DependentUpon>ORD15A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD14A_M0A\ORD14A_M0A.resx">
+      <DependentUpon>ORD14A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_D1A.resx">
+      <DependentUpon>ORD26A_D1A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_D0A.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ORD26A_D0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_M0A.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ORD26A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_D2A.resx">
+      <DependentUpon>ORD26A_D2A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_D3A.resx">
+      <DependentUpon>ORD26A_D3A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD26AX\ORD26A_D4A.resx">
+      <DependentUpon>ORD26A_D4A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.resx">
+      <DependentUpon>ORD12A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.resx">
+      <DependentUpon>ORD11A_M0A.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ORD06A%28AS보고서%29\frmPictureEdit.resx.bak" />
+    <None Include="Resources\as_report.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-clear_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledger.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\est-copy_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_add_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\exit_window_2x.png" />
+    <None Include="Resources\exit_2x.png" />
+    <None Include="Resources\edit_delete_2x.png" />
+    <None Include="Resources\system_search_2x.png" />
+    <None Include="Resources\image_open_1x.png" />
+    <None Include="Resources\image_open_2x.png" />
+    <None Include="Resources\rotate_left_1x.png" />
+    <None Include="Resources\rotate_right_1x.png" />
+    <None Include="Resources\request_cancel_2x.png" />
+    <None Include="Resources\refresh_1x.png" />
+    <None Include="Resources\magic_2x.png" />
+    <None Include="Resources\help_browser_2x.png" />
+    <None Include="Resources\internet_group_chat_1x.png" />
+    <None Include="Resources\wrench_1x.png" />
+    <None Include="Resources\workorder_lock_1x.png" />
+    <None Include="Resources\wand_1x.png" />
+    <None Include="Resources\video_display_2x.png" />
+    <None Include="Resources\user_trash_full__cancel_2x.png" />
+    <None Include="Resources\user_trash_2x.png" />
+    <None Include="Resources\user_home_1x.png" />
+    <None Include="Resources\txt_1x.png" />
+    <None Include="Resources\tooloptions_1x.png" />
+    <None Include="Resources\tool_return_cancel_2x.png" />
+    <None Include="Resources\tool_return_2x.png" />
+    <None Include="Resources\tool_give_cancel_2x.png" />
+    <None Include="Resources\tool_give_2x.png" />
+    <None Include="Resources\tick_2x.png" />
+    <None Include="Resources\tick_1x.png" />
+    <None Include="Resources\thumbnail_1x.png" />
+    <None Include="Resources\textfield_rename_1x.png" />
+    <None Include="Resources\text_x_generic_1x.png" />
+    <None Include="Resources\text_x_changelog_2x.png" />
+    <None Include="Resources\text_lowercase_1x.png" />
+    <None Include="Resources\templates_1x.png" />
+    <None Include="Resources\table_refresh_1x.png" />
+    <None Include="Resources\system_refresh_2x.png" />
+    <None Include="Resources\suggestion_1x.png" />
+    <None Include="Resources\stop_ypgo_2x.png" />
+    <None Include="Resources\stock_edit_2x.png" />
+    <None Include="Resources\stock_delete_2x.png" />
+    <None Include="Resources\stock_create_2x.png" />
+    <None Include="Resources\std_plan_2x.png" />
+    <None Include="Resources\std_bop_2x.png" />
+    <None Include="Resources\smlt_money_2x.png" />
+    <None Include="Resources\sign_warning_2x.png" />
+    <None Include="Resources\sign_warning_1x.png" />
+    <None Include="Resources\sign_tick_1x.png" />
+    <None Include="Resources\sign_remove_1x.png" />
+    <None Include="Resources\sign_question_1x.png" />
+    <None Include="Resources\sign_error_1x.png" />
+    <None Include="Resources\shape_selected_2x.png" />
+    <None Include="Resources\shape_link_add_2x.png" />
+    <None Include="Resources\shape_link_2x.png" />
+    <None Include="Resources\set_simulation_2x.png" />
+    <None Include="Resources\Service Manager_1x.png" />
+    <None Include="Resources\selectnodes_2x.png" />
+    <None Include="Resources\schduling_2x.png" />
+    <None Include="Resources\resource_all_change_2x.png" />
+    <None Include="Resources\request2_2x.png" />
+    <None Include="Resources\remove_sign_2x.png" />
+    <None Include="Resources\remove_sign_1x.png" />
+    <None Include="Resources\reload_2x.png" />
+    <None Include="Resources\refresh_search_2x.png" />
+    <None Include="Resources\printer_1x.png" />
+    <None Include="Resources\preferences_system_1x.png" />
+    <None Include="Resources\preferences_system.png" />
+    <None Include="Resources\preferences_desktop_locale_1x.png" />
+    <None Include="Resources\preferences_desktop_font_2x.png" />
+    <None Include="Resources\preferences_desktop_2x.png" />
+    <None Include="Resources\plus_sign_2x.png" />
+    <None Include="Resources\pdf_1x.png" />
+    <None Include="Resources\part_proc_update_2x.png" />
+    <None Include="Resources\panel_1x.png" />
+    <None Include="Resources\page_paste_2x.png" />
+    <None Include="Resources\page_excel_1x.png" />
+    <None Include="Resources\page_copy_2x.png" />
+    <None Include="Resources\pack_cancel_2x.png" />
+    <None Include="Resources\os_request_1x.png" />
+    <None Include="Resources\os_balju_1x.png" />
+    <None Include="Resources\open_data_2x.png" />
+    <None Include="Resources\ok_sign_2x.png" />
+    <None Include="Resources\oecost_2x.png" />
+    <None Include="Resources\object_align_horizontal_2x.png" />
+    <None Include="Resources\newtodo_2x.png" />
+    <None Include="Resources\new_window_1x.png" />
+    <None Include="Resources\money2_cancel_2x.png" />
+    <None Include="Resources\money2_2x.png" />
+    <None Include="Resources\money_1x.png" />
+    <None Include="Resources\minus_sign_2x.png" />
+    <None Include="Resources\mergecell_1x.png" />
+    <None Include="Resources\media_record_2x.png" />
+    <None Include="Resources\mat_out_2x.png" />
+    <None Include="Resources\mail_attachment_2x.png" />
+    <None Include="Resources\lock_edit_1x.png" />
+    <None Include="Resources\lock_2x.png" />
+    <None Include="Resources\lock_1x.png" />
+    <None Include="Resources\list_delete_2x.png" />
+    <None Include="Resources\list_confirm_2x.png" />
+    <None Include="Resources\list_add_2x.png" />
+    <None Include="Resources\lightning_2x.png" />
+    <None Include="Resources\layout_1x.png" />
+    <None Include="Resources\keyboard_1x.png" />
+    <None Include="Resources\inbox_plus_2x.png" />
+    <None Include="Resources\html_1x.png" />
+    <None Include="Resources\help_browser_3x.png" />
+    <None Include="Resources\help_browser_1x.png" />
+    <None Include="Resources\gtk_copy_2x.png" />
+    <None Include="Resources\go_up_2x.png" />
+    <None Include="Resources\go_previous_1x.png" />
+    <None Include="Resources\go_next_1x.png" />
+    <None Include="Resources\go_down_2x.png" />
+    <None Include="Resources\pack_cancel_x22.png" />
+    <None Include="Resources\excel_import_x22.png" />
+    <None Include="Resources\add_1x.png" />
+    <None Include="Resources\add_data_2x.png" />
+    <None Include="Resources\add_part_2x.png" />
+    <None Include="Resources\add_plant_2x.png" />
+    <None Include="Resources\add_sub_task_table_2x.png" />
+    <None Include="Resources\address_book_new_2x.png" />
+    <None Include="Resources\adjustcol_1x.png" />
+    <None Include="Resources\adjustcol_start_1x.png" />
+    <None Include="Resources\agenda_check_2x.png" />
+    <None Include="Resources\alignjustify_1x.png" />
+    <None Include="Resources\add_data_1x.png" />
+    <Content Include="Resources\aobottom_all.png" />
+    <None Include="Resources\aobottom_all_2x.png" />
+    <None Include="Resources\aocenterv_2x.png" />
+    <None Include="Resources\aocenterv_all_2x.png" />
+    <None Include="Resources\app_access_2x.png" />
+    <None Include="Resources\application_side_boxesx_x1.png" />
+    <None Include="Resources\applications_graphics_1x.png" />
+    <None Include="Resources\applications_system_1x.png" />
+    <None Include="Resources\appointment_1x.png" />
+    <None Include="Resources\approval_return_2x.png" />
+    <None Include="Resources\arrow_contract_1x.png" />
+    <None Include="Resources\arrow_expand_1x.png" />
+    <None Include="Resources\arrow_refresh_1x.png" />
+    <None Include="Resources\book_key_1x.png" />
+    <None Include="Resources\book_key_1xx.png" />
+    <None Include="Resources\browser_download_1x.png" />
+    <None Include="Resources\cancel_1x.png" />
+    <None Include="Resources\cancel_stock_2x.png" />
+    <None Include="Resources\cell_edit_x1.png" />
+    <None Include="Resources\change_ypgo_2x.png" />
+    <None Include="Resources\checkedclipboard_cancel_2x.png" />
+    <None Include="Resources\cogwheel_1x.png" />
+    <None Include="Resources\color_swatchx_1x.png" />
+    <None Include="Resources\date_1x.png" />
+    <None Include="Resources\date_add_1x.png" />
+    <None Include="Resources\date_error_1x.png" />
+    <None Include="Resources\date_go_1x.png" />
+    <None Include="Resources\day_cancel_2x.png" />
+    <None Include="Resources\day_delete_2x.png" />
+    <None Include="Resources\day_lock_2x.png" />
+    <None Include="Resources\day_ok_2x.png" />
+    <None Include="Resources\day_ok_cancel_2x.png" />
+    <None Include="Resources\day_pencil_2x.png" />
+    <None Include="Resources\deb_2x.png" />
+    <None Include="Resources\delivery_1x.png" />
+    <None Include="Resources\delivery_2x.png" />
+    <None Include="Resources\dialog_no_2x.png" />
+    <None Include="Resources\dialog_ok_1x.png" />
+    <None Include="Resources\dialog_warning_1x.png" />
+    <None Include="Resources\dialog_warning_3x.png" />
+    <None Include="Resources\dialog_yes_2x.png" />
+    <None Include="Resources\display_save_2x.png" />
+    <None Include="Resources\doc_excel_table_1x.png" />
+    <None Include="Resources\document_1x.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\document_open_1x.png" />
+    <None Include="Resources\document_print_1x.png" />
+    <None Include="Resources\document_print_2x.png" />
+    <None Include="Resources\document_properties_1x.png" />
+    <None Include="Resources\document_save_1x.png" />
+    <None Include="Resources\document_save_as_1x.png" />
+    <None Include="Resources\door_in_cancel_2x.png" />
+    <None Include="Resources\download_1x.png" />
+    <None Include="Resources\drive_hdd_refresh_2x.png" />
+    <None Include="Resources\duplicate_2x.png" />
+    <None Include="Resources\edit_1x.png" />
+    <None Include="Resources\edit_2x.png" />
+    <None Include="Resources\edit_copy_2x.png" />
+    <None Include="Resources\edit_cut_1x.png" />
+    <None Include="Resources\edit_due_date_2x.png" />
+    <None Include="Resources\edit_find_replace_1x.png" />
+    <None Include="Resources\edit_find_replace_2x.png" />
+    <None Include="Resources\edit_paste_1x.png" />
+    <None Include="Resources\edit_paste_check_2x.png" />
+    <None Include="Resources\edit_paste_copy_2x.png" />
+    <None Include="Resources\edit_paste_redo_2x.png" />
+    <None Include="Resources\edit_redo_1x.png" />
+    <None Include="Resources\edit_redo2_1x.png" />
+    <None Include="Resources\edit_undo_1x.png" />
+    <None Include="Resources\edit_undo_2x.png" />
+    <None Include="Resources\edit-lock_2x.png" />
+    <None Include="Resources\emblem_readonly_1x.png" />
+    <None Include="Resources\emblem_symbolic_link_1x.png" />
+    <None Include="Resources\emblem_system_1x.png" />
+    <None Include="Resources\enumList_1x.png" />
+    <None Include="Resources\enumList_2x.png" />
+    <None Include="Resources\est_copy_2x.png" />
+    <None Include="Resources\excel_import_2x.png" />
+    <None Include="Resources\exclamation_sign_2x.png" />
+    <None Include="Resources\Finish_icon_2x.png" />
+    <None Include="Resources\flag_1x.png" />
+    <None Include="Resources\flag_blue_1x.png" />
+    <None Include="Resources\flag_green_1x.png" />
+    <None Include="Resources\flag_red_1x.png" />
+    <None Include="Resources\document_open_2x.png" />
+    <None Include="Resources\document_new_2x.png" />
+    <None Include="Resources\edit_clear_2x.png" />
+    <None Include="Resources\document_save_2x.png" />
+    <None Include="Resources\emblem_readonly_2x.png" />
+    <None Include="Resources\document_save_close_2x.png" />
+    <None Include="Resources\edit_find_1x.png" />
+    <None Include="Resources\edit_paste_2x.png" />
+    <None Include="Resources\dialog_apply_2x.png" />
+    <None Include="Resources\edit_find_1x1.png" />
+    <None Include="Resources\edit_find_1x2.png" />
+    <None Include="Resources\folder_open_2x.png" />
+    <None Include="Resources\font_x_generic_1x.png" />
+    <None Include="Resources\format_decreaseindent_1x.png" />
+    <None Include="Resources\format_justify_center_1x.png" />
+    <None Include="Resources\format_justify_left_1x.png" />
+    <None Include="Resources\format_justify_right_1x.png" />
+    <None Include="Resources\ftp_mc_trans_1x.png" />
+    <None Include="Resources\full_display_2x.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TriggerJobService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ITriggerJobService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/Mozart.Deployment.JobScheduler" />
+      <xs:element name="Fire">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="delaySec" type="xs:int" />
+            <xs:element minOccurs="0" name="makeDisable" type="xs:boolean" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mozart.Deployment.JobScheduler" minOccurs="0" name="args" nillable="true" type="q1:ArrayOfKeyValue" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FireResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FireUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="delaySec" type="xs:int" />
+            <xs:element minOccurs="0" name="makeDisable" type="xs:boolean" />
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mozart.Deployment.JobScheduler" minOccurs="0" name="args" nillable="true" type="q2:ArrayOfKeyValue" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FireUserResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsCurrentlyExecuting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsCurrentlyExecutingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="IsCurrentlyExecutingResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsCurrentlyExecutingUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IsCurrentlyExecutingUserResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="IsCurrentlyExecutingUserResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Interrupt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InterruptResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InterruptUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InterruptUserResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Pause">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PauseResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PauseUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="triggerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PauseUserResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mozart.Deployment.JobScheduler" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mozart.Deployment.JobScheduler" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xs:complexType name="ArrayOfKeyValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValue" type="tns:KeyValue" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfKeyValue" nillable="true" type="tns:ArrayOfKeyValue" />
+      <xs:complexType name="KeyValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="KeyValue" nillable="true" type="tns:KeyValue" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ITriggerJobService_Fire_InputMessage">
+    <wsdl:part name="parameters" element="tns:Fire" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_Fire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FireResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_FireUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:FireUser" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_FireUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FireUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_IsCurrentlyExecuting_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsCurrentlyExecuting" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_IsCurrentlyExecuting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsCurrentlyExecutingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_IsCurrentlyExecutingUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsCurrentlyExecutingUser" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_IsCurrentlyExecutingUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsCurrentlyExecutingUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_Interrupt_InputMessage">
+    <wsdl:part name="parameters" element="tns:Interrupt" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_Interrupt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InterruptResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_InterruptUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InterruptUser" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_InterruptUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InterruptUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_Pause_InputMessage">
+    <wsdl:part name="parameters" element="tns:Pause" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_Pause_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PauseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_PauseUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:PauseUser" />
+  </wsdl:message>
+  <wsdl:message name="ITriggerJobService_PauseUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PauseUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITriggerJobService">
+    <wsdl:operation name="Fire">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/Fire" message="tns:ITriggerJobService_Fire_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/FireResponse" message="tns:ITriggerJobService_Fire_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FireUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/FireUser" message="tns:ITriggerJobService_FireUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/FireUserResponse" message="tns:ITriggerJobService_FireUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsCurrentlyExecuting">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/IsCurrentlyExecuting" message="tns:ITriggerJobService_IsCurrentlyExecuting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/IsCurrentlyExecutingResponse" message="tns:ITriggerJobService_IsCurrentlyExecuting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsCurrentlyExecutingUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/IsCurrentlyExecutingUser" message="tns:ITriggerJobService_IsCurrentlyExecutingUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/IsCurrentlyExecutingUserResponse" message="tns:ITriggerJobService_IsCurrentlyExecutingUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Interrupt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/Interrupt" message="tns:ITriggerJobService_Interrupt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/InterruptResponse" message="tns:ITriggerJobService_Interrupt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InterruptUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/InterruptUser" message="tns:ITriggerJobService_InterruptUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/InterruptUserResponse" message="tns:ITriggerJobService_InterruptUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pause">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/Pause" message="tns:ITriggerJobService_Pause_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/PauseResponse" message="tns:ITriggerJobService_Pause_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PauseUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITriggerJobService/PauseUser" message="tns:ITriggerJobService_PauseUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITriggerJobService/PauseUserResponse" message="tns:ITriggerJobService_PauseUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ITriggerJobService" type="tns:ITriggerJobService">
+    <wsp:PolicyReference URI="#WSHttpBinding_ITriggerJobService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fire">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/Fire" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireUser">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/FireUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCurrentlyExecuting">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/IsCurrentlyExecuting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCurrentlyExecutingUser">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/IsCurrentlyExecutingUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Interrupt">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/Interrupt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterruptUser">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/InterruptUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pause">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/Pause" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PauseUser">
+      <soap12:operation soapAction="http://tempuri.org/ITriggerJobService/PauseUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TriggerJobService">
+    <wsdl:port name="WSHttpBinding_ITriggerJobService" binding="tns:WSHttpBinding_ITriggerJobService">
+      <soap12:address location="http://localhost:8000/mozart/TriggerJobService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8000/mozart/TriggerJobService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <PublishUrlHistory>D:\02_POP\</PublishUrlHistory>
+    <InstallUrlHistory>http://192.168.10.4/Deplus/|http://211.238.138.160:7862/Deplus/|http://192.168.10.4:8080/Deplus/|http://192.168.10.4/DeplusMat/|http://192.168.10.4/DeplusTest/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory>https://go.microsoft.com/fwlink/p/%3fLinkId=2124703</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>ko-KR</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

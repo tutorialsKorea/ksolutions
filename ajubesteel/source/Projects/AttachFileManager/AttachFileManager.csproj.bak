@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6176B23-2BA2-4B8D-8880-EA47DEEC8DF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AttachFileManager</RootNamespace>
+    <AssemblyName>AttachFileManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acSlimAttachFileControl .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acSlimAttachFileControl .Designer.cs">
+      <DependentUpon>acSlimAttachFileControl .cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAttachFileControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acAttachFileControl3.Designer.cs">
+      <DependentUpon>acAttachFileControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAttachFileControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acAttachFileControl2.Designer.cs">
+      <DependentUpon>acAttachFileControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAttachOneFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acAttachOneFileControl.Designer.cs">
+      <DependentUpon>acAttachOneFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acPOPAttachFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acPOPAttachFileControl.Designer.cs">
+      <DependentUpon>acPOPAttachFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acAttachFileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="acAttachFileControl.Designer.cs">
+      <DependentUpon>acAttachFileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acFtpTransMcEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acFtpTransMcEditor.Designer.cs">
+      <DependentUpon>acFtpTransMcEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acSlimAttachFileControl .resx">
+      <DependentUpon>acSlimAttachFileControl .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAttachFileControl3.resx">
+      <DependentUpon>acAttachFileControl3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAttachFileControl2.resx">
+      <DependentUpon>acAttachFileControl2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAttachOneFileControl.resx">
+      <DependentUpon>acAttachOneFileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acPOPAttachFileControl.resx">
+      <DependentUpon>acPOPAttachFileControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acAttachFileControl.resx">
+      <DependentUpon>acAttachFileControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acFtpTransMcEditor.resx">
+      <DependentUpon>acFtpTransMcEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
+      <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
+      <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelperManager\CodeHelperManager.csproj">
+      <Project>{37AC3413-C30B-4A46-9629-405FCA9F0592}</Project>
+      <Name>CodeHelperManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dev20.ControlManager\ControlManager.csproj">
+      <Project>{1044e528-da90-49c5-90c2-a98798e3af00}</Project>
+      <Name>ControlManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser-download_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog-apply_x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font-x-generic_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftp_mc_trans_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-home_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_silhouette_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_home_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser_download_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_apply_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_open_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_delete_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_x_generic_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftp_mc_trans_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acMachine1.Properties.Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_silhouette_1x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

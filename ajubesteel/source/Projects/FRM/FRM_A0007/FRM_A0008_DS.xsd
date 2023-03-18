@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FRM_A0008_DS" targetNamespace="http://tempuri.org/FRM_A0008_DS.xsd" xmlns:mstns="http://tempuri.org/FRM_A0008_DS.xsd" xmlns="http://tempuri.org/FRM_A0008_DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FRM_A0008_DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="FRM_A0008_DS" msprop:Generator_UserDSName="FRM_A0008_DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="D" msprop:Generator_TableClassName="DDataTable" msprop:Generator_RowEvArgName="DRowChangeEvent" msprop:Generator_TableVarName="tableD" msprop:Generator_TablePropName="D" msprop:Generator_RowDeletingName="DRowDeleting" msprop:Generator_RowChangingName="DRowChanging" msprop:Generator_RowEvHandlerName="DRowChangeEventHandler" msprop:Generator_RowDeletedName="DRowDeleted" msprop:Generator_RowChangedName="DRowChanged" msprop:Generator_UserTableName="D" msprop:Generator_RowClassName="DRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PART_NAME" msprop:Generator_ColumnVarNameInTable="columnPART_NAME" msprop:Generator_ColumnPropNameInRow="PART_NAME" msprop:Generator_ColumnPropNameInTable="PART_NAMEColumn" msprop:Generator_UserColumnName="PART_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PAGE_INFO" msprop:Generator_ColumnVarNameInTable="columnPAGE_INFO" msprop:Generator_ColumnPropNameInRow="PAGE_INFO" msprop:Generator_ColumnPropNameInTable="PAGE_INFOColumn" msprop:Generator_UserColumnName="PAGE_INFO" type="xs:string" minOccurs="0" />
+              <xs:element name="SHIP_DATE" msprop:Generator_ColumnVarNameInTable="columnSHIP_DATE" msprop:Generator_ColumnPropNameInRow="SHIP_DATE" msprop:Generator_ColumnPropNameInTable="SHIP_DATEColumn" msprop:Generator_UserColumnName="SHIP_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PART_CODE" msprop:Generator_ColumnVarNameInTable="columnPART_CODE" msprop:Generator_ColumnPropNameInRow="PART_CODE" msprop:Generator_ColumnPropNameInTable="PART_CODEColumn" msprop:Generator_UserColumnName="PART_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHIP_QTY" msprop:Generator_ColumnVarNameInTable="columnSHIP_QTY" msprop:Generator_ColumnPropNameInRow="SHIP_QTY" msprop:Generator_ColumnPropNameInTable="SHIP_QTYColumn" msprop:Generator_UserColumnName="SHIP_QTY" type="xs:long" minOccurs="0" />
+              <xs:element name="PROD_UC" msprop:Generator_ColumnVarNameInTable="columnPROD_UC" msprop:Generator_ColumnPropNameInRow="PROD_UC" msprop:Generator_ColumnPropNameInTable="PROD_UCColumn" msprop:Generator_UserColumnName="PROD_UC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SHIP_COST" msprop:Generator_ColumnVarNameInTable="columnSHIP_COST" msprop:Generator_ColumnPropNameInRow="SHIP_COST" msprop:Generator_ColumnPropNameInTable="SHIP_COSTColumn" msprop:Generator_UserColumnName="SHIP_COST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROD_VAT" msprop:Generator_ColumnVarNameInTable="columnPROD_VAT" msprop:Generator_ColumnPropNameInRow="PROD_VAT" msprop:Generator_ColumnPropNameInTable="PROD_VATColumn" msprop:Generator_UserColumnName="PROD_VAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_AMT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMTColumn" msprop:Generator_UserColumnName="TOTAL_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_AMT_S" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMT_S" msprop:Generator_ColumnPropNameInRow="TOTAL_AMT_S" msprop:Generator_ColumnPropNameInTable="TOTAL_AMT_SColumn" msprop:Generator_UserColumnName="TOTAL_AMT_S" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="M" msprop:Generator_TableClassName="MDataTable" msprop:Generator_RowEvArgName="MRowChangeEvent" msprop:Generator_TableVarName="tableM" msprop:Generator_TablePropName="M" msprop:Generator_RowDeletingName="MRowDeleting" msprop:Generator_RowChangingName="MRowChanging" msprop:Generator_RowEvHandlerName="MRowChangeEventHandler" msprop:Generator_RowDeletedName="MRowDeleted" msprop:Generator_RowChangedName="MRowChanged" msprop:Generator_UserTableName="M" msprop:Generator_RowClassName="MRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnITEM_CODE" msprop:Generator_ColumnPropNameInRow="ITEM_CODE" msprop:Generator_ColumnPropNameInTable="ITEM_CODEColumn" msprop:Generator_UserColumnName="ITEM_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="DAY" msprop:Generator_ColumnVarNameInTable="columnDAY" msprop:Generator_ColumnPropNameInRow="DAY" msprop:Generator_ColumnPropNameInTable="DAYColumn" msprop:Generator_UserColumnName="DAY" type="xs:string" minOccurs="0" />
+              <xs:element name="PAGE_INFO" msprop:Generator_ColumnVarNameInTable="columnPAGE_INFO" msprop:Generator_ColumnPropNameInRow="PAGE_INFO" msprop:Generator_ColumnPropNameInTable="PAGE_INFOColumn" msprop:Generator_UserColumnName="PAGE_INFO" type="xs:string" minOccurs="0" />
+              <xs:element name="CVND_NAME" msprop:Generator_ColumnVarNameInTable="columnCVND_NAME" msprop:Generator_ColumnPropNameInRow="CVND_NAME" msprop:Generator_ColumnPropNameInTable="CVND_NAMEColumn" msprop:Generator_UserColumnName="CVND_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnVEN_ADDRESS" msprop:Generator_ColumnPropNameInRow="VEN_ADDRESS" msprop:Generator_ColumnPropNameInTable="VEN_ADDRESSColumn" msprop:Generator_UserColumnName="VEN_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_TEL" msprop:Generator_ColumnVarNameInTable="columnVEN_TEL" msprop:Generator_ColumnPropNameInRow="VEN_TEL" msprop:Generator_ColumnPropNameInTable="VEN_TELColumn" msprop:Generator_UserColumnName="VEN_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="VEN_FAX" msprop:Generator_ColumnVarNameInTable="columnVEN_FAX" msprop:Generator_ColumnPropNameInRow="VEN_FAX" msprop:Generator_ColumnPropNameInTable="VEN_FAXColumn" msprop:Generator_UserColumnName="VEN_FAX" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_BIZ_NO" msprop:Generator_ColumnVarNameInTable="columnSELF_BIZ_NO" msprop:Generator_ColumnPropNameInRow="SELF_BIZ_NO" msprop:Generator_ColumnPropNameInTable="SELF_BIZ_NOColumn" msprop:Generator_UserColumnName="SELF_BIZ_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_NAME" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_NAME" msprop:Generator_ColumnPropNameInRow="SELF_VEN_NAME" msprop:Generator_ColumnPropNameInTable="SELF_VEN_NAMEColumn" msprop:Generator_UserColumnName="SELF_VEN_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_CEO" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_CEO" msprop:Generator_ColumnPropNameInRow="SELF_VEN_CEO" msprop:Generator_ColumnPropNameInTable="SELF_VEN_CEOColumn" msprop:Generator_UserColumnName="SELF_VEN_CEO" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_ADDRESS" msprop:Generator_ColumnPropNameInRow="SELF_VEN_ADDRESS" msprop:Generator_ColumnPropNameInTable="SELF_VEN_ADDRESSColumn" msprop:Generator_UserColumnName="SELF_VEN_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_CONDITIONS" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_CONDITIONS" msprop:Generator_ColumnPropNameInRow="SELF_VEN_CONDITIONS" msprop:Generator_ColumnPropNameInTable="SELF_VEN_CONDITIONSColumn" msprop:Generator_UserColumnName="SELF_VEN_CONDITIONS" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_PRODUCTS" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_PRODUCTS" msprop:Generator_ColumnPropNameInRow="SELF_VEN_PRODUCTS" msprop:Generator_ColumnPropNameInTable="SELF_VEN_PRODUCTSColumn" msprop:Generator_UserColumnName="SELF_VEN_PRODUCTS" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_TEL" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_TEL" msprop:Generator_ColumnPropNameInRow="SELF_VEN_TEL" msprop:Generator_ColumnPropNameInTable="SELF_VEN_TELColumn" msprop:Generator_UserColumnName="SELF_VEN_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="SELF_VEN_FAX" msprop:Generator_ColumnVarNameInTable="columnSELF_VEN_FAX" msprop:Generator_ColumnPropNameInRow="SELF_VEN_FAX" msprop:Generator_ColumnPropNameInTable="SELF_VEN_FAXColumn" msprop:Generator_UserColumnName="SELF_VEN_FAX" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_AMT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMTColumn" msprop:Generator_UserColumnName="TOTAL_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAGE_AMT" msprop:Generator_ColumnVarNameInTable="columnPAGE_AMT" msprop:Generator_ColumnPropNameInRow="PAGE_AMT" msprop:Generator_ColumnPropNameInTable="PAGE_AMTColumn" msprop:Generator_UserColumnName="PAGE_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROJECT" msprop:Generator_ColumnVarNameInTable="columnPROJECT" msprop:Generator_ColumnPropNameInRow="PROJECT" msprop:Generator_ColumnPropNameInTable="PROJECTColumn" msprop:Generator_UserColumnName="PROJECT" type="xs:string" minOccurs="0" />
+              <xs:element name="PAGE_TAX" msprop:Generator_ColumnVarNameInTable="columnPAGE_TAX" msprop:Generator_ColumnPropNameInRow="PAGE_TAX" msprop:Generator_ColumnPropNameInTable="PAGE_TAXColumn" msprop:Generator_UserColumnName="PAGE_TAX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BALJU_NUM" msprop:Generator_ColumnVarNameInTable="columnBALJU_NUM" msprop:Generator_ColumnPropNameInRow="BALJU_NUM" msprop:Generator_ColumnPropNameInTable="BALJU_NUMColumn" msprop:Generator_UserColumnName="BALJU_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="SCOMMENT" msprop:Generator_ColumnVarNameInTable="columnSCOMMENT" msprop:Generator_ColumnPropNameInRow="SCOMMENT" msprop:Generator_ColumnPropNameInTable="SCOMMENTColumn" msprop:Generator_UserColumnName="SCOMMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="EMP_CODE" msprop:Generator_ColumnVarNameInTable="columnEMP_CODE" msprop:Generator_ColumnPropNameInRow="EMP_CODE" msprop:Generator_ColumnPropNameInTable="EMP_CODEColumn" msprop:Generator_UserColumnName="EMP_CODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="T" msprop:Generator_TableClassName="TDataTable" msprop:Generator_TableVarName="tableT" msprop:Generator_TablePropName="T" msprop:Generator_RowDeletingName="TRowDeleting" msprop:Generator_RowChangingName="TRowChanging" msprop:Generator_RowEvHandlerName="TRowChangeEventHandler" msprop:Generator_RowDeletedName="TRowDeleted" msprop:Generator_UserTableName="T" msprop:Generator_RowChangedName="TRowChanged" msprop:Generator_RowEvArgName="TRowChangeEvent" msprop:Generator_RowClassName="TRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTAL_AMT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMTColumn" msprop:Generator_UserColumnName="TOTAL_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_AMT_S" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMT_S" msprop:Generator_ColumnPropNameInRow="TOTAL_AMT_S" msprop:Generator_ColumnPropNameInTable="TOTAL_AMT_SColumn" msprop:Generator_UserColumnName="TOTAL_AMT_S" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="M_D" msdata:parent="M" msdata:child="D" msdata:parentkey="PAGE_INFO" msdata:childkey="PAGE_INFO" msprop:Generator_UserChildTable="D" msprop:Generator_ChildPropName="GetDRows" msprop:Generator_UserRelationName="M_D" msprop:Generator_RelationVarName="relationM_D" msprop:Generator_UserParentTable="M" msprop:Generator_ParentPropName="MRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

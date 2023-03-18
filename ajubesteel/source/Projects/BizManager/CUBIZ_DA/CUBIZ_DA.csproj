@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{226022B9-848E-4111-9094-46087918B318}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CUBIZ_DA</RootNamespace>
+    <AssemblyName>CUBIZ_DA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAPS\APS_EXE.cs" />
+    <Compile Include="DAPS\APS_MATERIAL_BOM.cs" />
+    <Compile Include="DAPS\APS_PLAN.cs" />
+    <Compile Include="DAPS\APS_STD_AVAILMC_PROD.cs" />
+    <Compile Include="DAPS\APS_STD_AVAILMC_PART.cs" />
+    <Compile Include="DAPS\APS_PART.cs" />
+    <Compile Include="DAPS\APS_PROC.cs" />
+    <Compile Include="DAPS\APS_STD_ERROR.cs" />
+    <Compile Include="DCOST\DCOST.cs" />
+    <Compile Include="DCST\TCST_UNIT_COST_DATE.cs" />
+    <Compile Include="DCST\TCST_UNIT_COST_DETAIL.cs" />
+    <Compile Include="DCST\TCST_UNIT_COST_MASTER.cs" />
+    <Compile Include="DENE\MovingRack.cs" />
+    <Compile Include="DHIS\THIS_INS_MC_PARTS.cs" />
+    <Compile Include="DHIS\THIS_INS_MC.cs" />
+    <Compile Include="DHIS\THIS_PM_PLAN_PARTS.cs" />
+    <Compile Include="DHIS\THIS_PM_MC_PARTS.cs" />
+    <Compile Include="DHIS\THIS_PM_ACT.cs" />
+    <Compile Include="DHIS\THIS_PM_PLAN.cs" />
+    <Compile Include="DHIS\THIS_STD_PM_PARTS.cs" />
+    <Compile Include="DHIS\THIS_PM_MC.cs" />
+    <Compile Include="DHIS\THIS_STD_PM.cs" />
+    <Compile Include="DHIS\THIS_MEASURE_REPAIR.cs" />
+    <Compile Include="DHIS\THIS_MEASURE_HISTORY.cs" />
+    <Compile Include="DIF\IF_MES_BOM.cs" />
+    <Compile Include="DIF\IF_MES_DWG.cs" />
+    <Compile Include="DIF\IF_BALJU_D.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_VIRTUAL.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_ASSY.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_CONT_DETAIL.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_CONT.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_PRE.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC_WORK.cs" />
+    <Compile Include="DLSE\LSE_HOLIDAY.cs" />
+    <Compile Include="DLSE\LSE_MACHINE.cs" />
+    <Compile Include="DLSE\LSE_MC_CAPAPLAN.cs" />
+    <Compile Include="DLSE\LSE_MC_WORKTIME.cs" />
+    <Compile Include="DLSE\LSE_PROC.cs" />
+    <Compile Include="DLSE\LSE_STD_AVAILMC.cs" />
+    <Compile Include="DLSE\LSE_STDBOP_PROC.cs" />
+    <Compile Include="DLSE\LSE_STD_PARTPROC.cs" />
+    <Compile Include="DLSE\LSE_STD_PROC.cs" />
+    <Compile Include="DLSE\LSE_STD_PART.cs" />
+    <Compile Include="DMAT\TMAT_BALJU_SET.cs" />
+    <Compile Include="DMAT\TMAT_OUT.cs" />
+    <Compile Include="DMAT\TMAT_OUT_COST.cs" />
+    <Compile Include="DMAT\TMAT_OUT_REQ_EMP.cs" />
+    <Compile Include="DMAT\TMAT_OUT_REQ_PT.cs" />
+    <Compile Include="DMAT\TMAT_OUT_REQ.cs" />
+    <Compile Include="DMAT\TMAT_OUT_SHIP.cs" />
+    <Compile Include="DMAT\TMAT_RET_REQ.cs" />
+    <Compile Include="DMAT\TMAT_STOCK_LOG_DETAIL.cs" />
+    <Compile Include="DMAT\TMAT_STOCK_LOT.cs" />
+    <Compile Include="DMAT\TMAT_STOCK.cs" />
+    <Compile Include="DMAT\TMAT_STOCK_LOG.cs" />
+    <Compile Include="DORD\TORD_BOM_MASTER.cs" />
+    <Compile Include="DORD\TORD_MODEL_LOCK.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_CONFIRM_LOG.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_SEND_DEV.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_IF.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_REV .cs" />
+    <Compile Include="DORD\TORD_ST_GROUP.cs" />
+    <Compile Include="DORD\TORD_MODEL.cs" />
+    <Compile Include="DORD\TORD_GOAL_YEAR.cs" />
+    <Compile Include="DORD\TORD_GOAL_AMT.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_AS.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_BILL.cs" />
+    <Compile Include="DORD\TORD_PATENT.cs" />
+    <Compile Include="DORD\TORD_PROJECT_HISTORY.cs" />
+    <Compile Include="DOUT\TOUT_TEMP_YPGO.cs" />
+    <Compile Include="DMAT\TMAT_YPGO.cs" />
+    <Compile Include="DMAT\TMAT_PARTLIST.cs" />
+    <Compile Include="DMAT\TMAT_PUR_PARTLIST.cs" />
+    <Compile Include="DMAT\TMAT_QUC_DETAIL.cs" />
+    <Compile Include="DMAT\TMAT_QUC_MASTER.cs" />
+    <Compile Include="DMAT\TMAT_BALJU.cs" />
+    <Compile Include="DMAT\TMAT_REQUEST.cs" />
+    <Compile Include="DMAT\TMAT_BALJU_MASTER.cs" />
+    <Compile Include="DMAT\TMAT_REQUEST_MASTER.cs" />
+    <Compile Include="DORD\TORD_SHIP.cs" />
+    <Compile Include="DORD\TORD_ITEM.cs" />
+    <Compile Include="DORD\TORD_PRODUCT.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_EVENT.cs" />
+    <Compile Include="DORD\TORD_PRODUCT_SPEC.cs" />
+    <Compile Include="DORD\TORD_PROJECT.cs" />
+    <Compile Include="DOUT\TOUT_PROCYPGO.cs" />
+    <Compile Include="DOUT\TOUT_PROCBALJU_MASTER.cs" />
+    <Compile Include="DOUT\TOUT_PROCBALJU.cs" />
+    <Compile Include="DOUT\TOUT_REQUEST.cs" />
+    <Compile Include="DOUT\TOUT_REQUEST_MASTER.cs" />
+    <Compile Include="DOUT\TOUT_SETREQUEST.cs" />
+    <Compile Include="DOUT\TOUT_SETREQUEST_MASTER.cs" />
+    <Compile Include="DPLN\TPLN_WEEKPLAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DPLN\TPLN_WEEKPLAN_MASTER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DPOP\TPOP_ASSY_EMPS.cs" />
+    <Compile Include="DPOP\TPOP_ASSY_SCOMMENT.cs" />
+    <Compile Include="DPOP\TPOP_INS_SCOMMENT.cs" />
+    <Compile Include="DPOP\TPOP_MC_ACTUAL.cs" />
+    <Compile Include="DPOP\TPOP_MC_STATUS.cs" />
+    <Compile Include="DPOP\TPOP_PANNEL_LOG.cs" />
+    <Compile Include="DPUR\TPURCHASE_EVENT.cs" />
+    <Compile Include="DQCT\TQCT_COST.cs" />
+    <Compile Include="DQCT\TQCT_PURCHASE_NG.cs" />
+    <Compile Include="DQCT\TQCT_VENDOR_EVAL.cs" />
+    <Compile Include="DREP\TREP_ASSY_AT.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_ASSY.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_INS.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_LOT_LOG.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_MILL.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_CAM.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL_TOOL.cs" />
+    <Compile Include="DSHP\TSHP_ASSPLAN.cs" />
+    <Compile Include="DSHP\TSHP_INSPECTION_RESULT.cs" />
+    <Compile Include="DSHP\TSHP_NG_EMP.cs" />
+    <Compile Include="DSHP\TSHP_PART_CHK.cs" />
+    <Compile Include="DSHP\TSHP_DAILYWORK.cs" />
+    <Compile Include="DSHP\TSHP_NG.cs" />
+    <Compile Include="DSHP\TSHP_STOCK.cs" />
+    <Compile Include="DSHP\TSHP_STOCK_SNAPSHOT.cs" />
+    <Compile Include="DSHP\TSHP_WORKORDER_HIS.cs" />
+    <Compile Include="DSHP\TSHP_WORKPLAN.cs" />
+    <Compile Include="DSHP\TSHP_ACTUAL.cs" />
+    <Compile Include="DSHP\TSHP_IDLETIME.cs" />
+    <Compile Include="DSHP\TSHP_MANACTUAL.cs" />
+    <Compile Include="DSHP\TSHP_WORK_MNG.cs" />
+    <Compile Include="DSHP\TSHP_WORK_MNG_EMP.cs" />
+    <Compile Include="DSHP\TSHP_WORK_MNG_REF.cs" />
+    <Compile Include="DSTD\TSTD_AS_GOAL.cs" />
+    <Compile Include="DSTD\TSTD_BILL_VENDOR.cs" />
+    <Compile Include="DSTD\TSTD_COST_EXCHANGE.cs" />
+    <Compile Include="DSTD\TSTD_COST_TYPE.cs" />
+    <Compile Include="DSTD\TSTD_ORG_REF_EMP.cs" />
+    <Compile Include="DSTD\TSTD_PANEL_POP.cs" />
+    <Compile Include="DSTD\TSTD_PART_RATE.cs" />
+    <Compile Include="DSTD\TSTD_ROUTING.cs" />
+    <Compile Include="DSTD\TSTD_BOM_MASTER.cs" />
+    <Compile Include="DSTD\TSTD_EMP_HOLI.cs" />
+    <Compile Include="DSTD\TSTD_EMP_HOLIPLAN.cs" />
+    <Compile Include="DSTD\TSTD_EMP_HOLIPLAN_DETAIL.cs" />
+    <Compile Include="DSTD\TSTD_EMP_WORKTYPE.cs" />
+    <Compile Include="DSTD\TSTD_EMP_WORKTYPE_DETAIL.cs" />
+    <Compile Include="DSTD\TSTD_FIELD.cs" />
+    <Compile Include="DSTD\TSTD_IDLETIME.cs" />
+    <Compile Include="DSTD\TSTD_MC_INS_LIST.cs" />
+    <Compile Include="DSTD\TSTD_APP_EMP.cs" />
+    <Compile Include="DSTD\TSTD_PANEL_MASTER.cs" />
+    <Compile Include="DSTD\TSTD_REPORT_GOAL.cs" />
+    <Compile Include="DSTD\TSTD_VENDOR_GRP_DETAIL.cs" />
+    <Compile Include="DSTD\TSTD_VENDOR_GRP.cs" />
+    <Compile Include="DSTD\TSTD_STOCK_GRP.cs" />
+    <Compile Include="DSTD\TSTD_BOM_TPL.cs" />
+    <Compile Include="DSTD\TSTD_PART_INS.cs" />
+    <Compile Include="DSTD\TSTD_BOM.cs" />
+    <Compile Include="DSTD\TSTD_MC_DAILYCAPA.cs" />
+    <Compile Include="DSTD\TSTD_ACTUAL_TOOL.cs" />
+    <Compile Include="DSTD\TSTD_TOOL.cs" />
+    <Compile Include="DSTD\TSTD_VENDOR_CHARGE.cs" />
+    <Compile Include="DSTD\TSTD_VENDOR.cs" />
+    <Compile Include="DSTD\TSTD_PROCPLAN_MASTER.cs" />
+    <Compile Include="DSTD\TSTD_PROCPLAN.cs" />
+    <Compile Include="DSTD\TSTD_PROCGRP.cs" />
+    <Compile Include="DSTD\TSTD_CODES.cs" />
+    <Compile Include="DSTD\TSTD_MC_AVAILEMP.cs" />
+    <Compile Include="DSTD\TSTD_EMPLOYEE.cs" />
+    <Compile Include="DSTD\TSTD_ORG.cs" />
+    <Compile Include="DSTD\TSTD_WORKCODE.cs" />
+    <Compile Include="DSTD\TSTD_WORKCODE_CAUSE.cs" />
+    <Compile Include="DSTD\TSTD_WORKDAY.cs" />
+    <Compile Include="DSTD\TSTD_WORKMNG.cs" />
+    <Compile Include="DSTD\TSTD_WORKTIME.cs" />
+    <Compile Include="DSYS\TSYS_CONTROL_CONDITION.cs" />
+    <Compile Include="DSYS\TSYS_DAILY_LOG_PLAN.cs" />
+    <Compile Include="DSYS\TSYS_MEETING_EMP.cs" />
+    <Compile Include="DSYS\TSYS_MEETING.cs" />
+    <Compile Include="DSYS\TSYS_EXECUTE_LOG.cs" />
+    <Compile Include="DSYS\TSYS_BUTTON_ACTION_LOG.cs" />
+    <Compile Include="DSYS\TSYS_MYMENU.cs" />
+    <Compile Include="DSYS\TSYS_PRINT_LOG.cs" />
+    <Compile Include="DSYS\TSYS_EMAILSEND_LOG.cs" />
+    <Compile Include="DSYS\TSYS_PROPOSE.cs" />
+    <Compile Include="DSYS\TSYS_DAILY_LOG.cs" />
+    <Compile Include="DSYS\TSYS_DB_FILELIST.cs" />
+    <Compile Include="DSYS\TSYS_BOARD.cs" />
+    <Compile Include="DSYS\TSYS_BOARD_EMP.cs" />
+    <Compile Include="DSYS\TSYS_BOARD_LOG.cs" />
+    <Compile Include="DSYS\TSYS_UPDATE.cs" />
+    <Compile Include="DSYS\TSYS_PLAN_CONF.cs" />
+    <Compile Include="DSYS\TSYS_TOOLTIP.cs" />
+    <Compile Include="DSYS\TSYS_PLANTS.cs" />
+    <Compile Include="DSYS\TSYS_REPORTLIST.cs" />
+    <Compile Include="DSYS\TSYS_BIZERROR.cs" />
+    <Compile Include="DSYS\TSYS_ACCESS.cs" />
+    <Compile Include="DSYS\TSYS_CONF.cs" />
+    <Compile Include="DSYS\TSYS_ERROR_LOG.cs" />
+    <Compile Include="DSYS\TSYS_FILELIST_MASTER.cs" />
+    <Compile Include="DSYS\TSYS_LOGIN_LOG.cs" />
+    <Compile Include="DSYS\TSYS_MENULIST.cs" />
+    <Compile Include="DSYS\TSYS_CODECAT.cs" />
+    <Compile Include="DSYS\TSYS_MENU_CONF.cs" />
+    <Compile Include="DSYS\TSYS_NOTICE.cs" />
+    <Compile Include="DSYS\TSYS_NOTIFY.cs" />
+    <Compile Include="DSYS\TSYS_STRINGTABLE.cs" />
+    <Compile Include="DSYS\TSYS_USERGRP.cs" />
+    <Compile Include="DSYS\TSYS_USER_CUSTOM_REPORT_USE.cs" />
+    <Compile Include="DSYS\TSYS_USER_CUSTOM_REPORT.cs" />
+    <Compile Include="DSYS\TSYS_USER_CUSTOM_REPORT_DETAIL.cs" />
+    <Compile Include="DSYS\TSYS_VERSION.cs" />
+    <Compile Include="DSYS\TSYS_EMP_CONF.cs" />
+    <Compile Include="DSYS\TSYS_EMP_CONF_LIST.cs" />
+    <Compile Include="DSYS\TSYS_USERCONFIG_LIST.cs" />
+    <Compile Include="DSYS\TSYS_USERCONFIG_USE.cs" />
+    <Compile Include="DSHP\TSHP_WORKORDER.cs" />
+    <Compile Include="DTOL\TTOL_DISUSE.cs" />
+    <Compile Include="DTOL\TTOL_MOUNT.cs" />
+    <Compile Include="DTOL\TTOL_RETURN.cs" />
+    <Compile Include="DTOL\TTOL_REQUEST_MASTER.cs" />
+    <Compile Include="DTOL\TTOL_GIVE.cs" />
+    <Compile Include="DTOL\TTOL_TOOLLIST.cs" />
+    <Compile Include="DHIS\THIS_MEASURE_MASTER.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MAINFORM\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizExcute\BizExecute.csproj">
+      <Project>{ff02f467-f287-4293-afdc-33b09648101b}</Project>
+      <Name>BizExecute</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

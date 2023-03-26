@@ -12,3 +12,10 @@ D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManag
 D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CopyComplete
 D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.dll
 D:\ProactiveShop\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\DebugForm\bin\Debug\LocalizationManager.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\DebugForm\bin\Debug\LocalizationManager.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.AssemblyReference.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.csproj.CopyComplete
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\LocalizationManager\obj\Debug\LocalizationManager.pdb

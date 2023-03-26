@@ -1,16 +1,13 @@
-using System;
+Ôªøusing System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Text;
 using System.Windows.Forms;
-
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
-
 using ControlManager;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
-
 using BizManager;
 
 namespace STD
@@ -36,7 +33,6 @@ namespace STD
 
         public STD60A_M0A()
         {
-
             InitializeComponent();
         }
 
@@ -49,232 +45,49 @@ namespace STD
             }
         }
 
-
+        private DataRow ParamRow;
+        private readonly string CAT_CODE = "AB01";
 
 
         public override void MenuInit()
         {
+            DataTable pTable = new DataTable("PARAM");
+            pTable.Columns.Add("CAT_CODE", typeof(String));
+            this.ParamRow = pTable.NewRow();
+            this.ParamRow["CAT_CODE"] = this.CAT_CODE;
 
+            acGridView2.GridType = acGridView.emGridType.AUTO_COL;
+            acGridView2.AddCheckEdit("SEL", "ÏÑ†ÌÉù", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
+            acGridView2.AddTextEdit("CD_CODE", "Íµ¨Î∂Ñ", "AB_L0002", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("NUM1", "ÏÑ§Ï†ïÍ∞í(Min)", "AB_L0003", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("NUM2", "ÏÑ§Ï†ïÍ∞í(Max)", "AB_L0004", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("SCOMMENT", "ÎπÑÍ≥†", "ARYZ726K", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddDateEdit("REG_DATE", "ÏµúÏ¥à Îì±Î°ùÏùº", "UL1O77MB", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emDateMask.LONG_DATE);
+            acGridView2.AddTextEdit("REG_EMP", "ÏµúÏ¥à Îì±Î°ùÏûêÏΩîÎìú", "P72K0SQJ", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("REG_EMP_NAME", "ÏµúÏ¥à Îì±Î°ùÏûê", "GPQHG8QQ", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddDateEdit("MDFY_DATE", "ÏµúÍ∑º ÏàòÏ†ïÏùº", "6RXQO0B2", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emDateMask.LONG_DATE);
+            acGridView2.AddTextEdit("MDFY_EMP", "ÏµúÍ∑º ÏàòÏ†ïÏûêÏΩîÎìú", "WDHSCE72", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("MDFY_EMP_NAME", "ÏµúÍ∑º ÏàòÏ†ïÏûê", "FHJDO4F0", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
 
-            //acGridView1.GridType = acGridView.emGridType.SEARCH_SEL;
+            acGridView2.KeyColumn = new string[] { "CAT_CODE", "CD_CODE" };
+            //acGridView2.GridControl.Enabled = false;
 
+            acGridView2.ShowGridMenuEx += new acGridView.ShowGridMenuExHandler(acGridView2_ShowGridMenuEx);
+            acGridView2.MouseDown += new MouseEventHandler(acGridView2_MouseDown);
+            acGridView2.OnMapingRowChanged += new acGridView.MapingRowChangedEventHandler(acGridView2_OnMapingRowChanged);
 
-            //acGridView1.AddTextEdit("PANEL_CODE", "¥‹∏ª±‚ƒ⁄µÂ", "41162", false , DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            //acGridView1.AddTextEdit("PANEL_NAME", "¥‹∏ª±‚∏Ì", "41202", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            ////acGridView1.AddLookUpEdit("CONN_TYPE", "ø¨∞· ≈∏¿‘", "40400", false , DevExpress.Utils.HorzAlignment.Center, false, true, false, "S029");
-
-            ////acGridView1.AddTextEdit("CONN_INFO", "ø¨∞· ¡§∫∏", "40400", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("PANEL_SEQ", "«•Ω√º¯º≠", "40400", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.QTY);
-
-            ////acGridView1.AddTextEdit("MAIN_MC", "º≥∫Òƒ⁄µÂ", "40400", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            ////acGridView1.AddTextEdit("MAIN_MC_NAME", "º≥∫Ò∏Ì", "40400", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddLookUpEdit("MC_GROUP", "º≥∫Ò±◊∑Ï", "", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "C020");
-
-            //acGridView1.AddMemoEdit("SCOMMENT", "∫Ò∞Ì", "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Utils.VertAlignment.Center, false, true, true, false);
-
-            //acGridView1.AddDateEdit("REG_DATE", "√÷√  µÓ∑œ¿œ", "UL1O77MB", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emDateMask.LONG_DATE);
-
-            //acGridView1.AddTextEdit("REG_EMP", "√÷√  µÓ∑œ¿⁄ƒ⁄µÂ", "P72K0SQJ", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("REG_EMP_NAME", "√÷√  µÓ∑œ¿⁄", "GPQHG8QQ", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddDateEdit("MDFY_DATE", "√÷±Ÿ ºˆ¡§¿œ", "6RXQO0B2", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emDateMask.LONG_DATE);
-
-            //acGridView1.AddTextEdit("MDFY_EMP", "√÷±Ÿ ºˆ¡§¿⁄ƒ⁄µÂ", "WDHSCE72", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("MDFY_EMP_NAME", "√÷±Ÿ ºˆ¡§¿⁄", "FHJDO4F0", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-
-            //acGridView1.KeyColumn = new string[] { "PANEL_CODE" };
-
-            //ƒ¡∆Æ∑— º≥¡§
-            //acGridView1.GridType = acGridView.emGridType.SEARCH;
-            acGridView1.GridType = acGridView.emGridType.AUTO_COL;
-
-            acGridView1.AddCheckEdit("SEL", "º±≈√", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
-            acGridView1.AddTextEdit("CD_CODE", "±∏∫–", "AB_L0002", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("NUM1", "º≥¡§∞™(min)", "AB_L0003", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("NUM2", "º≥¡§∞™(max)", "AB_L0004", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("SCOMMENT", "∫Ò∞Ì", "AB_L0005", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddDateEdit("REG_DATE", "√÷√  µÓ∑œ¿œ", "UL1O77MB", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emDateMask.LONG_DATE);
-            acGridView1.AddTextEdit("REG_EMP", "√÷√  µÓ∑œ¿⁄ƒ⁄µÂ", "P72K0SQJ", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("REG_EMP_NAME", "√÷√  µÓ∑œ¿⁄", "GPQHG8QQ", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddDateEdit("MDFY_DATE", "√÷±Ÿ ºˆ¡§¿œ", "6RXQO0B2", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emDateMask.LONG_DATE);
-            acGridView1.AddTextEdit("MDFY_EMP", "√÷±Ÿ ºˆ¡§¿⁄ƒ⁄µÂ", "WDHSCE72", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("MDFY_EMP_NAME", "√÷±Ÿ ºˆ¡§¿⁄", "FHJDO4F0", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            
-            acGridView1.KeyColumn = new string[] { "CAT_CODE", "CD_CODE" };
-
-            //acGridView1.OnMapingRowChanged += new acGridView.MapingRowChangedEventHandler(acGridView1_OnMapingRowChanged);
-
-            acGridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(acGridView1_FocusedRowChanged);  
-            acLayoutControl1.OnValueKeyDown+=new acLayoutControl.ValueKeyDownEventHandler(acLayoutControl1_OnValueKeyDown);
-            acGridView1.MouseDown += acGridView1_MouseDown;
-
-            acGridView1.ShowGridMenuEx += acGridView1_ShowGridMenuEx;
+            acLayoutControl1.OnValueKeyDown += new acLayoutControl.ValueKeyDownEventHandler(acLayoutControl1_OnValueKeyDown);
 
             base.MenuInit();
+
         }
 
-        private void acGridView1_ShowGridMenuEx(object sender, PopupMenuShowingEventArgs e)
+        protected override void OnLoad(EventArgs e)
         {
-            //if (acGridView1.FocusedRowHandle < 0)
-            //{
-            //    return;
-            //}
+            base.OnLoad(e);
 
-            acGridView view = sender as acGridView;
-
-            if (e.HitInfo.HitTest == GridHitTest.EmptyRow || e.HitInfo.HitTest == GridHitTest.Row || e.HitInfo.HitTest == GridHitTest.RowCell)
-            {
-
-
-                if (e.MenuType == GridMenuType.User)
-                {
-                    acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                    acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-
-
-                }
-                else if (e.MenuType == GridMenuType.Row)
-                {
-                    if (e.HitInfo.RowHandle >= 0)
-                    {
-
-                        acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-                        acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-                    }
-                    else
-                    {
-                        acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                        acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                    }
-
-                }
-
-
-                //∆Àæ˜∏ﬁ¥∫ ø≠±‚
-
-                GridHitInfo hitInfo = view.CalcHitInfo(e.Point);
-
-                popupMenu1.ShowPopup(view.GridControl.PointToScreen(e.Point));
-
-
-            }
+            this.Search();
         }
-
-        void acGridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
-        {
-            //this.GetDetail();
-        }
-
-
-
-        //void GetDetail()
-        //{
-        //    try
-        //    {
-        //        if (acGridView1.ValidFocusRowHandle() == true)
-        //        {
-        //            DataRow focusRow = acGridView1.GetFocusedDataRow();
-
-        //            DataTable paramTable = new DataTable("RQSTDT");
-        //            paramTable.Columns.Add("PLT_CODE", typeof(String)); //
-        //            paramTable.Columns.Add("MC_CODE", typeof(String)); //
-
-        //            DataRow paramRow = paramTable.NewRow();
-        //            paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-        //            paramRow["MC_CODE"] = focusRow["MC_CODE"];
-        //            paramTable.Rows.Add(paramRow);
-        //            DataSet paramSet = new DataSet();
-        //            paramSet.Tables.Add(paramTable);
-
-        //            BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.LOAD, "STD44A_SER2", paramSet, "RQSTDT", "RSLTDT",
-        //                            QuickDetail,
-        //                            QuickException);
-        //        }
-        //        else
-        //        {
-        //            acGridView2.ClearRow();
-        //        }
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        acMessageBox.Show(this, ex);
-        //    }
-        //}
-
-
-        //void QuickDetail(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
-        //{
-        //    try
-        //    {
-        //        acGridView2.GridControl.DataSource = e.result.Tables["RSLTDT"];
-
-        //        acGridView2.BestFitColumns();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        acMessageBox.Show(this, ex);
-        //    }
-
-        //}
-
-
-        //void acGridView2_ShowGridMenuEx(object sender, PopupMenuShowingEventArgs e)
-        //{
-
-        //    if (acGridView1.FocusedRowHandle < 0)
-        //    {
-        //        return;
-        //    }
-
-        //    acGridView view = sender as acGridView;
-
-        //    if (e.HitInfo.HitTest == GridHitTest.EmptyRow || e.HitInfo.HitTest == GridHitTest.Row || e.HitInfo.HitTest == GridHitTest.RowCell)
-        //    {
-
-
-
-
-        //        if (e.MenuType == GridMenuType.User)
-        //        {
-        //            acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-        //            acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-
-
-        //        }
-        //        else if (e.MenuType == GridMenuType.Row)
-        //        {
-        //            if (e.HitInfo.RowHandle >= 0)
-        //            {
-
-        //                acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-        //                acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-        //            }
-        //            else
-        //            {
-        //                acBarButtonItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-        //                acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-        //            }
-
-        //        }
-
-
-        //        //∆Àæ˜∏ﬁ¥∫ ø≠±‚
-
-        //        GridHitInfo hitInfo = view.CalcHitInfo(e.Point);
-
-        //        popupMenu1.ShowPopup(view.GridControl.PointToScreen(e.Point));
-
-
-        //    }
-        //}
 
         void acLayoutControl1_OnValueKeyDown(object sender, IBaseEditControl info, KeyEventArgs e)
         {
@@ -290,23 +103,81 @@ namespace STD
 
         void acGridView1_OnMapingRowChanged(acGridView.emMappingRowChangedType type, DataRow row)
         {
-           
+            if (type == acGridView.emMappingRowChangedType.DELETE)
+            {
+                base.ChildFormRemove(row["CAT_CODE"]);
+            }
+
         }
-        
+        void acGridView2_OnMapingRowChanged(acGridView.emMappingRowChangedType type, DataRow row)
+        {
+            if (type == acGridView.emMappingRowChangedType.DELETE)
+            {
+                string formKey = string.Format("{0},{1}", row["CAT_CODE"], row["CD_CODE"]);
+
+                base.ChildFormRemove(formKey);
+            }
+
+        }
+
+        void acGridView2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left && e.Clicks == 2)
+            {
+                GridHitInfo hitInfo = acGridView2.CalcHitInfo(e.Location);
+
+                if (hitInfo.HitTest == GridHitTest.RowCell || hitInfo.HitTest == GridHitTest.Row)
+                {
+                    //ÌëúÏ§ÄÏΩîÎìú Ïó¥Í∏∞
+
+                    this.acBarButtonItem5_ItemClick(null, null);
+                }
+
+            }
+        }
+
+        void acGridView2_ShowGridMenuEx(object sender, PopupMenuShowingEventArgs e)
+        {
+            acGridView view = sender as acGridView;
+
+            if (e.HitInfo.HitTest == GridHitTest.EmptyRow || e.HitInfo.HitTest == GridHitTest.Row || e.HitInfo.HitTest == GridHitTest.RowCell)
+            {
+
+                if (e.MenuType == GridMenuType.User)
+                {
+                    acBarButtonItem5.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                    acBarButtonItem6.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+
+
+                }
+                else if (e.MenuType == GridMenuType.Row)
+                {
+                    if (e.HitInfo.RowHandle >= 0)
+                    {
+                        acBarButtonItem5.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                        acBarButtonItem6.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                    }
+                    else
+                    {
+                        acBarButtonItem5.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                        acBarButtonItem6.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                    }
+                }
+
+
+                GridHitInfo hitInfo = view.CalcHitInfo(e.Point);
+
+                popupMenu2.ShowPopup(view.GridControl.PointToScreen(e.Point));
+
+
+            }
+        }
+
         public override void MenuInitComplete()
         {
-
-
+   
             base.MenuInitComplete();
         }
-
-
-        public override bool MenuDestory(object sender)
-        {
-
-            return base.MenuDestory(sender);
-        }
-
 
         public override void MenuGotFocus()
         {
@@ -318,89 +189,105 @@ namespace STD
         {
 
             base.MenuLostFocus();
+
+
         }
 
+        public override bool MenuDestory(object sender)
+        {
+
+            return base.MenuDestory(sender);
+
+        }
+
+        void acGridView1_ShowGridMenuEx(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)
+        {
+            acGridView view = sender as acGridView;
+
+            if (e.HitInfo.HitTest == GridHitTest.EmptyRow || e.HitInfo.HitTest == GridHitTest.Row || e.HitInfo.HitTest == GridHitTest.RowCell)
+            {
+
+                if (e.MenuType == GridMenuType.User)
+                {
+                    acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                    acBarButtonItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+
+
+                }
+                else if (e.MenuType == GridMenuType.Row)
+                {
+                    if (e.HitInfo.RowHandle >= 0)
+                    {
+                        acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                        acBarButtonItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                    }
+                    else
+                    {
+                        acBarButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                        acBarButtonItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                    }
+                }
+
+
+
+                GridHitInfo hitInfo = view.CalcHitInfo(e.Point);
+
+                popupMenu1.ShowPopup(view.GridControl.PointToScreen(e.Point));
+
+
+            }
+
+        }
+
+        void QuickDetail(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
+        {
+            try
+            {
+                acGridView2.GridControl.Enabled = true;
+
+                acGridView2.GridControl.DataSource = e.result.Tables["RSLTDT"];
+
+                acGridView2.BestFitColumns();
+                
+                acGridView2.SetOldFocusRowHandle(false);
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+
+        }
 
 
         void Search()
         {
+            //Í≤ÄÏÉâ
 
             DataRow layoutRow = acLayoutControl1.CreateParameterRow();
 
             DataTable paramTable = new DataTable("RQSTDT");
-            paramTable.Columns.Add("PLT_CODE", typeof(String));
-            paramTable.Columns.Add("CAT_CODE", typeof(String));
-            //paramTable.Columns.Add("PANEL_LIKE", typeof(String));
-
+            paramTable.Columns.Add("PLT_CODE", typeof(String)); //
+            paramTable.Columns.Add("CAT_CODE", typeof(String)); //
+            paramTable.Columns.Add("CD_CODE", typeof(String)); //
 
             DataRow paramRow = paramTable.NewRow();
             paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-            paramRow["CAT_CODE"] = "AB01";
-            //paramRow["PANEL_LIKE"] = layoutRow["PANEL_LIKE"];
+            paramRow["CAT_CODE"] = this.CAT_CODE;
+            paramRow["CD_CODE"] = layoutRow["CAT_LIKE"];
 
             paramTable.Rows.Add(paramRow);
+
             DataSet paramSet = new DataSet();
             paramSet.Tables.Add(paramTable);
 
-
-            BizRun.QBizRun.ExecuteService(
-            this, QBiz.emExecuteType.LOAD,
-            "STD60A_SER", paramSet, "RQSTDT", "RSLTDT",
-            QuickSearch,
-            QuickException);
-        }
-
-
-
-        void QuickSearch(object sender, QBiz qBiz, QBiz.ExcuteCompleteArgs e)
-        {
-            try
-            {
-                acGridView1.GridControl.DataSource = e.result.Tables["RSLTDT"];
-                
-                acGridView1.BestFitColumns();
-
-                acGridView1.SetOldFocusRowHandle(false);
-
-                base.SetLog(e.executeType, e.result.Tables["RSLTDT"].Rows.Count, e.executeTime);
-            }
-            catch (Exception ex)
-            {
-                acMessageBox.Show(this, ex);
-            }
+            
+            BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.LOAD, "STD60A_SER2", paramSet, "RQSTDT", "RSLTDT",
+              QuickDetail,
+              QuickException);
 
         }
-
-        void QuickException(object sender, QBiz qBiz, BizManager.BizException ex)
-        {
-            acMessageBox.Show(this, ex);
-        }
-
-
-
-        void QuickDel(object sender, QBiz qBiz, QBiz.ExcuteCompleteArgs e)
-        {
-            try
-            {
-
-                foreach (DataRow row in e.result.Tables["RQSTDT"].Rows)
-                {
-                    acGridView1.DeleteMappingRow(row);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                acMessageBox.Show(this, ex);
-            }
-
-
-        }
-
         private void barItemSearch_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //¡∂»∏
-
             try
             {
                 this.Search();
@@ -409,38 +296,20 @@ namespace STD
             {
                 acMessageBox.Show(this, ex);
             }
+
         }
 
-        /// <summary>
-        /// ªı∑Œ ∏∏µÈ±‚
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void acBarButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        void QuickException(object sender, QBiz QBiz, BizManager.BizException ex)
+        {
+            acMessageBox.Show(this, ex);
+        }
+
+
+        void QuickSearch(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
         {
             try
             {
-                DataRow focused = acGridView1.GetFocusedDataRow();
-
-                if (!base.ChildFormContains("NEW"))
-                {
-                    STD60A_D0A frm = new STD60A_D0A(acGridView1, focused);
-
-                    frm.ParentControl = this;
-
-                    frm.DialogMode = BaseMenuDialog.emDialogMode.NEW;
-
-
-                    base.ChildFormAdd("NEW", frm);
-
-                    frm.Show(this);
-
-                }
-                else
-                {
-                    base.ChildFormFocus("NEW");
-                }
-
+                base.SetLog(e.executeType, e.result.Tables["RSLTDT"].Rows.Count, e.executeTime);
             }
             catch (Exception ex)
             {
@@ -448,43 +317,94 @@ namespace STD
             }
         }
 
-        /// <summary>
-        /// ø≠±‚
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void acBarButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void acBarButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            //Î∂ÑÎ•ò ÏΩîÎìú Ïó¥Í∏∞
+
             try
             {
+                
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
 
-                DataRow focusRow = acGridView1.GetFocusedDataRow();
+
+
+        }
+
+
+        private void acBarButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //Î∂ÑÎ•ò ÏΩîÎìú ÏÉàÎ°úÎßåÎì§Í∏∞
+            try
+            {
+                if (!base.ChildFormContains("NEW_CAT"))
+                {
+                    
+                }
+                else
+                {
+                    base.ChildFormFocus("NEW_CAT");
+                }
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+
+
+
+        }
+
+
+
+
+        private void acBarButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            try
+            {
+              
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+        }
+
+        private void EditItem()
+        {
+            //ÌëúÏ§ÄÏΩîÎìú Ïó¥Í∏∞
+            try
+            {
+                DataRow focusRow = acGridView2.GetFocusedDataRow();
 
                 if (focusRow == null)
                 {
                     return;
                 }
 
+                string formKey = string.Format("{0},{1}", focusRow["CAT_CODE"], focusRow["CD_CODE"]);
 
-                if (!base.ChildFormContains(focusRow["PANEL_CODE"]))
+                if (!base.ChildFormContains(formKey))
                 {
-
-                    STD60A_D0A frm = new STD60A_D0A(acGridView1, focusRow);
+                    STD60A_D0A frm = new STD60A_D0A(this.ParamRow, acGridView2, focusRow);
 
                     frm.ParentControl = this;
 
                     frm.DialogMode = BaseMenuDialog.emDialogMode.OPEN;
 
-                    base.ChildFormAdd(focusRow["PANEL_CODE"], frm);
-
+                    base.ChildFormAdd(formKey, frm);
 
                     frm.Show(this);
                 }
                 else
                 {
-                    base.ChildFormFocus(focusRow["PANEL_CODE"]);
-                }
+                    base.ChildFormFocus(formKey);
 
+                }
             }
             catch (Exception ex)
             {
@@ -492,43 +412,89 @@ namespace STD
             }
         }
 
-        /// <summary>
-        /// ªË¡¶
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void acBarButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+
+        private void acBarButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            EditItem();
+        }
+
+        private void AddItem()
+        {
+            // ÌëúÏ§Ä ÏΩîÎìú ÏÉàÎ°úÎßåÎì§Í∏∞
             try
             {
+                if (!base.ChildFormContains("NEW_CD"))
+                {
 
-                acGridView1.EndEditor();
+                    STD60A_D0A frm = new STD60A_D0A(this.ParamRow, acGridView2, null);
 
-                if (acMessageBox.Show(this, "¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?", "TB43FSY3", true, acMessageBox.emMessageBoxType.YESNO) == DialogResult.No)
+                    frm.ParentControl = this;
+
+                    frm.DialogMode = BaseMenuDialog.emDialogMode.NEW;
+
+                    base.ChildFormAdd("NEW_CD", frm);
+
+                    frm.Show(this);
+
+
+                }
+                else
+                {
+                    base.ChildFormFocus("NEW_CD");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+
+        }
+
+        private void acBarButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddItem();
+        }
+
+        private void acBarButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //ÌëúÏ§ÄÏΩîÎìú ÏÇ≠Ï†ú
+
+            try
+            {
+                acGridView2.EndEditor();
+
+
+                ParameterYesNoDialogResult msgResult = acMessageBox.ShowParameterYesNo(this, "Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?", "TB43FSY3", true, acInfo.Resource.GetString("ÏÇ≠Ï†úÏÇ¨Ïú†", "A9DY9R6G"));
+
+
+                if (msgResult.DialogResult == DialogResult.No)
                 {
                     return;
                 }
 
-                DataRow[] selected = acGridView1.GetSelectedDataRows();
-
+                DataView selected = acGridView2.GetDataSourceView("SEL = '1'");
 
                 DataTable paramTable = new DataTable("RQSTDT");
+                paramTable.Columns.Add("PLT_CODE", typeof(String)); //
+                paramTable.Columns.Add("CAT_CODE", typeof(String)); //
+                paramTable.Columns.Add("CD_CODE", typeof(String)); //
                 paramTable.Columns.Add("DEL_EMP", typeof(String)); //
-                paramTable.Columns.Add("PANEL_CODE", typeof(String)); //
-                paramTable.Columns.Add("PLT_CODE", typeof(String)); //ªÁæ˜¿Â ƒ⁄µÂ
+                paramTable.Columns.Add("DEL_REASON", typeof(String)); //
 
-
-                if (selected.Length == 0)
+                if (selected.Count == 0)
                 {
-                    //¥‹¿œªË¡¶
 
-                    DataRow focusRow = acGridView1.GetFocusedDataRow();
+                    //Îã®ÏùºÏÇ≠Ï†ú
+                    DataRow focusRow = acGridView2.GetFocusedDataRow();
+
 
                     DataRow paramRow = paramTable.NewRow();
-                    paramRow["DEL_EMP"] = acInfo.UserID;
-                    paramRow["PANEL_CODE"] = focusRow["PANEL_CODE"];
                     paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-
+                    paramRow["CAT_CODE"] = focusRow["CAT_CODE"];
+                    paramRow["CD_CODE"] = focusRow["CD_CODE"];
+                    paramRow["DEL_EMP"] = acInfo.UserID;
+                    paramRow["DEL_REASON"] = msgResult.Parameter;
 
                     paramTable.Rows.Add(paramRow);
 
@@ -536,29 +502,55 @@ namespace STD
                 }
                 else
                 {
-                    //¥Ÿ¡ﬂ ªË¡¶
-                    for (int i = 0; i < selected.Length; i++)
+
+                    //Îã§Ï§ëÏÇ≠Ï†ú
+                    for (int i = 0; i < selected.Count; i++)
                     {
+
                         DataRow paramRow = paramTable.NewRow();
-                        paramRow["DEL_EMP"] = acInfo.UserID;
-                        paramRow["PANEL_CODE"] = selected[i]["PANEL_CODE"];
                         paramRow["PLT_CODE"] = acInfo.PLT_CODE;
+                        paramRow["CAT_CODE"] = selected[i]["CAT_CODE"];
+                        paramRow["CD_CODE"] = selected[i]["CD_CODE"];
+                        paramRow["DEL_EMP"] = acInfo.UserID;
+                        paramRow["DEL_REASON"] = msgResult.Parameter;
 
                         paramTable.Rows.Add(paramRow);
                     }
 
-
                 }
+
 
 
                 DataSet paramSet = new DataSet();
                 paramSet.Tables.Add(paramTable);
 
-                BizRun.QBizRun.ExecuteService(
-                this, QBiz.emExecuteType.PROCESS,
-                "STD60A_DEL", paramSet, "RQSTDT", "",
-                QuickDel,
+                BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.DEL,
+                "STD60A_DEL2", paramSet, "RQSTDT", "",
+                QuickDEL2,
                 QuickException);
+
+            }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+
+
+
+        }
+
+        void QuickDEL2(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
+        {
+            //ÌëúÏ§ÄÏΩîÎìú ÏÇ≠Ï†úÌõÑ
+
+            try
+            {
+                foreach (DataRow row in e.result.Tables["RQSTDT"].Rows)
+                {
+
+                    acGridView2.DeleteMappingRow(row);
+
+                }
 
             }
             catch (Exception ex)
@@ -567,23 +559,29 @@ namespace STD
             }
         }
 
-
-        void acGridView1_MouseDown(object sender, MouseEventArgs e)
+        private void barItemHelp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (e.Button == MouseButtons.Left && e.Clicks == 2)
+            try
             {
-                GridHitInfo hitInfo = acGridView1.CalcHitInfo(e.Location);
-
-                if (hitInfo.HitTest == GridHitTest.RowCell || hitInfo.HitTest == GridHitTest.Row)
-                {
-                    //¡°∞À«◊∏Ò ∆Ì¡˝±‚ ø≠±‚
-
-                    this.acBarButtonItem1_ItemClick(null, null);
-                }
-
+                this.ShowHelp();
             }
+            catch (Exception ex)
+            {
+                acMessageBox.Show(this, ex);
+            }
+
+
+        }
+
+        private void barAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AddItem();
+        }
+
+        private void barEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            EditItem();
         }
 
     }
 }
-

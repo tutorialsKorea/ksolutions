@@ -376,7 +376,12 @@ namespace ControlManager
             /// <summary>
             /// 주민번호
             /// </summary>
-            REG_NUMBER
+            REG_NUMBER,
+
+            /// <summary>
+            /// 관경코드
+            /// </summary>
+            AB01_CD
 
         }
 
@@ -915,6 +920,14 @@ namespace ControlManager
 
                         this.Properties.EditFormat.FormatString = @"[0-9][0-9][01][0-9][0123][0-9]-[12345678][0-9]{6}";
                         this.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+                        break;
+
+                    case emMaskType.AB01_CD:
+
+                        this.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+
+                        this.Properties.MaxLength = 50;
+
                         break;
 
                 }

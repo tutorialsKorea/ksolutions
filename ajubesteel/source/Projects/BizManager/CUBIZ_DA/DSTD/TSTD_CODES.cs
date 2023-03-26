@@ -90,6 +90,8 @@ namespace DSTD
                     sbQuery.Append(" , MDFY_DATE = GETDATE()");
                     sbQuery.Append(" , MDFY_EMP = "+ UTIL.GetValidValue(ConnInfo.UserID));
                     sbQuery.Append(" , DATA_FLAG = 0");
+                    sbQuery.Append(" , NUM1 = @NUM1");
+                    sbQuery.Append(" , NUM2 = @NUM2");
                     sbQuery.Append(" WHERE PLT_CODE = @PLT_CODE");
                     sbQuery.Append(" AND CAT_CODE = @CAT_CODE");
                     sbQuery.Append(" AND CD_CODE = @CD_CODE");
@@ -182,6 +184,8 @@ namespace DSTD
                     sbQuery.Append(" , REG_DATE");
                     sbQuery.Append(" , REG_EMP ");
                     sbQuery.Append(" , DATA_FLAG ");
+                    sbQuery.Append(" , NUM1 ");
+                    sbQuery.Append(" , NUM2 ");
                     sbQuery.Append(" ) ");
                     sbQuery.Append(" VALUES");
                     sbQuery.Append(" ( ");
@@ -197,6 +201,8 @@ namespace DSTD
                     sbQuery.Append(" ,GETDATE()");
                     sbQuery.Append(" ," + UTIL.GetValidValue(ConnInfo.UserID));
                     sbQuery.Append(" ,0");
+                    sbQuery.Append(" , @NUM1");
+                    sbQuery.Append(" , @NUM2");
                     sbQuery.Append(") ");
 
                     foreach (DataRow row in dtParam.Rows)
@@ -244,6 +250,19 @@ namespace DSTD
                     sbQuery.Append(" ,CD.MDFY_DATE ");
                     sbQuery.Append(" ,CD.MDFY_EMP");
                     sbQuery.Append(" ,MDFY.EMP_NAME AS MDFY_EMP_NAME ");
+
+                    sbQuery.Append(" ,CD.TEXT1");
+                    sbQuery.Append(" ,CD.TEXT2");
+                    sbQuery.Append(" ,CD.TEXT3");
+                    sbQuery.Append(" ,CD.TEXT4");
+                    sbQuery.Append(" ,CD.TEXT5");
+
+                    sbQuery.Append(" ,CD.NUM1");
+                    sbQuery.Append(" ,CD.NUM2");
+                    sbQuery.Append(" ,CD.NUM3");
+                    sbQuery.Append(" ,CD.NUM4");
+                    sbQuery.Append(" ,CD.NUM5");
+
                     sbQuery.Append(" FROM TSTD_CODES CD");
                     sbQuery.Append(" LEFT JOIN TSYS_CODECAT CAT");
                     sbQuery.Append(" ON CD.PLT_CODE= CAT.PLT_CODE");

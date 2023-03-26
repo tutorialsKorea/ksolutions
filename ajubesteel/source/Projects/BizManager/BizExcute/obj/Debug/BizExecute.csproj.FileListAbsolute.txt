@@ -9,3 +9,9 @@ D:\ProactiveShop\source\Projects\BizManager\BizExcute\bin\Debug\BizExecute.pdb
 D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csproj.CoreCompileInputs.cache
 D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.dll
 D:\ProactiveShop\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\bin\Debug\BizExecute.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\bin\Debug\BizExecute.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csproj.AssemblyReference.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\BizExcute\obj\Debug\BizExecute.pdb

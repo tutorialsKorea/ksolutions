@@ -1,6 +1,6 @@
 ﻿namespace STD
 {
-    partial class STD60A_D0A
+    partial class STD45A_D0A
     {
         /// <summary>
         /// Required designer variable.
@@ -546,7 +546,7 @@
             this.acLayoutControlItem7.UseResourceID = false;
             this.acLayoutControlItem7.UseToolTipID = false;
             // 
-            // STD60A_D0A
+            // STD45A_D0A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -557,9 +557,9 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IconOptions.ShowIcon = false;
-            this.Name = "STD60A_D0A";
+            this.Name = "STD45A_D0A";
             this.ResourceID = "";
-            this.Text = "관경관리";
+            this.Text = "단말기 편집기";
             ((System.ComponentModel.ISupportInitialize)(this.acBarManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acMemoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControl1)).EndInit();

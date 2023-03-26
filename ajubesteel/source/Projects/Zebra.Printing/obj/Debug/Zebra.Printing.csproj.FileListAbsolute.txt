@@ -9,3 +9,9 @@ D:\ProactiveShop\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.pdb
 D:\ProactiveShop\source\Projects\Zebra.Printing\bin\Debug\Zebra.Printing.dll
 D:\ProactiveShop\source\Projects\Zebra.Printing\bin\Debug\Zebra.Printing.pdb
 D:\ProactiveShop\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\bin\Debug\Zebra.Printing.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\bin\Debug\Zebra.Printing.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.csproj.AssemblyReference.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\Zebra.Printing\obj\Debug\Zebra.Printing.pdb

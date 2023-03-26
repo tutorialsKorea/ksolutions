@@ -24,3 +24,16 @@ D:\ProactiveShop\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.csproj
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.csproj.CopyComplete
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.dll
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\CUBIZ_BR.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\CUBIZ_BR.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\BizExecute.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\CUBIZ_DA.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\Zebra.Printing.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\Zebra.Printing.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\BizExecute.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\bin\Debug\CUBIZ_DA.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.csproj.AssemblyReference.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.csproj.CopyComplete
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_RULE\obj\Debug\CUBIZ_BR.pdb

@@ -16,3 +16,12 @@ D:\ProactiveShop\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.csproj.C
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.csproj.CopyComplete
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.dll
 D:\ProactiveShop\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\bin\Debug\CUBIZ_DA.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\bin\Debug\CUBIZ_DA.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\bin\Debug\BizExecute.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\bin\Debug\BizExecute.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.csproj.AssemblyReference.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.csproj.CoreCompileInputs.cache
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.csproj.CopyComplete
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\BizManager\CUBIZ_DA\obj\Debug\CUBIZ_DA.pdb

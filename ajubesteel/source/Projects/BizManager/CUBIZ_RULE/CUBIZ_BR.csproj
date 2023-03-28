@@ -151,6 +151,7 @@
     <Compile Include="BSAN\SAN01B.cs" />
     <Compile Include="BSAN\SAN03A.cs" />
     <Compile Include="BSAN\SAN05A.cs" />
+    <Compile Include="BSTD\STD62A.cs" />
     <Compile Include="BSTD\STD61A.cs" />
     <Compile Include="BSTD\STD60A.cs" />
     <Compile Include="BSTD\STD51A.cs" />

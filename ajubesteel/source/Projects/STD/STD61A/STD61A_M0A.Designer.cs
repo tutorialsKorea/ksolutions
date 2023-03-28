@@ -303,10 +303,10 @@
             // 
             // acBarButtonItem1
             // 
-            this.acBarButtonItem1.Caption = "분류코드 편집기";
+            this.acBarButtonItem1.Caption = "이동차량 편집기";
             this.acBarButtonItem1.Id = 17;
             this.acBarButtonItem1.Name = "acBarButtonItem1";
-            this.acBarButtonItem1.ResourceID = "ASSHCM37";
+            this.acBarButtonItem1.ResourceID = "AB_L0023";
             this.acBarButtonItem1.ToolTipID = null;
             this.acBarButtonItem1.UseResourceID = true;
             this.acBarButtonItem1.UseToolTipID = false;

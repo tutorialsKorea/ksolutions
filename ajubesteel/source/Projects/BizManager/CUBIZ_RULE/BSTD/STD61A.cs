@@ -70,7 +70,7 @@ namespace BSTD
             {
                 UTIL.SetBizAddColumnToValue(paramDS.Tables["RQSTDT"], "DATA_FLAG", 0, typeof(byte));
 
-                DataTable dtRslt = DSTD.TSTD_TRANSPORT_QUERY.TSTD_CODES_QUERY2(paramDS.Tables["RQSTDT"], bizExecute);
+                DataTable dtRslt = DSTD.TSTD_TRANSPORT_QUERY.TSTD_TRANSPORT_QUERY2(paramDS.Tables["RQSTDT"], bizExecute);
 
                 dtRslt.Columns.Add("SEL", typeof(string));
                 dtRslt.TableName = "RSLTDT";

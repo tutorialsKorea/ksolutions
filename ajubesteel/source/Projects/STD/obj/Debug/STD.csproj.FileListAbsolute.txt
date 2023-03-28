@@ -1093,3 +1093,5 @@ D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.pdb
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD60A_M0A.resources
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD61A_M0A.resources
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD61A_D0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_M0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_D0A.resources

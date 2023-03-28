@@ -45,17 +45,9 @@ namespace STD
             }
         }
 
-        private DataRow ParamRow;
-        private readonly string CAT_CODE = "AB01";
-
 
         public override void MenuInit()
         {
-            DataTable pTable = new DataTable("PARAM");
-            pTable.Columns.Add("CAT_CODE", typeof(String));
-            this.ParamRow = pTable.NewRow();
-            this.ParamRow["CAT_CODE"] = this.CAT_CODE;
-
             acGridView2.GridType = acGridView.emGridType.AUTO_COL;
             acGridView2.AddCheckEdit("SEL", "선택", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
 
@@ -519,7 +511,7 @@ namespace STD
                 paramSet.Tables.Add(paramTable);
 
                 BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.DEL,
-                "STD60A_DEL2", paramSet, "RQSTDT", "",
+                "STD61A_DEL2", paramSet, "RQSTDT", "",
                 QuickDEL2,
                 QuickException);
 

@@ -227,8 +227,6 @@ namespace DSTD
         {
             try
             {
-
-
                 DataSet dsResult = new DataSet();
 
                 if (dtParam.Rows.Count > 0)

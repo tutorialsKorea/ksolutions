@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CubicDBComparer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">211.238.138.160,7860</Value>
+    </Setting>
+    <Setting Name="DB_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cubic</Value>
+    </Setting>
+    <Setting Name="DB_PW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cubictek!18</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

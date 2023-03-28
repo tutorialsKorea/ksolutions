@@ -177,291 +177,193 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.cs" />
     <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A_OLD.Designer.cs">
       <DependentUpon>ORD01A_M0A_OLD.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A.cs" />
     <Compile Include="ORD01A%28매출목표%29\ORD01A_M0A.Designer.cs">
       <DependentUpon>ORD01A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D5A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D5A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D5A.designer.cs">
       <DependentUpon>ORD02A_D5A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D1A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D1A.Designer.cs">
       <DependentUpon>ORD02A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D4A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D4A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D4A.Designer.cs">
       <DependentUpon>ORD02A_D4A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_M0A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_M0A.Designer.cs">
       <DependentUpon>ORD02A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D2A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D2A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D2A.Designer.cs">
       <DependentUpon>ORD02A_D2A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D3A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D3A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D3A.Designer.cs">
       <DependentUpon>ORD02A_D3A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD02A%28수주관리%29\ORD02A_D6A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD02A%28수주관리%29\ORD02A_D6A.cs" />
     <Compile Include="ORD02A%28수주관리%29\ORD02A_D6A.Designer.cs">
       <DependentUpon>ORD02A_D6A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD04A%28출하현황%29\ORD04A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D0A.cs" />
     <Compile Include="ORD04A%28출하현황%29\ORD04A_D0A.Designer.cs">
       <DependentUpon>ORD04A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD04A%28출하현황%29\ORD04A_D3A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D3A.cs" />
     <Compile Include="ORD04A%28출하현황%29\ORD04A_D3A.Designer.cs">
       <DependentUpon>ORD04A_D3A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD04A%28출하현황%29\ORD04A_D2A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D2A.cs" />
     <Compile Include="ORD04A%28출하현황%29\ORD04A_D2A.Designer.cs">
       <DependentUpon>ORD04A_D2A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD04A%28출하현황%29\ORD04A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_D1A.cs" />
     <Compile Include="ORD04A%28출하현황%29\ORD04A_D1A.Designer.cs">
       <DependentUpon>ORD04A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\acOneButtonEdit.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D7A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\acOneButtonEdit.cs" />
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D7A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D7A.Designer.cs">
       <DependentUpon>ORD05A_D7A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D6A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D6A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D6A.Designer.cs">
       <DependentUpon>ORD05A_D6A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D5A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D5A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D5A.Designer.cs">
       <DependentUpon>ORD05A_D5A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D4A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D4A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D4A.Designer.cs">
       <DependentUpon>ORD05A_D4A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D3A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D3A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D3A.Designer.cs">
       <DependentUpon>ORD05A_D3A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D2A .cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D2A .cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D2A .Designer.cs">
       <DependentUpon>ORD05A_D2A .cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.cs" />
     <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D3A.Designer.cs">
       <DependentUpon>ORD10A_D3A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.cs" />
     <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D2A.Designer.cs">
       <DependentUpon>ORD10A_D2A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.cs" />
     <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D0A.Designer.cs">
       <DependentUpon>ORD10A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.cs" />
     <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_M0A.Designer.cs">
       <DependentUpon>ORD10A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD03A%28출하대상%29\ORD03A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_D0A.cs" />
     <Compile Include="ORD03A%28출하대상%29\ORD03A_D0A.Designer.cs">
       <DependentUpon>ORD03A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD03A%28출하대상%29\ORD03A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD03A%28출하대상%29\ORD03A_M0A.cs" />
     <Compile Include="ORD03A%28출하대상%29\ORD03A_M0A.Designer.cs">
       <DependentUpon>ORD03A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD04A%28출하현황%29\ORD04A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD04A%28출하현황%29\ORD04A_M0A.cs" />
     <Compile Include="ORD04A%28출하현황%29\ORD04A_M0A.Designer.cs">
       <DependentUpon>ORD04A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\acTwoButtonEdit.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\acTwoButtonEdit.cs" />
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D0A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D0A.Designer.cs">
       <DependentUpon>ORD05A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_D1A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_D1A.Designer.cs">
       <DependentUpon>ORD05A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD05A%28마감현황%29\ORD05A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD05A%28마감현황%29\ORD05A_M0A.cs" />
     <Compile Include="ORD05A%28마감현황%29\ORD05A_M0A.Designer.cs">
       <DependentUpon>ORD05A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD06A%28AS보고서%29\frmPictureEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\frmPictureEdit.cs" />
     <Compile Include="ORD06A%28AS보고서%29\frmPictureEdit.designer.cs">
       <DependentUpon>frmPictureEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D0A.cs" />
     <Compile Include="ORD06A%28AS보고서%29\ORD06A_D0A.designer.cs">
       <DependentUpon>ORD06A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_D1A.cs" />
     <Compile Include="ORD06A%28AS보고서%29\ORD06A_D1A.designer.cs">
       <DependentUpon>ORD06A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD06A%28AS보고서%29\ORD06A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD06A%28AS보고서%29\ORD06A_M0A.cs" />
     <Compile Include="ORD06A%28AS보고서%29\ORD06A_M0A.Designer.cs">
       <DependentUpon>ORD06A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD08A%28ST관리%29\ORD08A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD08A%28ST관리%29\ORD08A_M0A.cs" />
     <Compile Include="ORD08A%28ST관리%29\ORD08A_M0A.designer.cs">
       <DependentUpon>ORD08A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD07A%28모델관리%29\ORD07A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD07A%28모델관리%29\ORD07A_M0A.cs" />
     <Compile Include="ORD07A%28모델관리%29\ORD07A_M0A.designer.cs">
       <DependentUpon>ORD07A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD09A%28매출현황%29\ORD09A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD09A%28매출현황%29\ORD09A_M0A.cs" />
     <Compile Include="ORD09A%28매출현황%29\ORD09A_M0A.designer.cs">
       <DependentUpon>ORD09A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.cs" />
     <Compile Include="ORD10A%28출하대상-상품,제고%29\ORD10A_D1A.Designer.cs">
       <DependentUpon>ORD10A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.cs" />
     <Compile Include="ORD13A%28수주.사양 이력조회%29\ORD13A_M0A.Designer.cs">
       <DependentUpon>ORD13A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.cs" />
     <Compile Include="ORD15A_M0A%28조립품생성%28임시%29%29\ORD15A_M0A.designer.cs">
       <DependentUpon>ORD15A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD14A_M0A\ORD14A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD14A_M0A\ORD14A_M0A.cs" />
     <Compile Include="ORD14A_M0A\ORD14A_M0A.designer.cs">
       <DependentUpon>ORD14A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_D1A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D1A.cs" />
     <Compile Include="ORD26AX\ORD26A_D1A.Designer.cs">
       <DependentUpon>ORD26A_D1A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_D0A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D0A.cs" />
     <Compile Include="ORD26AX\ORD26A_D0A.Designer.cs">
       <DependentUpon>ORD26A_D0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_M0A.cs" />
     <Compile Include="ORD26AX\ORD26A_M0A.Designer.cs">
       <DependentUpon>ORD26A_M0A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_D2A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D2A.cs" />
     <Compile Include="ORD26AX\ORD26A_D2A.Designer.cs">
       <DependentUpon>ORD26A_D2A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_D3A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D3A.cs" />
     <Compile Include="ORD26AX\ORD26A_D3A.Designer.cs">
       <DependentUpon>ORD26A_D3A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD26AX\ORD26A_D4A.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ORD26AX\ORD26A_D4A.cs" />
     <Compile Include="ORD26AX\ORD26A_D4A.Designer.cs">
       <DependentUpon>ORD26A_D4A.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.cs" />
     <Compile Include="ORD12A%28생산라우팅관리%29\ORD12A_M0A.Designer.cs">
       <DependentUpon>ORD12A_M0A.cs</DependentUpon>
     </Compile>
@@ -471,9 +373,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.cs" />
     <Compile Include="ORD11A%28AssyBOM관리%29\ORD11A_M0A.Designer.cs">
       <DependentUpon>ORD11A_M0A.cs</DependentUpon>
     </Compile>

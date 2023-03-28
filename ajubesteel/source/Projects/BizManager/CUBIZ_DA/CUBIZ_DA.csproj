@@ -186,6 +186,7 @@
     <Compile Include="DSHP\TSHP_WORK_MNG_REF.cs" />
     <Compile Include="DSTD\TSTD_AS_GOAL.cs" />
     <Compile Include="DSTD\TSTD_BILL_VENDOR.cs" />
+    <Compile Include="DSTD\TSTD_PIPE_PRICE.cs" />
     <Compile Include="DSTD\TSTD_TRANSPORT.cs" />
     <Compile Include="DSTD\TSTD_COST_EXCHANGE.cs" />
     <Compile Include="DSTD\TSTD_COST_TYPE.cs" />

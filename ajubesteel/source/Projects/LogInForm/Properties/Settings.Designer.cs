@@ -118,18 +118,6 @@ namespace LogInForm.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.219.111")]
-        public string SERVER_IP {
-            get {
-                return ((string)(this["SERVER_IP"]));
-            }
-            set {
-                this["SERVER_IP"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public string SAVE_PWD {
             get {
@@ -185,6 +173,18 @@ namespace LogInForm.Properties {
             }
             set {
                 this["API_URL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.219.108")]
+        public string SERVER_IP {
+            get {
+                return ((string)(this["SERVER_IP"]));
+            }
+            set {
+                this["SERVER_IP"] = value;
             }
         }
     }

@@ -241,7 +241,7 @@ namespace DSTD
 
     public class TSTD_TRANSPORT_QUERY
     {
-        public static DataTable TSTD_CODES_QUERY2(DataTable dtParam, BizExecute.BizExecute bizExecute)
+        public static DataTable TSTD_TRANSPORT_QUERY2(DataTable dtParam, BizExecute.BizExecute bizExecute)
         {
             try
             {

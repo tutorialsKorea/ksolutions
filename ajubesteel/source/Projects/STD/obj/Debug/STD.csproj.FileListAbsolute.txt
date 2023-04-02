@@ -1095,3 +1095,11 @@ D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD61A_M
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD61A_D0A.resources
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_M0A.resources
 D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_D0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_M1A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD62A_D1A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\bin\Debug\CUBIZ_DA.dll
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\bin\Debug\CUBIZ_DA.pdb
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD63A_M0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD63A_D0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD6311A_D0A.resources
+D:\Projects\git\ksolutions\ajubesteel\source\Projects\STD\obj\Debug\STD.STD64A_M0A.resources

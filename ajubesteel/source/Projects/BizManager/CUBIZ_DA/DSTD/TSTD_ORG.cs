@@ -26,6 +26,7 @@ namespace DSTD
                     sbQuery.Append(" , ORG_PARENT");
                     sbQuery.Append(" , ORG_LEADER");
                     sbQuery.Append(" , ORG_SEQ ");
+                    sbQuery.Append(" , ORG_CLASS ");
                     sbQuery.Append(" , CC_EMP ");
                     sbQuery.Append(" , REG_DATE");
                     sbQuery.Append(" , REG_EMP ");
@@ -81,6 +82,7 @@ namespace DSTD
                     sbQuery.Append(" , ORG_PARENT = @ORG_PARENT");
                     sbQuery.Append(" , ORG_LEADER = @ORG_LEADER");
                     sbQuery.Append(" , ORG_SEQ = @ORG_SEQ");
+                    sbQuery.Append(" , ORG_CLASS = @ORG_CLASS");
                     sbQuery.Append(" , CC_EMP = @CC_EMP");
                     sbQuery.Append(" , IS_DEV = @IS_DEV");
                     sbQuery.Append(" , IS_SECRET = @IS_SECRET");
@@ -168,6 +170,7 @@ namespace DSTD
                     sbQuery.Append(" , ORG_PARENT");
                     sbQuery.Append(" , ORG_LEADER");
                     sbQuery.Append(" , ORG_SEQ ");
+                    sbQuery.Append(" , ORG_CLASS ");
                     sbQuery.Append(" , CC_EMP ");
                     sbQuery.Append(" , IS_DEV ");
                     sbQuery.Append(" , IS_SECRET ");
@@ -184,6 +187,7 @@ namespace DSTD
                     sbQuery.Append(" , @ORG_PARENT ");
                     sbQuery.Append(" , @ORG_LEADER ");
                     sbQuery.Append(" , @ORG_SEQ");
+                    sbQuery.Append(" , @ORG_CLASS");
                     sbQuery.Append(" , @CC_EMP");
                     sbQuery.Append(" , @IS_DEV ");
                     sbQuery.Append(" , @IS_ADMIN ");
@@ -269,6 +273,7 @@ namespace DSTD
                     sbQuery.Append(" ,O.ORG_LEADER");
                     sbQuery.Append(" ,ORG_LEADER_NAME = E.EMP_NAME");
                     sbQuery.Append(" ,O.ORG_SEQ");
+                    sbQuery.Append(" ,O.ORG_CLASS");
                     sbQuery.Append(" ,O.CC_EMP");
                     sbQuery.Append(" ,O.IS_DEV");
                     sbQuery.Append(" ,O.IS_SECRET");

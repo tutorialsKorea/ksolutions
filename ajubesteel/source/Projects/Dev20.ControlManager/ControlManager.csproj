@@ -269,163 +269,245 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="acAdvBandGridView\acAdvBandGridView.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewApperance.cs" />
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewFilterEditor.Designer.cs">
       <DependentUpon>acAdvBandGridViewFilterEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewMask.cs" />
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewMaskEditor.Designer.cs">
       <DependentUpon>acAdvBandGridViewMaskEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewStyleBox.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewStyleBox.Designer.cs">
       <DependentUpon>acAdvBandGridViewStyleBox.cs</DependentUpon>
     </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfig.cs" />
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigLoadEditor.Designer.cs">
       <DependentUpon>acAdvBandGridViewUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigManager.Designer.cs">
       <DependentUpon>acAdvBandGridViewUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.cs" />
+    <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSaveEditor.Designer.cs">
       <DependentUpon>acAdvBandGridViewUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acAdvBandGridView\acAdvBandGridViewUserConfigSerializationBinder.cs" />
     <Compile Include="acAdvBandGridView\acAdvBandPaintHelper.cs" />
     <Compile Include="acAlert\acAlert.cs" />
-    <Compile Include="acAlert\acAlertForm.cs" />
+    <Compile Include="acAlert\acAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acAlert\acAlertForm.designer.cs">
       <DependentUpon>acAlertForm.cs</DependentUpon>
     </Compile>
     <Compile Include="acBandGridView\acBandGridView.cs" />
     <Compile Include="acBandGridView\acBandGridViewApperance.cs" />
-    <Compile Include="acBandGridView\acBandGridViewFilterEditor.cs" />
+    <Compile Include="acBandGridView\acBandGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewFilterEditor.designer.cs">
       <DependentUpon>acBandGridViewFilterEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acBandGridView\acBandGridViewMask.cs" />
-    <Compile Include="acBandGridView\acBandGridViewMaskEditor.cs" />
+    <Compile Include="acBandGridView\acBandGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewMaskEditor.designer.cs">
       <DependentUpon>acBandGridViewMaskEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acBandGridView\acBandGridViewStyleBox.cs" />
+    <Compile Include="acBandGridView\acBandGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewStyleBox.designer.cs">
       <DependentUpon>acBandGridViewStyleBox.cs</DependentUpon>
     </Compile>
     <Compile Include="acBandGridView\acBandGridViewUserConfig.cs" />
-    <Compile Include="acBandGridView\acBandGridViewUserConfigLoadEditor.cs" />
+    <Compile Include="acBandGridView\acBandGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewUserConfigLoadEditor.designer.cs">
       <DependentUpon>acBandGridViewUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acBandGridView\acBandGridViewUserConfigManager.cs" />
+    <Compile Include="acBandGridView\acBandGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewUserConfigManager.designer.cs">
       <DependentUpon>acBandGridViewUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acBandGridView\acBandGridViewUserConfigSaveEditor.cs" />
+    <Compile Include="acBandGridView\acBandGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBandGridView\acBandGridViewUserConfigSaveEditor.designer.cs">
       <DependentUpon>acBandGridViewUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acBandGridView\acBandGridViewUserConfigSerializationBinder.cs" />
     <Compile Include="acBandGridView\acBandPaintHelper.cs" />
-    <Compile Include="acDocumentManager.cs" />
-    <Compile Include="acBarManager.cs" />
-    <Compile Include="acBaseControl\BaseFullScreenMenu.cs" />
+    <Compile Include="acDocumentManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acBaseControl\BaseFullScreenMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBaseControl\BaseFullScreenMenu.Designer.cs">
       <DependentUpon>BaseFullScreenMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="acBaseControl\BaseMenu.cs" />
+    <Compile Include="acBaseControl\BaseMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="acBaseControl\BaseMenu.Designer.cs">
       <DependentUpon>BaseMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="acBaseControl\BaseMenuDialog.cs" />
+    <Compile Include="acBaseControl\BaseMenuDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acBaseControl\BaseMenuDialog.Designer.cs">
       <DependentUpon>BaseMenuDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="acBizError.cs" />
-    <Compile Include="acChartControl\acChartControl.cs" />
+    <Compile Include="acChartControl\acChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartControl.Designer.cs">
       <DependentUpon>acChartControl.cs</DependentUpon>
     </Compile>
     <Compile Include="acChartControl\acChartUserConfig.cs" />
-    <Compile Include="acChartControl\acChartUserConfigLoadEditor.cs" />
+    <Compile Include="acChartControl\acChartUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartUserConfigLoadEditor.Designer.cs">
       <DependentUpon>acChartUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartUserConfigManager.cs" />
+    <Compile Include="acChartControl\acChartUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartUserConfigManager.Designer.cs">
       <DependentUpon>acChartUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartUserConfigSaveEditor.cs" />
+    <Compile Include="acChartControl\acChartUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartUserConfigSaveEditor.Designer.cs">
       <DependentUpon>acChartUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartBarSeriesEditor.cs" />
+    <Compile Include="acChartControl\acChartBarSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartBarSeriesEditor.Designer.cs">
       <DependentUpon>acChartBarSeriesEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartLineSeriesEditor.cs" />
+    <Compile Include="acChartControl\acChartLineSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartLineSeriesEditor.Designer.cs">
       <DependentUpon>acChartLineSeriesEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartDoughnutSeriesEditor.cs" />
+    <Compile Include="acChartControl\acChartDoughnutSeriesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartDoughnutSeriesEditor.Designer.cs">
       <DependentUpon>acChartDoughnutSeriesEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartControlSimpleDiagramStyleBox.cs" />
+    <Compile Include="acChartControl\acChartControlSimpleDiagramStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartControlSimpleDiagramStyleBox.Designer.cs">
       <DependentUpon>acChartControlSimpleDiagramStyleBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="acChartControl\acChartControlXYDiagramStyleBox.cs" />
+    <Compile Include="acChartControl\acChartControlXYDiagramStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acChartControl\acChartControlXYDiagramStyleBox.Designer.cs">
       <DependentUpon>acChartControlXYDiagramStyleBox.cs</DependentUpon>
     </Compile>
     <Compile Include="acCheckedListBoxControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="acCheckedComboBoxEdit.cs" />
-    <Compile Include="acCheckEdit.cs" />
+    <Compile Include="acCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acCheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acChecker.cs" />
-    <Compile Include="acColorEdit.cs" />
-    <Compile Include="acComboBoxEdit.cs" />
+    <Compile Include="acColorEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acConfig\acSysConfig.cs" />
     <Compile Include="acConfig\acMenuConfig.cs" />
     <Compile Include="acConfig\acEmpConfig.cs" />
     <Compile Include="acConvert.cs" />
-    <Compile Include="acDateEdit.cs" />
-    <Compile Include="acDateEditInstantForm.cs" />
+    <Compile Include="acDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acDateEditInstantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acDateEditInstantForm.Designer.cs">
       <DependentUpon>acDateEditInstantForm.cs</DependentUpon>
     </Compile>
     <Compile Include="acDesCrypt.cs" />
     <Compile Include="acDockManager.cs" />
-    <Compile Include="acDropDownButton.cs" />
+    <Compile Include="acDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acException.cs" />
-    <Compile Include="acGridLookupEdit.cs" />
-    <Compile Include="acGridView\acGridViewCustomReport.cs" />
+    <Compile Include="acGridLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acGridView\acGridViewCustomReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewCustomReport.designer.cs">
       <DependentUpon>acGridViewCustomReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="acGridView\acGridViewUserCustomReportManager.cs" />
+    <Compile Include="acGridView\acGridViewUserCustomReportManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewUserCustomReportManager.Designer.cs">
       <DependentUpon>acGridViewUserCustomReportManager.cs</DependentUpon>
     </Compile>
     <Compile Include="acMailImplicitSSL.cs" />
     <Compile Include="acMail.cs" />
-    <Compile Include="acMessageBox\acMessageBoxYesNoCan.cs" />
+    <Compile Include="acMessageBox\acMessageBoxYesNoCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxYesNoCan.Designer.cs">
       <DependentUpon>acMessageBoxYesNoCan.cs</DependentUpon>
     </Compile>
     <Compile Include="acPassWord.cs" />
     <Compile Include="acFile.cs" />
-    <Compile Include="acFontDialogEdit.cs" />
-    <Compile Include="acForm\acForm.cs" />
+    <Compile Include="acFontDialogEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acForm\acForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acForm\acFormUserConfigSerializationBinder.cs" />
     <Compile Include="acForm\acFormUserConfig.cs" />
     <Compile Include="acFTP.cs" />
@@ -433,7 +515,9 @@
     <Compile Include="acGantt\acGanttUserConfigSerializationBinder.cs" />
     <Compile Include="acGantt\acGantt.cs" />
     <Compile Include="acGraphics.cs" />
-    <Compile Include="acGridView\acGridViewFilterEditor.cs" />
+    <Compile Include="acGridView\acGridViewFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewFilterEditor.Designer.cs">
       <DependentUpon>acGridViewFilterEditor.cs</DependentUpon>
     </Compile>
@@ -441,101 +525,157 @@
     <Compile Include="acGridView\acGridView.cs" />
     <Compile Include="acGridView\acGridViewApperance.cs" />
     <Compile Include="acGridView\acGridViewUserConfig.cs" />
-    <Compile Include="acGridView\acGridViewUserConfigManager.cs" />
+    <Compile Include="acGridView\acGridViewUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewUserConfigManager.Designer.cs">
       <DependentUpon>acGridViewUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acGridView\acGridViewUserConfigLoadEditor.cs" />
+    <Compile Include="acGridView\acGridViewUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewUserConfigLoadEditor.Designer.cs">
       <DependentUpon>acGridViewUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acGridView\acGridViewMask.cs">
     </Compile>
-    <Compile Include="acGridView\acGridViewMaskEditor.cs" />
+    <Compile Include="acGridView\acGridViewMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewMaskEditor.Designer.cs">
       <DependentUpon>acGridViewMaskEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acGridView\acGridViewUserConfigSaveEditor.cs" />
+    <Compile Include="acGridView\acGridViewUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewUserConfigSaveEditor.Designer.cs">
       <DependentUpon>acGridViewUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acGridView\acGridViewStyleBox.cs" />
+    <Compile Include="acGridView\acGridViewStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acGridView\acGridViewStyleBox.Designer.cs">
       <DependentUpon>acGridViewStyleBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="acGroupControl.cs" />
+    <Compile Include="acGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acKey.cs" />
-    <Compile Include="acMachineControl.cs" />
+    <Compile Include="acMachineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="acMachineControl.designer.cs">
       <DependentUpon>acMachineControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMachineControlForm.cs" />
+    <Compile Include="acMachineControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMachineControlForm.Designer.cs">
       <DependentUpon>acMachineControlForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMntMachine.cs" />
+    <Compile Include="acMntMachine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="acMntMachine.designer.cs">
       <DependentUpon>acMntMachine.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxHelp.cs" />
+    <Compile Include="acMessageBox\acMessageBoxHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxHelp.Designer.cs">
       <DependentUpon>acMessageBoxHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="acInput.cs" />
-    <Compile Include="acMessageBox\acMessageBoxBarcode.cs" />
+    <Compile Include="acMessageBox\acMessageBoxBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxBarcode.Designer.cs">
       <DependentUpon>acMessageBoxBarcode.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxParameterYesNo.cs" />
+    <Compile Include="acMessageBox\acMessageBoxParameterYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxParameterYesNo.Designer.cs">
       <DependentUpon>acMessageBoxParameterYesNo.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxError2.cs" />
+    <Compile Include="acMessageBox\acMessageBoxError2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxError2.Designer.cs">
       <DependentUpon>acMessageBoxError2.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxNotify.cs" />
+    <Compile Include="acMessageBox\acMessageBoxNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxNotify.Designer.cs">
       <DependentUpon>acMessageBoxNotify.cs</DependentUpon>
     </Compile>
-    <Compile Include="acPictureEdit.cs" />
+    <Compile Include="acPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acPrinter.cs" />
-    <Compile Include="acRadioComboBoxEdit.cs" />
-    <Compile Include="acReport.cs" />
-    <Compile Include="acRichEdit.cs" />
-    <Compile Include="acRoundLabel.cs" />
+    <Compile Include="acRadioComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acRichEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acRoundLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acToolTip.cs" />
-    <Compile Include="acTrackBarControl.cs" />
-    <Compile Include="acTimeSpinEdit.cs" />
-    <Compile Include="acTreeList\acTreeListFilterEditor.cs" />
+    <Compile Include="acTrackBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTimeSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTreeList\acTreeListFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acTreeList\acTreeListFilterEditor.Designer.cs">
       <DependentUpon>acTreeListFilterEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acTreeList\acTreeListMask.cs" />
     <Compile Include="acTreeList\acTreeListUserConfig.cs" />
-    <Compile Include="acTreeList\acTreeListUserConfigLoadEditor.cs" />
+    <Compile Include="acTreeList\acTreeListUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acTreeList\acTreeListUserConfigLoadEditor.Designer.cs">
       <DependentUpon>acTreeListUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acTreeList\acTreeListUserConfigManager.cs" />
+    <Compile Include="acTreeList\acTreeListUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acTreeList\acTreeListUserConfigManager.Designer.cs">
       <DependentUpon>acTreeListUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acTreeList\acTreeListUserConfigSaveEditor.cs" />
+    <Compile Include="acTreeList\acTreeListUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acTreeList\acTreeListUserConfigSaveEditor.Designer.cs">
       <DependentUpon>acTreeListUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acTreeList\acTreeListUserConfigSerializationBinder.cs" />
     <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEditUserConfig.cs" />
     <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEditUserConfigSerializationBinder.cs" />
-    <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEdit.cs" />
+    <Compile Include="acUserPopupContainerEdit\acUserPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acValidationRule.cs" />
-    <Compile Include="acLoadableMcForm.cs" />
+    <Compile Include="acLoadableMcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acLoadableMcForm.Designer.cs">
       <DependentUpon>acLoadableMcForm.cs</DependentUpon>
     </Compile>
     <Compile Include="acReportHelper.cs" />
-    <Compile Include="acWeekDate.cs" />
+    <Compile Include="acWeekDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="acWeekDate.Designer.cs">
       <DependentUpon>acWeekDate.cs</DependentUpon>
     </Compile>
@@ -544,70 +684,118 @@
     <Compile Include="Interface\IBaseContainer.cs" />
     <Compile Include="Interface\IBaseHelp.cs" />
     <Compile Include="Interface\IBaseMenu.cs" />
-    <Compile Include="acLayoutControl\acLayoutControlGroup.cs" />
-    <Compile Include="acLayoutControl\acLayoutControlItem.cs" />
-    <Compile Include="acLayoutControl\acSimpleLabelItem.cs" />
+    <Compile Include="acLayoutControl\acLayoutControlGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLayoutControl\acLayoutControlItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLayoutControl\acSimpleLabelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acMenuItem.cs" />
-    <Compile Include="acLabelControl.cs" />
+    <Compile Include="acLabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acLayoutControl\acLayoutControl.cs" />
-    <Compile Include="acLookupEdit.cs" />
-    <Compile Include="acMemoEdit.cs" />
+    <Compile Include="acLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acMenuCheckItem.cs" />
     <Compile Include="acMessageBox\acMessageBox.cs" />
-    <Compile Include="acMessageBox\acMessageBoxYesNo.cs" />
+    <Compile Include="acMessageBox\acMessageBoxYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxYesNo.Designer.cs">
       <DependentUpon>acMessageBoxYesNo.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxConfirm.cs" />
+    <Compile Include="acMessageBox\acMessageBoxConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxConfirm.Designer.cs">
       <DependentUpon>acMessageBoxConfirm.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxGridConfirm.cs" />
+    <Compile Include="acMessageBox\acMessageBoxGridConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxGridConfirm.Designer.cs">
       <DependentUpon>acMessageBoxGridConfirm.cs</DependentUpon>
     </Compile>
-    <Compile Include="acMessageBox\acMessageBoxGridYesNo.cs" />
+    <Compile Include="acMessageBox\acMessageBoxGridYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxGridYesNo.Designer.cs">
       <DependentUpon>acMessageBoxGridYesNo.cs</DependentUpon>
     </Compile>
     <Compile Include="acNetWork.cs" />
-    <Compile Include="acPivotGridControl\acPivotGridMaskEditor.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridMaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPivotGridControl\acPivotGridMaskEditor.Designer.cs">
       <DependentUpon>acPivotGridMaskEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acPivotGridControl\acPivotGridUserConfig.cs" />
-    <Compile Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPivotGridControl\acPivotGridUserConfigLoadEditor.Designer.cs">
       <DependentUpon>acPivotGridUserConfigLoadEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="acPivotGridControl\acPivotGridUserConfigManager.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPivotGridControl\acPivotGridUserConfigManager.Designer.cs">
       <DependentUpon>acPivotGridUserConfigManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPivotGridControl\acPivotGridUserConfigSaveEditor.Designer.cs">
       <DependentUpon>acPivotGridUserConfigSaveEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="acPivotGridControl\acPivotGridUserConfigSerializationBinder.cs" />
-    <Compile Include="acPivotGridControl\acPivotGridStyleBox.cs" />
+    <Compile Include="acPivotGridControl\acPivotGridStyleBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPivotGridControl\acPivotGridStyleBox.Designer.cs">
       <DependentUpon>acPivotGridStyleBox.cs</DependentUpon>
     </Compile>
     <Compile Include="acPivotGridControl\acPivotGridControl.cs" />
-    <Compile Include="acPopupContainerControl.cs" />
-    <Compile Include="acPopupContainerEdit.cs" />
-    <Compile Include="acRadioGroup.cs" />
+    <Compile Include="acPopupContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acResource\acResource.cs" />
-    <Compile Include="acSimpleButton.cs" />
+    <Compile Include="acSimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acSplitContainerControl\acSplitContainerControlUserConfig.cs" />
     <Compile Include="acSplitContainerControl\acSplitContainerControlUserConfigSerializationBinder.cs" />
-    <Compile Include="acSplitContainerControl\acSplitContainerControl.cs" />
+    <Compile Include="acSplitContainerControl\acSplitContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acStdCodes.cs" />
-    <Compile Include="acTabControl.cs" />
-    <Compile Include="acTimeEdit.cs" />
+    <Compile Include="acTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="acTreeList\acTreeList.cs" />
-    <Compile Include="acVerticalGrid\acVerticalGrid.cs" />
-    <Compile Include="acMessageBox\acMessageBoxError.cs" />
+    <Compile Include="acVerticalGrid\acVerticalGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acMessageBox\acMessageBoxError.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acMessageBox\acMessageBoxError.Designer.cs">
       <DependentUpon>acMessageBoxError.cs</DependentUpon>
     </Compile>
@@ -615,16 +803,24 @@
     <Compile Include="Interface\IBaseViewControl.cs" />
     <Compile Include="Interface\IControl.cs" />
     <Compile Include="Interface\IMainControl.cs" />
-    <Compile Include="acMachineInfo.cs" />
+    <Compile Include="acMachineInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="acMachineInfo.designer.cs">
       <DependentUpon>acMachineInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="RegexEx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="acDateNavigator.cs" />
-    <Compile Include="acTextEdit.cs" />
+    <Compile Include="acDateNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="QControl\QGridViewExportTo.cs" />
-    <Compile Include="QControl\QProgress.cs" />
+    <Compile Include="QControl\QProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="QControl\QProgress.Designer.cs">
       <DependentUpon>QProgress.cs</DependentUpon>
     </Compile>
@@ -641,10 +837,18 @@
     <Compile Include="Message.cs" />
     <Compile Include="Scrollinfo.cs" />
     <Compile Include="WIN32API.cs" />
-    <Compile Include="acCodeGeneratorEdit.cs" />
-    <Compile Include="acLoadableMcEdit.cs" />
-    <Compile Include="acPartSpecTypePopupEdit.cs" />
-    <Compile Include="acPartSpecTypePopupForm.cs" />
+    <Compile Include="acCodeGeneratorEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acLoadableMcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPartSpecTypePopupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="acPartSpecTypePopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="acPartSpecTypePopupForm.Designer.cs">
       <DependentUpon>acPartSpecTypePopupForm.cs</DependentUpon>
     </Compile>

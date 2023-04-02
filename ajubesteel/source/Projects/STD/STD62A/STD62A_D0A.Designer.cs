@@ -41,46 +41,43 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.acLayoutControl1 = new ControlManager.acLayoutControl();
+            this.acLookupEdit1 = new ControlManager.acLookupEdit();
             this.acCheckEdit2 = new ControlManager.acCheckEdit();
             this.acTextEdit6 = new ControlManager.acTextEdit();
-            this.acTextEdit5 = new ControlManager.acTextEdit();
             this.acTextEdit4 = new ControlManager.acTextEdit();
             this.acTextEdit2 = new ControlManager.acTextEdit();
             this.acTextEdit1 = new ControlManager.acTextEdit();
-            this.syS05A_M0A1 = new SYS.SYS05A_M0A();
             this.acMemoEdit1 = new ControlManager.acMemoEdit();
             this.layoutControlGroup1 = new ControlManager.acLayoutControlGroup();
             this.acLayoutControlItem5 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem10 = new ControlManager.acLayoutControlItem();
             this.acLayoutControlItem1 = new ControlManager.acLayoutControlItem();
             this.acLayoutControlItem2 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem4 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem6 = new ControlManager.acLayoutControlItem();
             this.acLayoutControlItem7 = new ControlManager.acLayoutControlItem();
             this.acLayoutControlItem17 = new ControlManager.acLayoutControlItem();
-            this.acLookupEdit1 = new ControlManager.acLookupEdit();
             this.acLayoutControlItem8 = new ControlManager.acLayoutControlItem();
+            this.acLayoutControlItem4 = new ControlManager.acLayoutControlItem();
+            this.acLookupEdit2 = new ControlManager.acLookupEdit();
+            this.acLayoutControlItem3 = new ControlManager.acLayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.acBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControl1)).BeginInit();
             this.acLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acCheckEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acTextEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acMemoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // acBarManager1
@@ -238,14 +235,13 @@
             this.acLayoutControl1.AllowCustomization = false;
             this.acLayoutControl1.AutoScroll = false;
             this.acLayoutControl1.ContainerName = null;
+            this.acLayoutControl1.Controls.Add(this.acLookupEdit2);
             this.acLayoutControl1.Controls.Add(this.acLookupEdit1);
             this.acLayoutControl1.Controls.Add(this.acCheckEdit2);
             this.acLayoutControl1.Controls.Add(this.acTextEdit6);
-            this.acLayoutControl1.Controls.Add(this.acTextEdit5);
             this.acLayoutControl1.Controls.Add(this.acTextEdit4);
             this.acLayoutControl1.Controls.Add(this.acTextEdit2);
             this.acLayoutControl1.Controls.Add(this.acTextEdit1);
-            this.acLayoutControl1.Controls.Add(this.syS05A_M0A1);
             this.acLayoutControl1.Controls.Add(this.acMemoEdit1);
             this.acLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.acLayoutControl1.EnterMoveNextControl = false;
@@ -258,6 +254,32 @@
             this.acLayoutControl1.Size = new System.Drawing.Size(579, 312);
             this.acLayoutControl1.TabIndex = 4;
             this.acLayoutControl1.Text = "acLayoutControl1";
+            // 
+            // acLookupEdit1
+            // 
+            this.acLookupEdit1.ColumnName = "PIP_PROD_NAME";
+            this.acLookupEdit1.DefaultValueType = ControlManager.acLookupEdit.emDefaultValueType.NONE;
+            this.acLookupEdit1.isReadyOnly = false;
+            this.acLookupEdit1.isRequired = true;
+            this.acLookupEdit1.Location = new System.Drawing.Point(94, 41);
+            this.acLookupEdit1.MenuManager = this.acBarManager1;
+            this.acLookupEdit1.Name = "acLookupEdit1";
+            this.acLookupEdit1.Properties.Appearance.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.acLookupEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.acLookupEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.acLookupEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.acLookupEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.acLookupEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.acLookupEdit1.Properties.NullText = "";
+            this.acLookupEdit1.Properties.ShowHeader = false;
+            this.acLookupEdit1.searchMode = false;
+            this.acLookupEdit1.Size = new System.Drawing.Size(190, 24);
+            this.acLookupEdit1.StyleController = this.acLayoutControl1;
+            this.acLookupEdit1.TabIndex = 32;
+            this.acLookupEdit1.ToolTipID = null;
+            this.acLookupEdit1.UseToolTipID = false;
+            this.acLookupEdit1.Value = null;
             // 
             // acCheckEdit2
             // 
@@ -296,24 +318,6 @@
             this.acTextEdit6.Size = new System.Drawing.Size(189, 24);
             this.acTextEdit6.StyleController = this.acLayoutControl1;
             this.acTextEdit6.TabIndex = 21;
-            // 
-            // acTextEdit5
-            // 
-            this.acTextEdit5.ColumnName = "PIP_PROD_TYPE";
-            this.acTextEdit5.isRequired = true;
-            this.acTextEdit5.Location = new System.Drawing.Point(95, 78);
-            this.acTextEdit5.MaskType = ControlManager.acTextEdit.emMaskType.NONE;
-            this.acTextEdit5.MenuManager = this.acBarManager1;
-            this.acTextEdit5.Name = "acTextEdit5";
-            this.acTextEdit5.Properties.Appearance.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.acTextEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.acTextEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.acTextEdit5.Properties.Appearance.Options.UseForeColor = true;
-            this.acTextEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.acTextEdit5.Properties.MaxLength = 20;
-            this.acTextEdit5.Size = new System.Drawing.Size(188, 24);
-            this.acTextEdit5.StyleController = this.acLayoutControl1;
-            this.acTextEdit5.TabIndex = 20;
             // 
             // acTextEdit4
             // 
@@ -369,19 +373,6 @@
             this.acTextEdit1.StyleController = this.acLayoutControl1;
             this.acTextEdit1.TabIndex = 16;
             // 
-            // syS05A_M0A1
-            // 
-            this.syS05A_M0A1.ClassName = null;
-            this.syS05A_M0A1.IsMenuDestroy = false;
-            this.syS05A_M0A1.IsMenuInit = false;
-            this.syS05A_M0A1.Location = new System.Drawing.Point(6, 295);
-            this.syS05A_M0A1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.syS05A_M0A1.MenuName = null;
-            this.syS05A_M0A1.MenuStatus = ControlManager.BaseMenu.emMenuStatus.NONE;
-            this.syS05A_M0A1.Name = "syS05A_M0A1";
-            this.syS05A_M0A1.Size = new System.Drawing.Size(567, 11);
-            this.syS05A_M0A1.TabIndex = 15;
-            // 
             // acMemoEdit1
             // 
             this.acMemoEdit1.ColumnName = "SCOMMENT";
@@ -400,7 +391,7 @@
             this.acMemoEdit1.Properties.AppearanceFocused.Options.UseFont = true;
             this.acMemoEdit1.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.acMemoEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.acMemoEdit1.Size = new System.Drawing.Size(478, 133);
+            this.acMemoEdit1.Size = new System.Drawing.Size(478, 156);
             this.acMemoEdit1.StyleController = this.acLayoutControl1;
             this.acMemoEdit1.TabIndex = 13;
             this.acMemoEdit1.ToolTipID = null;
@@ -413,14 +404,13 @@
             this.layoutControlGroup1.IsHeader = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.acLayoutControlItem5,
-            this.acLayoutControlItem10,
             this.acLayoutControlItem1,
             this.acLayoutControlItem2,
-            this.acLayoutControlItem6,
-            this.acLayoutControlItem7,
             this.acLayoutControlItem17,
             this.acLayoutControlItem8,
-            this.acLayoutControlItem4});
+            this.acLayoutControlItem4,
+            this.acLayoutControlItem3,
+            this.acLayoutControlItem7});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.ResourceID = null;
             this.layoutControlGroup1.Size = new System.Drawing.Size(579, 312);
@@ -439,32 +429,13 @@
             this.acLayoutControlItem5.Name = "acLayoutControlItem5";
             this.acLayoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
             this.acLayoutControlItem5.ResourceID = "ARYZ726K";
-            this.acLayoutControlItem5.Size = new System.Drawing.Size(579, 145);
+            this.acLayoutControlItem5.Size = new System.Drawing.Size(579, 168);
             this.acLayoutControlItem5.Text = "비고";
             this.acLayoutControlItem5.TextSize = new System.Drawing.Size(77, 18);
             this.acLayoutControlItem5.ToolTipID = null;
             this.acLayoutControlItem5.ToolTipStdCode = null;
             this.acLayoutControlItem5.UseResourceID = true;
             this.acLayoutControlItem5.UseToolTipID = false;
-            // 
-            // acLayoutControlItem10
-            // 
-            this.acLayoutControlItem10.Control = this.syS05A_M0A1;
-            this.acLayoutControlItem10.CustomizationFormText = "acLayoutControlItem10";
-            this.acLayoutControlItem10.IsHeader = false;
-            this.acLayoutControlItem10.IsTitle = false;
-            this.acLayoutControlItem10.Location = new System.Drawing.Point(0, 289);
-            this.acLayoutControlItem10.Name = "acLayoutControlItem10";
-            this.acLayoutControlItem10.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.acLayoutControlItem10.ResourceID = null;
-            this.acLayoutControlItem10.Size = new System.Drawing.Size(579, 23);
-            this.acLayoutControlItem10.Text = "acLayoutControlItem10";
-            this.acLayoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem10.TextVisible = false;
-            this.acLayoutControlItem10.ToolTipID = null;
-            this.acLayoutControlItem10.ToolTipStdCode = null;
-            this.acLayoutControlItem10.UseResourceID = false;
-            this.acLayoutControlItem10.UseToolTipID = false;
             // 
             // acLayoutControlItem1
             // 
@@ -501,42 +472,6 @@
             this.acLayoutControlItem2.ToolTipStdCode = null;
             this.acLayoutControlItem2.UseResourceID = true;
             this.acLayoutControlItem2.UseToolTipID = false;
-            // 
-            // acLayoutControlItem4
-            // 
-            this.acLayoutControlItem4.Control = this.acTextEdit4;
-            this.acLayoutControlItem4.CustomizationFormText = "이론두께";
-            this.acLayoutControlItem4.IsHeader = false;
-            this.acLayoutControlItem4.IsTitle = false;
-            this.acLayoutControlItem4.Location = new System.Drawing.Point(289, 36);
-            this.acLayoutControlItem4.Name = "acLayoutControlItem4";
-            this.acLayoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.acLayoutControlItem4.ResourceID = null;
-            this.acLayoutControlItem4.Size = new System.Drawing.Size(290, 36);
-            this.acLayoutControlItem4.Text = "이론두께";
-            this.acLayoutControlItem4.TextSize = new System.Drawing.Size(77, 18);
-            this.acLayoutControlItem4.ToolTipID = "AB_L0029";
-            this.acLayoutControlItem4.ToolTipStdCode = null;
-            this.acLayoutControlItem4.UseResourceID = true;
-            this.acLayoutControlItem4.UseToolTipID = false;
-            // 
-            // acLayoutControlItem6
-            // 
-            this.acLayoutControlItem6.Control = this.acTextEdit5;
-            this.acLayoutControlItem6.CustomizationFormText = "품목구분";
-            this.acLayoutControlItem6.IsHeader = false;
-            this.acLayoutControlItem6.IsTitle = false;
-            this.acLayoutControlItem6.Location = new System.Drawing.Point(0, 72);
-            this.acLayoutControlItem6.Name = "acLayoutControlItem6";
-            this.acLayoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.acLayoutControlItem6.ResourceID = "AB_L0030";
-            this.acLayoutControlItem6.Size = new System.Drawing.Size(289, 36);
-            this.acLayoutControlItem6.Text = "품목구분";
-            this.acLayoutControlItem6.TextSize = new System.Drawing.Size(77, 18);
-            this.acLayoutControlItem6.ToolTipID = null;
-            this.acLayoutControlItem6.ToolTipStdCode = null;
-            this.acLayoutControlItem6.UseResourceID = true;
-            this.acLayoutControlItem6.UseToolTipID = false;
             // 
             // acLayoutControlItem7
             // 
@@ -575,32 +510,6 @@
             this.acLayoutControlItem17.UseResourceID = false;
             this.acLayoutControlItem17.UseToolTipID = false;
             // 
-            // acLookupEdit1
-            // 
-            this.acLookupEdit1.ColumnName = "PIP_PROD_NAME";
-            this.acLookupEdit1.DefaultValueType = ControlManager.acLookupEdit.emDefaultValueType.NONE;
-            this.acLookupEdit1.isReadyOnly = false;
-            this.acLookupEdit1.isRequired = true;
-            this.acLookupEdit1.Location = new System.Drawing.Point(94, 41);
-            this.acLookupEdit1.MenuManager = this.acBarManager1;
-            this.acLookupEdit1.Name = "acLookupEdit1";
-            this.acLookupEdit1.Properties.Appearance.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.acLookupEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.acLookupEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.acLookupEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.acLookupEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.acLookupEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.acLookupEdit1.Properties.NullText = "";
-            this.acLookupEdit1.Properties.ShowHeader = false;
-            this.acLookupEdit1.searchMode = false;
-            this.acLookupEdit1.Size = new System.Drawing.Size(190, 24);
-            this.acLookupEdit1.StyleController = this.acLayoutControl1;
-            this.acLookupEdit1.TabIndex = 32;
-            this.acLookupEdit1.ToolTipID = null;
-            this.acLookupEdit1.UseToolTipID = false;
-            this.acLookupEdit1.Value = null;
-            // 
             // acLayoutControlItem8
             // 
             this.acLayoutControlItem8.Control = this.acLookupEdit1;
@@ -618,6 +527,68 @@
             this.acLayoutControlItem8.ToolTipStdCode = null;
             this.acLayoutControlItem8.UseResourceID = true;
             this.acLayoutControlItem8.UseToolTipID = false;
+            // 
+            // acLayoutControlItem4
+            // 
+            this.acLayoutControlItem4.Control = this.acTextEdit4;
+            this.acLayoutControlItem4.CustomizationFormText = "이론두께";
+            this.acLayoutControlItem4.IsHeader = false;
+            this.acLayoutControlItem4.IsTitle = false;
+            this.acLayoutControlItem4.Location = new System.Drawing.Point(289, 36);
+            this.acLayoutControlItem4.Name = "acLayoutControlItem4";
+            this.acLayoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
+            this.acLayoutControlItem4.ResourceID = null;
+            this.acLayoutControlItem4.Size = new System.Drawing.Size(290, 36);
+            this.acLayoutControlItem4.Text = "이론두께";
+            this.acLayoutControlItem4.TextSize = new System.Drawing.Size(77, 18);
+            this.acLayoutControlItem4.ToolTipID = "AB_L0029";
+            this.acLayoutControlItem4.ToolTipStdCode = null;
+            this.acLayoutControlItem4.UseResourceID = true;
+            this.acLayoutControlItem4.UseToolTipID = false;
+            // 
+            // acLookupEdit2
+            // 
+            this.acLookupEdit2.ColumnName = "PIP_PROD_TYPE";
+            this.acLookupEdit2.DefaultValueType = ControlManager.acLookupEdit.emDefaultValueType.NONE;
+            this.acLookupEdit2.isReadyOnly = false;
+            this.acLookupEdit2.isRequired = true;
+            this.acLookupEdit2.Location = new System.Drawing.Point(94, 77);
+            this.acLookupEdit2.MenuManager = this.acBarManager1;
+            this.acLookupEdit2.Name = "acLookupEdit2";
+            this.acLookupEdit2.Properties.Appearance.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.acLookupEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.acLookupEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.acLookupEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.acLookupEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.acLookupEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.acLookupEdit2.Properties.NullText = "";
+            this.acLookupEdit2.Properties.ShowHeader = false;
+            this.acLookupEdit2.searchMode = false;
+            this.acLookupEdit2.Size = new System.Drawing.Size(190, 24);
+            this.acLookupEdit2.StyleController = this.acLayoutControl1;
+            this.acLookupEdit2.TabIndex = 33;
+            this.acLookupEdit2.ToolTipID = null;
+            this.acLookupEdit2.UseToolTipID = false;
+            this.acLookupEdit2.Value = null;
+            // 
+            // acLayoutControlItem3
+            // 
+            this.acLayoutControlItem3.Control = this.acLookupEdit2;
+            this.acLayoutControlItem3.CustomizationFormText = "품목구분";
+            this.acLayoutControlItem3.IsHeader = false;
+            this.acLayoutControlItem3.IsTitle = false;
+            this.acLayoutControlItem3.Location = new System.Drawing.Point(0, 72);
+            this.acLayoutControlItem3.Name = "acLayoutControlItem3";
+            this.acLayoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.acLayoutControlItem3.ResourceID = "AB_L0030";
+            this.acLayoutControlItem3.Size = new System.Drawing.Size(289, 36);
+            this.acLayoutControlItem3.Text = "품목구분";
+            this.acLayoutControlItem3.TextSize = new System.Drawing.Size(77, 18);
+            this.acLayoutControlItem3.ToolTipID = null;
+            this.acLayoutControlItem3.ToolTipStdCode = null;
+            this.acLayoutControlItem3.UseResourceID = true;
+            this.acLayoutControlItem3.UseToolTipID = false;
             // 
             // STD62A_D0A
             // 
@@ -639,24 +610,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.acBarManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControl1)).EndInit();
             this.acLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acCheckEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acTextEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acMemoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLookupEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -677,23 +647,21 @@
         private ControlManager.acBarButtonItem barItemClear;
         private ControlManager.acBarButtonItem barItemSave;
         private ControlManager.acBarCheckItem barItemFixedWindow;
-        private ControlManager.acTextEdit acTextEdit5;
         private ControlManager.acTextEdit acTextEdit4;
         private ControlManager.acTextEdit acTextEdit2;
         private ControlManager.acTextEdit acTextEdit1;
         private ControlManager.acLayoutControlItem acLayoutControlItem1;
         private ControlManager.acLayoutControlItem acLayoutControlItem2;
         private ControlManager.acLayoutControlItem acLayoutControlItem4;
-        private ControlManager.acLayoutControlItem acLayoutControlItem6;
         private ControlManager.acCheckEdit acCheckEdit2;
         private ControlManager.acLayoutControlItem acLayoutControlItem17;
         private ControlManager.acTextEdit acTextEdit6;
         private ControlManager.acLayoutControlItem acLayoutControlItem7;
-        private SYS.SYS05A_M0A syS05A_M0A1;
         private ControlManager.acMemoEdit acMemoEdit1;
         private ControlManager.acLayoutControlItem acLayoutControlItem5;
-        private ControlManager.acLayoutControlItem acLayoutControlItem10;
         private ControlManager.acLookupEdit acLookupEdit1;
         private ControlManager.acLayoutControlItem acLayoutControlItem8;
+        private ControlManager.acLookupEdit acLookupEdit2;
+        private ControlManager.acLayoutControlItem acLayoutControlItem3;
     }
 }

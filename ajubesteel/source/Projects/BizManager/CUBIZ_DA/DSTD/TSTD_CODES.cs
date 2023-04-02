@@ -9,6 +9,83 @@ namespace DSTD
 {
     public class TSTD_CODES
     {
+        /// <summary>
+        /// 관경관리
+        /// </summary>
+        public static string 관경관리 = "AB01";
+        /// <summary>
+        /// 내수구분
+        /// </summary>
+        public static string 내수구분 = "AB02";
+        /// <summary>
+        /// 품목유형
+        /// </summary>
+        public static string 품목유형 = "AB03";
+        /// <summary>
+        /// 형태코드
+        /// </summary>
+        public static string 형태코드 = "AB04";
+        /// <summary>
+        /// 품목구분
+        /// </summary>
+        public static string 품목구분 = "AB05";
+        /// <summary>
+        /// 품명_중분류
+        /// </summary>
+        public static string 품명_중분류 = "AB06";
+        /// <summary>
+        /// 제작규격
+        /// </summary>
+        public static string 제작규격 = "AB07";
+        /// <summary>
+        /// 검사기준
+        /// </summary>
+        public static string 검사기준 = "AB08";
+        /// <summary>
+        /// 재질
+        /// </summary>
+        public static string 재질 = "AB09";
+        /// <summary>
+        /// MILL
+        /// </summary>
+        public static string MILL = "AB10";
+        /// <summary>
+        /// 관단처리방법
+        /// </summary>
+        public static string 관단처리방법 = "AB11";
+        /// <summary>
+        /// 단위
+        /// </summary>
+        public static string 단위 = "AB12";
+        /// <summary>
+        /// 배관용도
+        /// </summary>
+        public static string 배관용도 = "AB13";
+        /// <summary>
+        /// 비가동구분
+        /// </summary>
+        public static string 비가동구분 = "AB14";
+        /// <summary>
+        /// 비가동원인
+        /// </summary>
+        public static string 비가동원인 = "AB15";
+        /// <summary>
+        /// 비가동분류
+        /// </summary>
+        public static string 비가동분류 = "AB16";
+        /// <summary>
+        /// 생산구분
+        /// </summary>
+        public static string 생산구분 = "AB17";
+        /// <summary>
+        /// 생산라인
+        /// </summary>
+        public static string 생산라인 = "AB18";
+        /// <summary>
+        /// 생산세부공정
+        /// </summary>
+        public static string 생산세부공정 = "AB19";
+
         public static DataTable TSTD_CODES_SER(DataTable dtParam, BizExecute.BizExecute bizExecute)
         {
 
@@ -289,7 +366,7 @@ namespace DSTD
                         DataTable sourceTable = bizExecute.executeSelectQuery(sbQuery.ToString() + sbWhere.ToString() ).Copy();
 
                         sourceTable.TableName = "RSLTDT";
-                        dsResult.Merge(sourceTable);  
+                        dsResult.Merge(sourceTable);
                     }
                 }
 

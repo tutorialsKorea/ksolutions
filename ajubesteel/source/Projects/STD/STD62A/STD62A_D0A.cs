@@ -9,6 +9,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using ControlManager;
 using BizManager;
+using DSTD;
 
 namespace STD
 {
@@ -63,7 +64,7 @@ namespace STD
             acLayoutControl1.GetEditor("PIP_NAME").Value = "15A";
             acLayoutControl1.GetEditor("PIP_PROD_NAME").Value = "SPP";
             acLayoutControl1.GetEditor("PIP_SIZE").Value = "1.8";
-            acLayoutControl1.GetEditor("PIP_PROD_TYPE").Value = "흑관";
+            acLayoutControl1.GetEditor("PIP_PROD_TYPE").Value = "B";
             acLayoutControl1.GetEditor("PIP_PRICE").Value = 123.45;
             //acLayoutControl1.GetEditor("PIP_ACTIVE").Value = true;
 #endif
@@ -73,14 +74,18 @@ namespace STD
 
             DataRow paramRow = paramTable.NewRow();
             paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-            paramRow["CAT_CODE"] = "AB06";
+            paramRow["CAT_CODE"] = TSTD_CODES.품명_중분류;
             paramTable.Rows.Add(paramRow);
             DataSet paramSet = new DataSet();
             paramSet.Tables.Add(paramTable);
 
-
+            // 품목(중분류)
             (acLayoutControl1.GetEditor("PIP_PROD_NAME") as acLookupEdit).SetData("CD_NAME", "CD_CODE", "STD14A_SER2", paramSet, "RQSTDT", "RSLTDT");
 
+            // 품목구분
+            paramSet.Tables["RQSTDT"].Rows[0]["CAT_CODE"] = TSTD_CODES.품목구분;
+            paramSet.Tables.Remove("RSLTDT");
+            (acLayoutControl1.GetEditor("PIP_PROD_TYPE") as acLookupEdit).SetData("CD_NAME", "CD_CODE", "STD14A_SER2", paramSet, "RQSTDT", "RSLTDT");
 
             acLayoutControl1.KeyColumns = new string[] { "PIP_CODE" };
 

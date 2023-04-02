@@ -184,6 +184,7 @@ namespace STD
                 paramTable.Columns.Add("ORG_NAME", typeof(String)); //
                 paramTable.Columns.Add("ORG_PARENT", typeof(String)); //
                 paramTable.Columns.Add("ORG_SEQ", typeof(Int32)); //
+                paramTable.Columns.Add("ORG_CLASS", typeof(Int32)); //
                 paramTable.Columns.Add("ORG_LEADER", typeof(String)); //
                 paramTable.Columns.Add("CC_EMP", typeof(String)); //
                 paramTable.Columns.Add("IS_DEV", typeof(String)); //
@@ -198,6 +199,7 @@ namespace STD
                 paramRow["ORG_NAME"] = layoutRow["ORG_NAME"];
                 paramRow["ORG_PARENT"] = layoutRow["ORG_PARENT"];
                 paramRow["ORG_SEQ"] = layoutRow["ORG_SEQ"];
+                paramRow["ORG_CLASS"] = layoutRow["ORG_CLASS"];
                 paramRow["ORG_LEADER"] = layoutRow["ORG_LEADER"];
                 paramRow["CC_EMP"] = layoutRow["CC_EMP"];
                 paramRow["IS_DEV"] = layoutRow["IS_DEV"];
@@ -288,6 +290,7 @@ namespace STD
                 paramTable.Columns.Add("ORG_NAME", typeof(String)); //
                 paramTable.Columns.Add("ORG_PARENT", typeof(String)); //
                 paramTable.Columns.Add("ORG_SEQ", typeof(Int32)); //
+                paramTable.Columns.Add("ORG_CLASS", typeof(Int32)); //
                 paramTable.Columns.Add("ORG_LEADER", typeof(String)); //
                 paramTable.Columns.Add("CC_EMP", typeof(String)); //
                 paramTable.Columns.Add("IS_DEV", typeof(String)); //
@@ -302,6 +305,7 @@ namespace STD
                 paramRow["ORG_NAME"] = layoutRow["ORG_NAME"];
                 paramRow["ORG_PARENT"] = layoutRow["ORG_PARENT"];
                 paramRow["ORG_SEQ"] = layoutRow["ORG_SEQ"];
+                paramRow["ORG_CLASS"] = layoutRow["ORG_CLASS"];
                 paramRow["ORG_LEADER"] = layoutRow["ORG_LEADER"];
                 paramRow["CC_EMP"] = layoutRow["CC_EMP"];
                 paramRow["IS_DEV"] = layoutRow["IS_DEV"];

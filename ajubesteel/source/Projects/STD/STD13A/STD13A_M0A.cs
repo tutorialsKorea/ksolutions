@@ -77,6 +77,8 @@ namespace STD
 
             acTreeList1.AddTextEdit("ORG_SEQ", "표시순서", "40723", true, DevExpress.Utils.HorzAlignment.Far, false, true, acTreeList.emTextEditMask.NONE);
 
+            acTreeList1.AddCheckEdit("ORG_CLASS", "영업소 여부", "AB_L0041", false, false, true, acTreeList.emCheckEditDataType._BYTE);
+
             acTreeList1.AddCheckEdit("IS_DEV", "개발담당 등록 여부", "", false, false, true, acTreeList.emCheckEditDataType._BYTE);
 
             acTreeList1.AddCheckEdit("IS_SECRET", "영업기밀 허용 여부", "", false, false, true, acTreeList.emCheckEditDataType._BYTE);

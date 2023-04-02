@@ -124,8 +124,6 @@ namespace STD
 
                 if (hitInfo.HitTest == GridHitTest.RowCell || hitInfo.HitTest == GridHitTest.Row)
                 {
-                    //표준코드 열기
-
                     this.acBarButtonItem5_ItemClick(null, null);
                 }
 
@@ -365,7 +363,6 @@ namespace STD
 
         private void EditItem()
         {
-            //표준코드 열기
             try
             {
                 DataRow focusRow = acGridView2.GetFocusedDataRow();
@@ -447,8 +444,6 @@ namespace STD
 
         private void acBarButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //표준코드 삭제
-
             try
             {
                 acGridView2.EndEditor();
@@ -527,8 +522,6 @@ namespace STD
 
         void QuickDEL2(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
         {
-            //표준코드 삭제후
-
             try
             {
                 foreach (DataRow row in e.result.Tables["RQSTDT"].Rows)

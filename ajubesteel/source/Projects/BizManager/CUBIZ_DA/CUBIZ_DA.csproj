@@ -228,6 +228,7 @@
     <Compile Include="DSTD\TSTD_WORKCODE_CAUSE.cs" />
     <Compile Include="DSTD\TSTD_WORKDAY.cs" />
     <Compile Include="DSTD\TSTD_WORKMNG.cs" />
+    <Compile Include="DSTD\TSTD_MC_DOWN_REASON.cs" />
     <Compile Include="DSTD\TSTD_WORKTIME.cs" />
     <Compile Include="DSYS\TSYS_CONTROL_CONDITION.cs" />
     <Compile Include="DSYS\TSYS_DAILY_LOG_PLAN.cs" />

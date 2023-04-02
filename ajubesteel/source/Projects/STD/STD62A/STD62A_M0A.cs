@@ -9,6 +9,7 @@ using ControlManager;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
 using BizManager;
+using DSTD;
 
 namespace STD
 {
@@ -45,18 +46,18 @@ namespace STD
             }
         }
 
-        private readonly string CAT_CODE = "PIPE";
+        private readonly string CAT_CODE = "PIPE"; // 강관
 
         public override void MenuInit()
         {
             acGridView2.GridType = acGridView.emGridType.AUTO_COL;
             acGridView2.AddCheckEdit("SEL", "선택", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
-
+            
             acGridView2.AddTextEdit("PIP_CODE", "코드", "AB_L0034", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
             acGridView2.AddTextEdit("PIP_NAME", "호칭", "AB_L0027", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddTextEdit("PIP_PROD_NAME", "품명(중분류)", "AB_L0028", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddLookUpEdit("PIP_PROD_NAME", "품명(중분류)", "AB_L0028", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, TSTD_CODES.품명_중분류);
             acGridView2.AddTextEdit("PIP_SIZE", "이론두께", "AB_L0029", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddTextEdit("PIP_PROD_TYPE", "품목구분", "AB_L0030", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddLookUpEdit("PIP_PROD_TYPE", "품목구분", "AB_L0030", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, TSTD_CODES.품목구분);
             acGridView2.AddTextEdit("PIP_PRICE", "가격", "AB_L0031", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
             acGridView2.AddTextEdit("PIP_ACTIVE", "활성화여부", "AB_L0021", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
             acGridView2.AddTextEdit("SCOMMENT", "비고", "ARYZ726K", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
@@ -116,8 +117,6 @@ namespace STD
 
                 if (hitInfo.HitTest == GridHitTest.RowCell || hitInfo.HitTest == GridHitTest.Row)
                 {
-                    //표준코드 열기
-
                     this.acBarButtonItem5_ItemClick(null, null);
                 }
 
@@ -306,8 +305,6 @@ namespace STD
 
         private void acBarButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //분류 코드 열기
-
             try
             {
                 
@@ -316,9 +313,6 @@ namespace STD
             {
                 acMessageBox.Show(this, ex);
             }
-
-
-
         }
 
 
@@ -358,7 +352,6 @@ namespace STD
 
         private void EditItem()
         {
-            //표준코드 열기
             try
             {
                 DataRow focusRow = acGridView2.GetFocusedDataRow();
@@ -439,8 +432,6 @@ namespace STD
 
         private void acBarButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //표준코드 삭제
-
             try
             {
                 acGridView2.EndEditor();
@@ -469,7 +460,6 @@ namespace STD
                     //단일삭제
                     DataRow focusRow = acGridView2.GetFocusedDataRow();
 
-
                     DataRow paramRow = paramTable.NewRow();
                     paramRow["PLT_CODE"] = acInfo.PLT_CODE;
                     paramRow["CAT_CODE"] = this.CAT_CODE;
@@ -478,12 +468,9 @@ namespace STD
                     paramRow["DEL_REASON"] = msgResult.Parameter;
 
                     paramTable.Rows.Add(paramRow);
-
-
                 }
                 else
                 {
-
                     //다중삭제
                     for (int i = 0; i < selected.Count; i++)
                     {
@@ -499,8 +486,6 @@ namespace STD
                     }
 
                 }
-
-
 
                 DataSet paramSet = new DataSet();
                 paramSet.Tables.Add(paramTable);
@@ -522,15 +507,11 @@ namespace STD
 
         void QuickDEL2(object sender, QBiz QBiz, QBiz.ExcuteCompleteArgs e)
         {
-            //표준코드 삭제후
-
             try
             {
                 foreach (DataRow row in e.result.Tables["RQSTDT"].Rows)
                 {
-
                     acGridView2.DeleteMappingRow(row);
-
                 }
 
             }

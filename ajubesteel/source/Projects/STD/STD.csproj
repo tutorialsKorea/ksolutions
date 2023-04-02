@@ -761,17 +761,53 @@
     <Compile Include="STD61A\STD61A_M0A.Designer.cs">
       <DependentUpon>STD61A_M0A.cs</DependentUpon>
     </Compile>
+    <Compile Include="STD62A\STD62A_D1A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STD62A\STD62A_D1A.Designer.cs">
+      <DependentUpon>STD62A_D1A.cs</DependentUpon>
+    </Compile>
     <Compile Include="STD62A\STD62A_D0A.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="STD62A\STD62A_D0A.Designer.cs">
       <DependentUpon>STD62A_D0A.cs</DependentUpon>
     </Compile>
+    <Compile Include="STD62A\STD62A_M1A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="STD62A\STD62A_M1A.Designer.cs">
+      <DependentUpon>STD62A_M1A.cs</DependentUpon>
+    </Compile>
     <Compile Include="STD62A\STD62A_M0A.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="STD62A\STD62A_M0A.Designer.cs">
       <DependentUpon>STD62A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STD63A\STD63A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STD63A\STD63A_D0A.Designer.cs">
+      <DependentUpon>STD63A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STD63A\STD6311A_D0A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STD63A\STD6311A_D0A.Designer.cs">
+      <DependentUpon>STD6311A_D0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STD63A\STD63A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="STD63A\STD63A_M0A.Designer.cs">
+      <DependentUpon>STD63A_M0A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STD64A%28공정관리%29\STD64A_M0A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="STD64A%28공정관리%29\STD64A_M0A.designer.cs">
+      <DependentUpon>STD64A_M0A.cs</DependentUpon>
     </Compile>
     <Compile Include="STD99A%28TEST%29\STD99A_D0A.cs">
       <SubType>Form</SubType>
@@ -1149,13 +1185,36 @@
       <DependentUpon>STD61A_M0A.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="STD62A\STD62A_D1A.resx">
+      <DependentUpon>STD62A_D1A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="STD62A\STD62A_D0A.resx">
       <DependentUpon>STD62A_D0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STD62A\STD62A_M1A.resx">
+      <DependentUpon>STD62A_M1A.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="STD62A\STD62A_M0A.resx">
       <DependentUpon>STD62A_M0A.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STD63A\STD63A_D0A.resx">
+      <DependentUpon>STD63A_D0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STD63A\STD6311A_D0A.resx">
+      <DependentUpon>STD6311A_D0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STD63A\STD63A_M0A.resx">
+      <DependentUpon>STD63A_M0A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STD64A%28공정관리%29\STD64A_M0A.resx">
+      <DependentUpon>STD64A_M0A.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="STD99A%28TEST%29\STD99A_D0A.resx">
       <DependentUpon>STD99A_D0A.cs</DependentUpon>
@@ -1178,6 +1237,10 @@
     <ProjectReference Include="..\BizManager\BizManager\BizManager.csproj">
       <Project>{6f4f652d-2310-4185-9bb0-06d985e12ddb}</Project>
       <Name>BizManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BizManager\CUBIZ_DA\CUBIZ_DA.csproj">
+      <Project>{226022B9-848E-4111-9094-46087918B318}</Project>
+      <Name>CUBIZ_DA</Name>
     </ProjectReference>
     <ProjectReference Include="..\CodeHelperManager\CodeHelperManager.csproj">
       <Project>{37AC3413-C30B-4A46-9629-405FCA9F0592}</Project>

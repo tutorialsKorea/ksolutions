@@ -244,7 +244,7 @@ namespace DSTD
                     sbQuery.Append(" FROM TSTD_PIPE_PRICE PP");
                     sbQuery.Append(" LEFT JOIN TSTD_EMPLOYEE REG ");
                     sbQuery.Append(" ON PP.PLT_CODE = REG.PLT_CODE ");
-                    sbQuery.Append( "AND PP.REG_EMP = REG.EMP_CODE ");
+                    sbQuery.Append(" AND PP.REG_EMP = REG.EMP_CODE");
                     sbQuery.Append(" LEFT JOIN TSTD_EMPLOYEE  MDFY");
                     sbQuery.Append(" ON PP.PLT_CODE = MDFY.PLT_CODE ");
                     sbQuery.Append(" AND PP.MDFY_EMP = MDFY.EMP_CODE");

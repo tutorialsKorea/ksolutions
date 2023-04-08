@@ -178,7 +178,7 @@ namespace LogInForm.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.219.106")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.219.107")]
         public string SERVER_IP {
             get {
                 return ((string)(this["SERVER_IP"]));

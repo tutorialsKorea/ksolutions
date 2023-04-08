@@ -12,6 +12,7 @@ using ControlManager;
 using DevExpress.XtraGrid.Views.Grid;
 using BizManager;
 using DevExpress.Utils.Serializing;
+using DSTD;
 
 namespace STD
 {
@@ -39,18 +40,18 @@ namespace STD
 
             InitializeComponent();
 
-            //발주처
+            //생산구분
             acGridView4.FocusedRowChanged += acGridView4_FocusedRowChanged;
             acGridView4.CellValueChanged += AcGridView4_CellValueChanged;
 
-            // 모델
+            // 라인
             acGridView1.FocusedRowChanged += acGridView1_FocusedRowChanged;
             acGridView1.CellValueChanged += acGridView1_CellValueChanged;
 
-            //세부모델
+            //세부공정
             acGridView2.CellValueChanged += acGridView2_CellValueChanged;
 
-            acGridView4.ShowGridMenuEx += new acGridView.ShowGridMenuExHandler(acGridView4_ShowGridMenuEx);
+            //acGridView4.ShowGridMenuEx += new acGridView.ShowGridMenuExHandler(acGridView4_ShowGridMenuEx);
             acGridView1.ShowGridMenuEx += new acGridView.ShowGridMenuExHandler(acGridView1_ShowGridMenuEx);
             acGridView2.ShowGridMenuEx += new acGridView.ShowGridMenuExHandler(acGridView2_ShowGridMenuEx);
 
@@ -96,45 +97,49 @@ namespace STD
             //acGridView4.KeyColumn = new string[] { "SCODE" };
             //acGridView4.OptionsView.ShowIndicator = true;
 
-            acGridView4.AddTextEdit("MAP_CODE_F", "생산구분코드", "AB_L0044", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView4.AddTextEdit("MAP_NAME_F", "생산구분명", "AB_L0045", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView4.AddTextEdit("EMP_NAME", "정렬순서", "AB_L0046", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView4.AddCheckEdit("USE_FLAG", "활성화여부", "AB_L0021", false, true, true, acGridView.emCheckEditDataType._BYTE);
-            acGridView4.AddTextEdit("MDFY_EMP", "최근 수정자코드", "WDHSCE72", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView4.AddTextEdit("MDFY_EMP_NAME", "최근 수정자", "FHJDO4F0", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView4.AddTextEdit("CD_CODE", "생산구분코드", "AB_L0044", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView4.AddTextEdit("CD_NAME", "생산구분명", "AB_L0045", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView4.AddTextEdit("MAP_SEQ", "정렬순서", "AB_L0046", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
+            acGridView4.AddCheckEdit("USE_FLAG", "활성화여부", "AB_L0021", true, true, true, acGridView.emCheckEditDataType._BYTE);
+            acGridView4.AddTextEdit("MDFY_EMP_NAME", "수정자", "AB_L0053", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView4.AddTextEdit("MDFY_DATE", "수정일자", "AB_L0054", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
             acGridView4.KeyColumn = new string[] { "MAP_CLASS", "MAP_CODE_F", "MAP_CODE_T" };
             acGridView4.OptionsView.ShowIndicator = true;
 
             #endregion
 
-            #region 생산구분
+            #region 라인
+            //DataSet refSet = acInfo.RefData.Clone();
+            //refSet.Tables["RQSTDT"].Columns.Add("VEN_TYPE_IN", typeof(string));
+            //DataRow refRow = refSet.Tables["RQSTDT"].NewRow();
+            //refRow["PLT_CODE"] = acInfo.PLT_CODE;
+            //refRow["VEN_TYPE_IN"] = "1,3";
+            //refSet.Tables["RQSTDT"].Rows.Add(refRow);
+            //DataTable dtVen = BizRun.QBizRun.ExecuteService(this, "CTRL", "CONTROL_VENDOR_SEARCH", refSet, "RQSTDT", "RSLTDT").Tables["RSLTDT"];
+
             acGridView1.GridType = acGridView.emGridType.FIXED_SINGLE;
-            acGridView1.AddTextEdit("MODEL_CODE", "모델코드", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("MODEL_NAME", "모델명", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddCheckEdit("USE_FLAG", "사용여부", "", false, true, true, acGridView.emCheckEditDataType._STRING);
-            acGridView1.AddTextEdit("SCOMMENT", "비고", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("EMP_CODE", "잠금자코드", "", false, DevExpress.Utils.HorzAlignment.Near, false, false, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("EMP_NAME", "잠금자", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddHidden("LOCK_FLAG", typeof(byte));
-            acGridView1.AddHidden("SCODE", typeof(string));
-            acGridView1.AddHidden("P_SCODE", typeof(string));
-            acGridView1.KeyColumn = new string[] { "SCODE" };
+            acGridView1.AddCheckEdit("SEL", "선택", "", false, true, true, acGridView.emCheckEditDataType._STRING);
+            acGridView1.AddLookUpEdit("MAP_CODE_T", "라인명", "AB_L0049", false, DevExpress.Utils.HorzAlignment.Center, true, true, false, TSTD_CODES.생산라인);
+            //acGridView1.AddTextEdit("MAP_CODE_T", "라인명", "AB_L0049", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MAP_SEQ", "정렬순서", "AB_L0046", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddCheckEdit("USE_FLAG", "활성화여부", "AB_L0021", true, true, true, acGridView.emCheckEditDataType._BYTE);
+            acGridView1.AddTextEdit("MDFY_EMP_NAME", "수정자", "AB_L0053", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MDFY_DATE", "수정일자", "AB_L0054", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.KeyColumn = new string[] { "MAP_CLASS", "MAP_CODE_F", "MAP_CODE_T" };
             acGridView1.OptionsView.ShowIndicator = true;
             acGridView1.OptionsBehavior.Editable = true;
             #endregion
 
-            #region 라인
+            #region 세부공정
             acGridView2.GridType = acGridView.emGridType.FIXED_SINGLE;
             acGridView2.AddCheckEdit("SEL", "선택", "", false, true, true, acGridView.emCheckEditDataType._STRING);
-            acGridView2.AddTextEdit("MODEL_CODE", "모델코드", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddTextEdit("MODEL_NAME", "모델명", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddCheckEdit("USE_FLAG", "사용여부", "", false, true, true, acGridView.emCheckEditDataType._STRING);
-            acGridView2.AddTextEdit("SCOMMENT", "비고", "", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddTextEdit("EMP_CODE", "잠금자코드", "", false, DevExpress.Utils.HorzAlignment.Near, false, false, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddTextEdit("EMP_NAME", "잠금자", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView2.AddHidden("LOCK_FLAG", typeof(byte));
-            acGridView2.AddHidden("SCODE", typeof(string));
-            acGridView2.KeyColumn = new string[] { "SCODE" };
+            acGridView2.AddLookUpEdit("MAP_CODE_T", "공정명", "AB_L0052", false, DevExpress.Utils.HorzAlignment.Center, true, true, false, TSTD_CODES.생산세부공정);
+            //acGridView2.AddTextEdit("MAP_CODE_T", "공정명", "AB_L0052", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("MAP_SEQ", "정렬순서", "AB_L0046", false, DevExpress.Utils.HorzAlignment.Near, true, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddCheckEdit("USE_FLAG", "활성화여부", "AB_L0021", true, true, true, acGridView.emCheckEditDataType._BYTE);
+            acGridView2.AddTextEdit("MDFY_EMP_NAME", "수정자", "AB_L0053", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.AddTextEdit("MDFY_DATE", "수정일자", "AB_L0054", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView2.KeyColumn = new string[] { "MAP_CLASS", "MAP_CODE_F", "MAP_CODE_T" };
             acGridView2.OptionsView.ShowIndicator = true;
             #endregion
 
@@ -148,15 +153,15 @@ namespace STD
 
             DataRow row = gridView.GetDataRow(gridView.FocusedRowHandle);
 
-            if (gridView.FocusedColumn.FieldName == "SEL") return;
+            //if (gridView.FocusedColumn.FieldName == "SEL") return;
 
             if (row == null) return;
 
-            if (row["LOCK_FLAG"].ToString() == "1")
-            {
-                e.Cancel = true;
+            //if (row["LOCK_FLAG"].ToString() == "1")
+            //{
+            //    e.Cancel = true;
 
-            }
+            //}
         }
 
         private void acGridView4_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
@@ -169,14 +174,14 @@ namespace STD
                     DataRow row = view.GetDataRow(e.RowHandle);
 
                     if (row == null) return;
-                    if (e.Column.FieldName == "SEL") return;
+                    //if (e.Column.FieldName == "SEL") return;
 
-                    if (row["LOCK_FLAG"].ToString() == "1")
-                    {
-                        e.Appearance.BackColor = Color.Gray;
-                        e.Appearance.ForeColor = Color.White;
+                    //if (row["LOCK_FLAG"].ToString() == "1")
+                    //{
+                    //    e.Appearance.BackColor = Color.Gray;
+                    //    e.Appearance.ForeColor = Color.White;
 
-                    }
+                    //}
                 }
             }
             catch { }
@@ -187,7 +192,7 @@ namespace STD
         {
             if (e.RowHandle > -1 && e.Column.FieldName == "MODEL_TYPE")
             {
-                string key = acGridView1.GetRowCellValue(e.RowHandle, "SCODE").ToString();
+                string key = acGridView1.GetRowCellValue(e.RowHandle, "MAP_CODE_T").ToString();
                 if (key != string.Empty)
                     e.Appearance.BackColor = Color.White;
             }
@@ -197,7 +202,7 @@ namespace STD
         {
             if (e.RowHandle > -1 && e.Column.FieldName == "MODEL_SERISE")
             {
-                string key = acGridView2.GetRowCellValue(e.RowHandle, "SCODE").ToString();
+                string key = acGridView2.GetRowCellValue(e.RowHandle, "MAP_CODE_T").ToString();
                 if (key != string.Empty)
                     e.Appearance.BackColor = Color.White;
             }
@@ -256,24 +261,24 @@ namespace STD
                 {
                     case "V":
 
-                        if (gView.GetFocusedDataRow()["VEN_CODE"].isNullOrEmpty()) { return; }
+                        //if (gView.GetFocusedDataRow()["VEN_CODE"].isNullOrEmpty()) { return; }
 
                         string vendor = gView.GetFocusedDataRow()["VEN_CODE"].ToString();
 
-                        foreach (DataRow row in dtView.Rows)
-                        {
-                            if (row["VEN_CODE"].ToString() == vendor && vendor != "")
-                            {
-                                cnt++;
-                            }
-                        }
+                        //foreach (DataRow row in dtView.Rows)
+                        //{
+                        //    if (row["VEN_CODE"].ToString() == vendor && vendor != "")
+                        //    {
+                        //        cnt++;
+                        //    }
+                        //}
 
-                        if (cnt > 1)
-                        {
-                            acMessageBox.Show("동일한 발주처가 이미 존재합니다.", "모델 관리", acMessageBox.emMessageBoxType.CONFIRM);
+                        //if (cnt > 1)
+                        //{
+                        //    acMessageBox.Show("동일한 발주처가 이미 존재합니다.", "모델 관리", acMessageBox.emMessageBoxType.CONFIRM);
 
-                            gView.SetFocusedRowCellValue("VEN_CODE", null);
-                        }
+                        //    gView.SetFocusedRowCellValue("VEN_CODE", null);
+                        //}
 
                         break;
 
@@ -293,7 +298,7 @@ namespace STD
 
                         if (cnt > 1)
                         {
-                            acMessageBox.Show("해당 발주처에 이미 동일한 모델이 존재합니다.", "모델 관리", acMessageBox.emMessageBoxType.CONFIRM);
+                            acMessageBox.Show("이미 동일한 라인이 존재합니다.", "라인 관리", acMessageBox.emMessageBoxType.CONFIRM);
 
                             gView.SetFocusedRowCellValue("MODEL_CODE", null);
                         }
@@ -316,7 +321,7 @@ namespace STD
 
                         if (cnt > 1)
                         {
-                            acMessageBox.Show("동일한 세부모델이 이미 존재합니다.", "모델 관리", acMessageBox.emMessageBoxType.CONFIRM);
+                            acMessageBox.Show("동일한 세부공정이 이미 존재합니다.", "세부공정 관리", acMessageBox.emMessageBoxType.CONFIRM);
 
                             gView.SetFocusedRowCellValue("MODEL_CODE", null);
                         }
@@ -449,10 +454,6 @@ namespace STD
             {
                 return;
             }
-            else if (focusRow["SCODE"].ToString() == string.Empty)
-            {
-                return;
-            }
 
             btnAddGubun.Enabled = true;
             btnSaveGubun.Enabled = true;
@@ -475,7 +476,7 @@ namespace STD
             {
                 return;
             }
-            else if(focusRow["SCODE"].ToString() == string.Empty)
+            else if(focusRow["MAP_CODE_T"].ToString() == string.Empty)
             {                
                 return;
             }
@@ -531,13 +532,11 @@ namespace STD
             {
                 DataTable paramTable = new DataTable("RQSTDT");
                 paramTable.Columns.Add("PLT_CODE", typeof(String));
-                paramTable.Columns.Add("DATA_TYPE", typeof(String));
-                paramTable.Columns.Add("EMP_CODE", typeof(String));
+                paramTable.Columns.Add("CAT_CODE", typeof(String));
 
                 DataRow paramRow = paramTable.NewRow();
                 paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-                paramRow["DATA_TYPE"] = "V";
-                paramRow["EMP_CODE"] = acInfo.UserID;
+                paramRow["CAT_CODE"] = TSTD_CODES.생산구분;
 
                 paramTable.Rows.Add(paramRow);
                 DataSet paramSet = new DataSet();
@@ -546,7 +545,7 @@ namespace STD
 
                 BizRun.QBizRun.ExecuteService(
                 this, QBiz.emExecuteType.LOAD,
-                "ORD07A_SER", paramSet, "RQSTDT", "RSLTDT",
+                "STD64A_SER", paramSet, "RQSTDT", "RSLTDT",
                 QuickSearch,
                 QuickException);
             }
@@ -586,24 +585,23 @@ namespace STD
 
                 DataTable paramTable = new DataTable("RQSTDT");
                 paramTable.Columns.Add("PLT_CODE", typeof(String));
-                paramTable.Columns.Add("DATA_TYPE", typeof(String));
-                paramTable.Columns.Add("P_SCODE", typeof(String));
-                paramTable.Columns.Add("EMP_CODE", typeof(String));
+                paramTable.Columns.Add("CAT_CODE_F", typeof(String));
+                paramTable.Columns.Add("MAP_CLASS", typeof(String));
+                paramTable.Columns.Add("MAP_CODE_F", typeof(String));
 
                 DataRow paramRow = paramTable.NewRow();
                 paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-                paramRow["DATA_TYPE"] = "T";
-                paramRow["P_SCODE"] = acGridView4.GetFocusedDataRow()["SCODE"];
-                paramRow["EMP_CODE"] = acInfo.UserID;
+                paramRow["CAT_CODE_F"] = TSTD_CODES.생산구분;
+                paramRow["MAP_CLASS"] = TSTD_CODES.생산라인;
+                paramRow["MAP_CODE_F"] = acGridView4.GetFocusedDataRow()["CD_CODE"];
 
                 paramTable.Rows.Add(paramRow);
                 DataSet paramSet = new DataSet();
                 paramSet.Tables.Add(paramTable);
 
-
                 BizRun.QBizRun.ExecuteService(
                 this, QBiz.emExecuteType.LOAD_DETAIL,
-                "ORD07A_SER2", paramSet, "RQSTDT", "RSLTDT",
+                "STD64A_SER2", paramSet, "RQSTDT", "RSLTDT",
                 QuickSearchDetail,
                 QuickException);
             }
@@ -642,35 +640,63 @@ namespace STD
                     return;
                 }
 
-                DataRow drFocusVendor = acGridView4.GetFocusedDataRow();
-                DataRow drFocusModel = acGridView1.GetFocusedDataRow();
-
-                // 발주처와 모델이 일치하지 않은 상태에서 조회하는 경우를 방지
-                if (drFocusVendor["SCODE"].ToString() != drFocusModel["P_SCODE"].ToString()) { return; }
-
                 DataTable paramTable = new DataTable("RQSTDT");
                 paramTable.Columns.Add("PLT_CODE", typeof(String));
-                paramTable.Columns.Add("DATA_TYPE", typeof(String));
-                paramTable.Columns.Add("P_SCODE", typeof(String));
-                paramTable.Columns.Add("EMP_CODE", typeof(String));
+                paramTable.Columns.Add("CAT_CODE_F", typeof(String));
+                paramTable.Columns.Add("MAP_CLASS", typeof(String));
+                paramTable.Columns.Add("MAP_CODE_F", typeof(String));
 
                 DataRow paramRow = paramTable.NewRow();
                 paramRow["PLT_CODE"] = acInfo.PLT_CODE;
-                paramRow["DATA_TYPE"] = "M";
-
-                paramRow["P_SCODE"] = acGridView1.GetFocusedDataRow()["SCODE"];
-                paramRow["EMP_CODE"] = acInfo.UserID;
+                paramRow["CAT_CODE_F"] = TSTD_CODES.생산라인;
+                paramRow["MAP_CLASS"] = TSTD_CODES.생산세부공정;
+                paramRow["MAP_CODE_F"] = acGridView1.GetFocusedDataRow()["MAP_CODE_T"];
 
                 paramTable.Rows.Add(paramRow);
                 DataSet paramSet = new DataSet();
                 paramSet.Tables.Add(paramTable);
 
+                //BizRun.QBizRun.ExecuteService(
+                //this, QBiz.emExecuteType.LOAD_DETAIL,
+                //"STD64A_SER2", paramSet, "RQSTDT", "RSLTDT",
+                //QuickSearchDetail,
+                //QuickException);
 
                 BizRun.QBizRun.ExecuteService(
                 this, QBiz.emExecuteType.LOAD_DETAIL,
-                "ORD07A_SER2", paramSet, "RQSTDT", "RSLTDT",
+                "STD64A_SER2", paramSet, "RQSTDT", "RSLTDT",
                 QuickSearchDetail2,
                 QuickException);
+
+                //DataRow drFocusVendor = acGridView4.GetFocusedDataRow();
+                //DataRow drFocusModel = acGridView1.GetFocusedDataRow();
+
+                //// 발주처와 모델이 일치하지 않은 상태에서 조회하는 경우를 방지
+                //if (drFocusVendor["SCODE"].ToString() != drFocusModel["P_SCODE"].ToString()) { return; }
+
+                //DataTable paramTable = new DataTable("RQSTDT");
+                //paramTable.Columns.Add("PLT_CODE", typeof(String));
+                //paramTable.Columns.Add("DATA_TYPE", typeof(String));
+                //paramTable.Columns.Add("P_SCODE", typeof(String));
+                //paramTable.Columns.Add("EMP_CODE", typeof(String));
+
+                //DataRow paramRow = paramTable.NewRow();
+                //paramRow["PLT_CODE"] = acInfo.PLT_CODE;
+                //paramRow["DATA_TYPE"] = "M";
+
+                //paramRow["P_SCODE"] = acGridView1.GetFocusedDataRow()["SCODE"];
+                //paramRow["EMP_CODE"] = acInfo.UserID;
+
+                //paramTable.Rows.Add(paramRow);
+                //DataSet paramSet = new DataSet();
+                //paramSet.Tables.Add(paramTable);
+
+
+                //BizRun.QBizRun.ExecuteService(
+                //this, QBiz.emExecuteType.LOAD_DETAIL,
+                //"ORD07A_SER2", paramSet, "RQSTDT", "RSLTDT",
+                //QuickSearchDetail2,
+                //QuickException);
             }
             catch (Exception ex)
             {
@@ -753,59 +779,55 @@ namespace STD
         /// <param name="e"></param>
         private void btnSaveModel_Click(object sender, EventArgs e)
         {
-            SetSaveUseFlag(acGridView3,"S");
+            //SetSaveUseFlag(acGridView3,"S");
         }
 
         private void SetSaveUseFlag(acGridView view,string data_type)
         {
             DataTable dtParam = new DataTable("RQSTDT");
             dtParam.Columns.Add("PLT_CODE", typeof(String));
-            dtParam.Columns.Add("SCODE", typeof(String));
-            dtParam.Columns.Add("P_SCODE", typeof(String));
-            dtParam.Columns.Add("VEN_CODE", typeof(String));
-            dtParam.Columns.Add("DATA_TYPE", typeof(String));
-            dtParam.Columns.Add("MODEL_CODE", typeof(String));
-            dtParam.Columns.Add("MODEL_NAME", typeof(String));            
-            dtParam.Columns.Add("USE_FLAG", typeof(String));
-            dtParam.Columns.Add("SCOMMENT", typeof(String));
+            dtParam.Columns.Add("MAP_CLASS", typeof(String));
+            dtParam.Columns.Add("MAP_CODE_F", typeof(String));
+            dtParam.Columns.Add("MAP_CODE_T", typeof(String));
+            dtParam.Columns.Add("MAP_SEQ", typeof(Int16));
+            dtParam.Columns.Add("USE_FLAG", typeof(Int16));
             dtParam.Columns.Add("REG_EMP", typeof(String));
-
+            dtParam.Columns.Add("DATA_FLAG", typeof(Int16));
+            dtParam.Columns.Add("OVERWRITE", typeof(String));
 
             foreach (DataRow row in view.GetAddModifyRows().Rows)
             {
                 DataRow drParam = dtParam.NewRow();
                 drParam["PLT_CODE"] = acInfo.PLT_CODE;
-                drParam["SCODE"] = row["SCODE"];
-                drParam["DATA_TYPE"] = data_type;
-              
-                if (data_type == "V") // 발주처
+                drParam["MAP_SEQ"] = row["MAP_SEQ"].isNullOrEmpty() ? 0 : row["MAP_SEQ"];
+                drParam["USE_FLAG"] = row["USE_FLAG"];
+                drParam["DATA_FLAG"] = 0;
+                drParam["OVERWRITE"] = "1";
+
+                if (data_type == "V") // 생산구분
                 {
-                    if (row["VEN_CODE"].isNullOrEmpty()) { continue; }
-                    drParam["VEN_CODE"] = row["VEN_CODE"];
+                    drParam["MAP_CLASS"] = TSTD_CODES.생산구분;
+                    drParam["MAP_CODE_F"] = row["CD_CODE"];
+                    drParam["MAP_CODE_T"] = row["CD_CODE"];
                 }
 
-                if (data_type == "T") // 모델
+                if (data_type == "T") // 라인
                 {
-                    if (row["MODEL_CODE"].isNullOrEmpty()) { continue; }
-                    drParam["P_SCODE"] = acGridView4.GetFocusedDataRow()["SCODE"];
-                    drParam["MODEL_CODE"] = row["MODEL_CODE"];
-                    drParam["MODEL_NAME"] = row["MODEL_NAME"]; 
-                    drParam["USE_FLAG"] = row["USE_FLAG"];
+                    if (row["MAP_CODE_T"].isNullOrEmpty()) { continue; }
+                    drParam["MAP_CLASS"] = TSTD_CODES.생산라인;
+                    drParam["MAP_CODE_F"] = acGridView4.GetFocusedDataRow()["CD_CODE"];
+                    drParam["MAP_CODE_T"] = row["MAP_CODE_T"];
                 }
 
                 if (data_type == "M") // 세부모델
                 {
-                    if (row["MODEL_CODE"].isNullOrEmpty()) { continue; }
-                    drParam["P_SCODE"] = acGridView1.GetFocusedDataRow()["SCODE"];
-                    drParam["MODEL_CODE"] = row["MODEL_CODE"];
-                    drParam["MODEL_NAME"] = row["MODEL_NAME"]; 
-                    drParam["USE_FLAG"] = row["USE_FLAG"];
+                    if (row["MAP_CODE_T"].isNullOrEmpty()) { continue; }
+                    drParam["MAP_CLASS"] = TSTD_CODES.생산세부공정;
+                    drParam["MAP_CODE_F"] = acGridView1.GetFocusedDataRow()["MAP_CODE_T"];
+                    drParam["MAP_CODE_T"] = row["MAP_CODE_T"];
                 }
 
-               
-                drParam["SCOMMENT"] = row["SCOMMENT"];
                 drParam["REG_EMP"] = acInfo.UserID;
-
                 dtParam.Rows.Add(drParam);
             }
 
@@ -820,7 +842,7 @@ namespace STD
             try
             {
 
-                DataSet dsRslt = BizRun.QBizRun.ExecuteService(this, "ORD07A_INS", paramSet, "RQSTDT", "RSLTDT");
+                DataSet dsRslt = BizRun.QBizRun.ExecuteService(this, "STD64A_INS", paramSet, "RQSTDT", "RSLTDT");
                 Search();
 
                 acAlert.Show(this, "저장 되었습니다.", acAlertForm.enmType.Success);
@@ -834,12 +856,27 @@ namespace STD
 
         private acGridView _deleteView = null;
 
+        private void barItemDeleteVendor_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //_deleteView = acGridView4;
+
+            //DataRow row = acGridView4.GetFocusedDataRow();
+            //if (row["CD_CODE"].isNullOrEmpty() || btnAddGubun.Enabled == false)
+            //{
+            //    acGridView4.GetFocusedDataRow().Delete();
+            //    return;
+            //}
+
+            //SetDeleteUseFlag(acGridView4);
+            //acGridView4_FocusedRowChanged(acGridView4, null);
+        }
+
         private void barItemDeleteGubun_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             _deleteView = acGridView1;
 
             DataRow row = acGridView1.GetFocusedDataRow();
-            if (row["MODEL_CODE"].isNullOrEmpty() || btnAddSerise.Enabled == false)
+            if (row["MAP_CODE_T"].isNullOrEmpty() || btnAddSerise.Enabled == false)
             {
                 acGridView1.GetFocusedDataRow().Delete();
                 return;
@@ -854,7 +891,7 @@ namespace STD
             _deleteView = acGridView2;
 
             DataRow row = acGridView2.GetFocusedDataRow();
-            if (row["MODEL_CODE"].isNullOrEmpty()) 
+            if (row["MAP_CODE_T"].isNullOrEmpty()) 
             {
                 acGridView2.GetFocusedDataRow().Delete();
                 return;
@@ -868,21 +905,6 @@ namespace STD
         {
             SetDeleteUseFlag(acGridView3);
           
-        }
-
-        private void barItemDeleteVendor_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            _deleteView = acGridView4;
-
-            DataRow row = acGridView4.GetFocusedDataRow();
-            if (row["VEN_CODE"].isNullOrEmpty() || btnAddGubun.Enabled == false) 
-            {
-                acGridView4.GetFocusedDataRow().Delete();
-                return;
-            }
-
-            SetDeleteUseFlag(acGridView4);
-            acGridView4_FocusedRowChanged(acGridView4, null);
         }
 
         private void SetDeleteUseFlag(acGridView view)
@@ -900,16 +922,20 @@ namespace STD
 
             DataTable dtParam = new DataTable("RQSTDT");
             dtParam.Columns.Add("PLT_CODE", typeof(String));
-            dtParam.Columns.Add("SCODE", typeof(String));            
+            dtParam.Columns.Add("MAP_CLASS", typeof(String));
+            dtParam.Columns.Add("MAP_CODE_F", typeof(String));
+            dtParam.Columns.Add("MAP_CODE_T", typeof(String));
             dtParam.Columns.Add("DEL_EMP", typeof(String));
 
             if (selectedView.Count == 0)
             {
-                if (view.GetFocusedDataRow()["LOCK_FLAG"].toStringEmpty() == "1") return;
+                //if (view.GetFocusedDataRow()["LOCK_FLAG"].toStringEmpty() == "1") return;
 
                 DataRow drParam = dtParam.NewRow();
                 drParam["PLT_CODE"] = acInfo.PLT_CODE;
-                drParam["SCODE"] = view.GetFocusedDataRow()["SCODE"];
+                drParam["MAP_CLASS"] = view.GetFocusedDataRow()["MAP_CLASS"];
+                drParam["MAP_CODE_F"] = view.GetFocusedDataRow()["MAP_CODE_F"];
+                drParam["MAP_CODE_T"] = view.GetFocusedDataRow()["MAP_CODE_T"];
                 drParam["DEL_EMP"] = acInfo.UserID;
 
                 dtParam.Rows.Add(drParam);
@@ -918,11 +944,13 @@ namespace STD
             {
                 for (int i = 0; i < selectedView.Count; i++)
                 {
-                    if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1") continue;
+                    //if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1") continue;
 
                     DataRow drParam = dtParam.NewRow();
                     drParam["PLT_CODE"] = acInfo.PLT_CODE;
-                    drParam["SCODE"] = selectedView[i]["SCODE"];
+                    drParam["MAP_CLASS"] = selectedView[i]["MAP_CLASS"];
+                    drParam["MAP_CODE_F"] = selectedView[i]["MAP_CODE_F"];
+                    drParam["MAP_CODE_T"] = selectedView[i]["MAP_CODE_T"];
                     drParam["DEL_EMP"] = acInfo.UserID;
 
                     dtParam.Rows.Add(drParam);
@@ -934,7 +962,7 @@ namespace STD
                 DataSet paramSet = new DataSet();
                 paramSet.Tables.Add(dtParam);
 
-                BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.DEL, "ORD07A_DEL", paramSet, "RQSTDT", "", QuickDel, QuickException);
+                BizRun.QBizRun.ExecuteService(this, QBiz.emExecuteType.DEL, "STD64A_DEL", paramSet, "RQSTDT", "", QuickDel, QuickException);
             }
         }
 
@@ -1091,25 +1119,25 @@ namespace STD
 
                 if (lockflag == 0)
                 {
-                    if (focusRow["LOCK_FLAG"].toStringEmpty() == "1")
-                    {
-                        if (focusRow["EMP_CODE"].toStringEmpty() != acInfo.UserID)
-                        {
-                            acAlert.Show(this, "잠금자만 해제할 수 있습니다.", acAlertForm.enmType.Info);
-                            return null;
-                        }
-                    }
+                    //if (focusRow["LOCK_FLAG"].toStringEmpty() == "1")
+                    //{
+                    //    if (focusRow["EMP_CODE"].toStringEmpty() != acInfo.UserID)
+                    //    {
+                    //        acAlert.Show(this, "잠금자만 해제할 수 있습니다.", acAlertForm.enmType.Info);
+                    //        return null;
+                    //    }
+                    //}
                 }
                 else if (lockflag == 1)
                 {
                     paramRow["EMP_CODE"] = acInfo.UserID;
 
-                    if (focusRow["LOCK_FLAG"].toStringEmpty() == "1"
-                        && focusRow["EMP_CODE"].toStringEmpty() != acInfo.UserID)
-                    {
-                        acAlert.Show(this, "다른 잠금자가 존재합니다.", acAlertForm.enmType.Info);
-                        return null;
-                    }
+                    //if (focusRow["LOCK_FLAG"].toStringEmpty() == "1"
+                    //    && focusRow["EMP_CODE"].toStringEmpty() != acInfo.UserID)
+                    //{
+                    //    acAlert.Show(this, "다른 잠금자가 존재합니다.", acAlertForm.enmType.Info);
+                    //    return null;
+                    //}
                 }
 
                 paramRow["LOCK_FLAG"] = lockflag;
@@ -1128,25 +1156,25 @@ namespace STD
 
                     if (lockflag == 0)
                     {
-                        if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1")
-                        {
-                            if (selectedView[i]["EMP_CODE"].toStringEmpty() != acInfo.UserID)
-                            {
-                                acAlert.Show(this, "잠금자만 해제할 수 있습니다.", acAlertForm.enmType.Info);
-                                return null;
-                            }
-                        }
+                        //if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1")
+                        //{
+                        //    if (selectedView[i]["EMP_CODE"].toStringEmpty() != acInfo.UserID)
+                        //    {
+                        //        acAlert.Show(this, "잠금자만 해제할 수 있습니다.", acAlertForm.enmType.Info);
+                        //        return null;
+                        //    }
+                        //}
                     }
                     else if (lockflag == 1)
                     {
                         paramRow["EMP_CODE"] = acInfo.UserID;
 
-                        if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1"
-                            && selectedView[i]["EMP_CODE"].toStringEmpty() != acInfo.UserID)
-                        {
-                            acAlert.Show(this, "다른 잠금자가 존재합니다.", acAlertForm.enmType.Info);
-                            return null;
-                        }
+                        //if (selectedView[i]["LOCK_FLAG"].toStringEmpty() == "1"
+                        //    && selectedView[i]["EMP_CODE"].toStringEmpty() != acInfo.UserID)
+                        //{
+                        //    acAlert.Show(this, "다른 잠금자가 존재합니다.", acAlertForm.enmType.Info);
+                        //    return null;
+                        //}
                     }
 
                     paramRow["LOCK_FLAG"] = lockflag;

@@ -167,7 +167,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(174, 25);
             this.txtIP.TabIndex = 3;
-            this.txtIP.Text = "192.168.219.106";
+            this.txtIP.Text = "192.168.219.108";
             // 
             // txtID
             // 

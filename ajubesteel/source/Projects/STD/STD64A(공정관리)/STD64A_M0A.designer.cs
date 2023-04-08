@@ -58,31 +58,23 @@
             this.acGridControl1 = new ControlManager.acGridControl();
             this.acGridView1 = new ControlManager.acGridView();
             this.acLayoutControl3 = new ControlManager.acLayoutControl();
-            this.btnModelUnLock = new ControlManager.acSimpleButton();
-            this.btnModelLock = new ControlManager.acSimpleButton();
             this.btnAddGubun = new ControlManager.acSimpleButton();
             this.btnSaveGubun = new ControlManager.acSimpleButton();
             this.acLayoutControlGroup3 = new ControlManager.acLayoutControlGroup();
             this.acLayoutControlItem3 = new ControlManager.acLayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.acLayoutControlItem4 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem8 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem11 = new ControlManager.acLayoutControlItem();
             this.acSplitContainerControl2 = new ControlManager.acSplitContainerControl();
             this.acGroupControl3 = new ControlManager.acGroupControl();
             this.acGridControl2 = new ControlManager.acGridControl();
             this.acGridView2 = new ControlManager.acGridView();
             this.acLayoutControl1 = new ControlManager.acLayoutControl();
-            this.btnDetailModelUnLock = new ControlManager.acSimpleButton();
-            this.btnDetailModelLock = new ControlManager.acSimpleButton();
             this.btnAddSerise = new ControlManager.acSimpleButton();
             this.btnSaveSerise = new ControlManager.acSimpleButton();
             this.acLayoutControlGroup1 = new ControlManager.acLayoutControlGroup();
             this.acLayoutControlItem1 = new ControlManager.acLayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.acLayoutControlItem5 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem9 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem12 = new ControlManager.acLayoutControlItem();
             this.acGroupControl4 = new ControlManager.acGroupControl();
             this.acGridControl3 = new ControlManager.acGridControl();
             this.acGridView3 = new ControlManager.acGridView();
@@ -100,16 +92,10 @@
             this.acGridControl4 = new ControlManager.acGridControl();
             this.acGridView4 = new ControlManager.acGridView();
             this.acLayoutControl4 = new ControlManager.acLayoutControl();
-            this.btnVenUnLock = new ControlManager.acSimpleButton();
-            this.btnVenLock = new ControlManager.acSimpleButton();
-            this.btnAddVendor = new ControlManager.acSimpleButton();
             this.btnSaveVendor = new ControlManager.acSimpleButton();
             this.Root = new ControlManager.acLayoutControlGroup();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.acLayoutControlItem7 = new ControlManager.acLayoutControlItem();
-            this.acLayoutControlItem10 = new ControlManager.acLayoutControlItem();
             this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pnlScreenBase)).BeginInit();
             this.pnlScreenBase.SuspendLayout();
@@ -133,8 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acSplitContainerControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acSplitContainerControl2.Panel1)).BeginInit();
             this.acSplitContainerControl2.Panel1.SuspendLayout();
@@ -151,8 +135,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acGroupControl4)).BeginInit();
             this.acGroupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.acGridControl3)).BeginInit();
@@ -179,10 +161,7 @@
             this.acLayoutControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -524,7 +503,7 @@
             this.acGroupControl1.ResourceID = null;
             this.acGroupControl1.Size = new System.Drawing.Size(440, 629);
             this.acGroupControl1.TabIndex = 0;
-            this.acGroupControl1.Text = "모델 구분";
+            this.acGroupControl1.Text = "라인";
             this.acGroupControl1.ToolTipID = null;
             this.acGroupControl1.UseResourceID = false;
             this.acGroupControl1.UseToolTipID = false;
@@ -565,8 +544,6 @@
             // 
             this.acLayoutControl3.AllowCustomization = false;
             this.acLayoutControl3.ContainerName = null;
-            this.acLayoutControl3.Controls.Add(this.btnModelUnLock);
-            this.acLayoutControl3.Controls.Add(this.btnModelLock);
             this.acLayoutControl3.Controls.Add(this.btnAddGubun);
             this.acLayoutControl3.Controls.Add(this.btnSaveGubun);
             this.acLayoutControl3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -579,36 +556,6 @@
             this.acLayoutControl3.Size = new System.Drawing.Size(436, 40);
             this.acLayoutControl3.TabIndex = 3;
             this.acLayoutControl3.Text = "acLayoutControl3";
-            // 
-            // btnModelUnLock
-            // 
-            this.btnModelUnLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnModelUnLock.Location = new System.Drawing.Point(191, 5);
-            this.btnModelUnLock.Name = "btnModelUnLock";
-            this.btnModelUnLock.ResourceID = null;
-            this.btnModelUnLock.Size = new System.Drawing.Size(80, 30);
-            this.btnModelUnLock.StyleController = this.acLayoutControl3;
-            this.btnModelUnLock.TabIndex = 7;
-            this.btnModelUnLock.Text = "잠금해제";
-            this.btnModelUnLock.ToolTipID = null;
-            this.btnModelUnLock.UseResourceID = false;
-            this.btnModelUnLock.UseToolTipID = false;
-            this.btnModelUnLock.Click += new System.EventHandler(this.btnModelUnLock_Click);
-            // 
-            // btnModelLock
-            // 
-            this.btnModelLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnModelLock.Location = new System.Drawing.Point(111, 5);
-            this.btnModelLock.Name = "btnModelLock";
-            this.btnModelLock.ResourceID = null;
-            this.btnModelLock.Size = new System.Drawing.Size(70, 30);
-            this.btnModelLock.StyleController = this.acLayoutControl3;
-            this.btnModelLock.TabIndex = 6;
-            this.btnModelLock.Text = "잠금";
-            this.btnModelLock.ToolTipID = null;
-            this.btnModelLock.UseResourceID = false;
-            this.btnModelLock.UseToolTipID = false;
-            this.btnModelLock.Click += new System.EventHandler(this.btnModelLock_Click);
             // 
             // btnAddGubun
             // 
@@ -649,9 +596,7 @@
             this.acLayoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.acLayoutControlItem3,
             this.emptySpaceItem3,
-            this.acLayoutControlItem4,
-            this.acLayoutControlItem8,
-            this.acLayoutControlItem11});
+            this.acLayoutControlItem4});
             this.acLayoutControlGroup3.Name = "Root";
             this.acLayoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.acLayoutControlGroup3.ResourceID = null;
@@ -689,7 +634,7 @@
             this.emptySpaceItem3.CustomizationFormText = "emptySpaceItem1";
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem1";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(106, 40);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(276, 40);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // acLayoutControlItem4
@@ -713,50 +658,6 @@
             this.acLayoutControlItem4.ToolTipStdCode = null;
             this.acLayoutControlItem4.UseResourceID = false;
             this.acLayoutControlItem4.UseToolTipID = false;
-            // 
-            // acLayoutControlItem8
-            // 
-            this.acLayoutControlItem8.Control = this.btnModelLock;
-            this.acLayoutControlItem8.CustomizationFormText = "acLayoutControlItem8";
-            this.acLayoutControlItem8.IsHeader = false;
-            this.acLayoutControlItem8.IsTitle = false;
-            this.acLayoutControlItem8.Location = new System.Drawing.Point(106, 0);
-            this.acLayoutControlItem8.MaxSize = new System.Drawing.Size(80, 0);
-            this.acLayoutControlItem8.MinSize = new System.Drawing.Size(80, 32);
-            this.acLayoutControlItem8.Name = "acLayoutControlItem8";
-            this.acLayoutControlItem8.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem8.ResourceID = null;
-            this.acLayoutControlItem8.Size = new System.Drawing.Size(80, 40);
-            this.acLayoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem8.Text = "acLayoutControlItem8";
-            this.acLayoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem8.TextVisible = false;
-            this.acLayoutControlItem8.ToolTipID = null;
-            this.acLayoutControlItem8.ToolTipStdCode = null;
-            this.acLayoutControlItem8.UseResourceID = false;
-            this.acLayoutControlItem8.UseToolTipID = false;
-            // 
-            // acLayoutControlItem11
-            // 
-            this.acLayoutControlItem11.Control = this.btnModelUnLock;
-            this.acLayoutControlItem11.CustomizationFormText = "acLayoutControlItem11";
-            this.acLayoutControlItem11.IsHeader = false;
-            this.acLayoutControlItem11.IsTitle = false;
-            this.acLayoutControlItem11.Location = new System.Drawing.Point(186, 0);
-            this.acLayoutControlItem11.MaxSize = new System.Drawing.Size(90, 0);
-            this.acLayoutControlItem11.MinSize = new System.Drawing.Size(90, 32);
-            this.acLayoutControlItem11.Name = "acLayoutControlItem11";
-            this.acLayoutControlItem11.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem11.ResourceID = null;
-            this.acLayoutControlItem11.Size = new System.Drawing.Size(90, 40);
-            this.acLayoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem11.Text = "acLayoutControlItem11";
-            this.acLayoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem11.TextVisible = false;
-            this.acLayoutControlItem11.ToolTipID = null;
-            this.acLayoutControlItem11.ToolTipStdCode = null;
-            this.acLayoutControlItem11.UseResourceID = false;
-            this.acLayoutControlItem11.UseToolTipID = false;
             // 
             // acSplitContainerControl2
             // 
@@ -793,7 +694,7 @@
             this.acGroupControl3.ResourceID = null;
             this.acGroupControl3.Size = new System.Drawing.Size(459, 629);
             this.acGroupControl3.TabIndex = 1;
-            this.acGroupControl3.Text = "세부 모델";
+            this.acGroupControl3.Text = "세부공정";
             this.acGroupControl3.ToolTipID = null;
             this.acGroupControl3.UseResourceID = false;
             this.acGroupControl3.UseToolTipID = false;
@@ -834,8 +735,6 @@
             // 
             this.acLayoutControl1.AllowCustomization = false;
             this.acLayoutControl1.ContainerName = null;
-            this.acLayoutControl1.Controls.Add(this.btnDetailModelUnLock);
-            this.acLayoutControl1.Controls.Add(this.btnDetailModelLock);
             this.acLayoutControl1.Controls.Add(this.btnAddSerise);
             this.acLayoutControl1.Controls.Add(this.btnSaveSerise);
             this.acLayoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -848,36 +747,6 @@
             this.acLayoutControl1.Size = new System.Drawing.Size(455, 40);
             this.acLayoutControl1.TabIndex = 2;
             this.acLayoutControl1.Text = "acLayoutControl1";
-            // 
-            // btnDetailModelUnLock
-            // 
-            this.btnDetailModelUnLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnDetailModelUnLock.Location = new System.Drawing.Point(210, 5);
-            this.btnDetailModelUnLock.Name = "btnDetailModelUnLock";
-            this.btnDetailModelUnLock.ResourceID = null;
-            this.btnDetailModelUnLock.Size = new System.Drawing.Size(80, 30);
-            this.btnDetailModelUnLock.StyleController = this.acLayoutControl1;
-            this.btnDetailModelUnLock.TabIndex = 7;
-            this.btnDetailModelUnLock.Text = "잠금해제";
-            this.btnDetailModelUnLock.ToolTipID = null;
-            this.btnDetailModelUnLock.UseResourceID = false;
-            this.btnDetailModelUnLock.UseToolTipID = false;
-            this.btnDetailModelUnLock.Click += new System.EventHandler(this.btnDetailModelUnLock_Click);
-            // 
-            // btnDetailModelLock
-            // 
-            this.btnDetailModelLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnDetailModelLock.Location = new System.Drawing.Point(130, 5);
-            this.btnDetailModelLock.Name = "btnDetailModelLock";
-            this.btnDetailModelLock.ResourceID = null;
-            this.btnDetailModelLock.Size = new System.Drawing.Size(70, 30);
-            this.btnDetailModelLock.StyleController = this.acLayoutControl1;
-            this.btnDetailModelLock.TabIndex = 6;
-            this.btnDetailModelLock.Text = "잠금";
-            this.btnDetailModelLock.ToolTipID = null;
-            this.btnDetailModelLock.UseResourceID = false;
-            this.btnDetailModelLock.UseToolTipID = false;
-            this.btnDetailModelLock.Click += new System.EventHandler(this.btnDetailModelLock_Click);
             // 
             // btnAddSerise
             // 
@@ -918,9 +787,7 @@
             this.acLayoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.acLayoutControlItem1,
             this.emptySpaceItem1,
-            this.acLayoutControlItem5,
-            this.acLayoutControlItem9,
-            this.acLayoutControlItem12});
+            this.acLayoutControlItem5});
             this.acLayoutControlGroup1.Name = "acLayoutControlGroup1";
             this.acLayoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.acLayoutControlGroup1.ResourceID = null;
@@ -958,7 +825,7 @@
             this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(125, 40);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(295, 40);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // acLayoutControlItem5
@@ -982,50 +849,6 @@
             this.acLayoutControlItem5.ToolTipStdCode = null;
             this.acLayoutControlItem5.UseResourceID = false;
             this.acLayoutControlItem5.UseToolTipID = false;
-            // 
-            // acLayoutControlItem9
-            // 
-            this.acLayoutControlItem9.Control = this.btnDetailModelLock;
-            this.acLayoutControlItem9.CustomizationFormText = "acLayoutControlItem9";
-            this.acLayoutControlItem9.IsHeader = false;
-            this.acLayoutControlItem9.IsTitle = false;
-            this.acLayoutControlItem9.Location = new System.Drawing.Point(125, 0);
-            this.acLayoutControlItem9.MaxSize = new System.Drawing.Size(80, 0);
-            this.acLayoutControlItem9.MinSize = new System.Drawing.Size(80, 32);
-            this.acLayoutControlItem9.Name = "acLayoutControlItem9";
-            this.acLayoutControlItem9.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem9.ResourceID = null;
-            this.acLayoutControlItem9.Size = new System.Drawing.Size(80, 40);
-            this.acLayoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem9.Text = "acLayoutControlItem9";
-            this.acLayoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem9.TextVisible = false;
-            this.acLayoutControlItem9.ToolTipID = null;
-            this.acLayoutControlItem9.ToolTipStdCode = null;
-            this.acLayoutControlItem9.UseResourceID = false;
-            this.acLayoutControlItem9.UseToolTipID = false;
-            // 
-            // acLayoutControlItem12
-            // 
-            this.acLayoutControlItem12.Control = this.btnDetailModelUnLock;
-            this.acLayoutControlItem12.CustomizationFormText = "acLayoutControlItem12";
-            this.acLayoutControlItem12.IsHeader = false;
-            this.acLayoutControlItem12.IsTitle = false;
-            this.acLayoutControlItem12.Location = new System.Drawing.Point(205, 0);
-            this.acLayoutControlItem12.MaxSize = new System.Drawing.Size(90, 0);
-            this.acLayoutControlItem12.MinSize = new System.Drawing.Size(90, 32);
-            this.acLayoutControlItem12.Name = "acLayoutControlItem12";
-            this.acLayoutControlItem12.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem12.ResourceID = null;
-            this.acLayoutControlItem12.Size = new System.Drawing.Size(90, 40);
-            this.acLayoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem12.Text = "acLayoutControlItem12";
-            this.acLayoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem12.TextVisible = false;
-            this.acLayoutControlItem12.ToolTipID = null;
-            this.acLayoutControlItem12.ToolTipStdCode = null;
-            this.acLayoutControlItem12.UseResourceID = false;
-            this.acLayoutControlItem12.UseToolTipID = false;
             // 
             // acGroupControl4
             // 
@@ -1242,7 +1065,7 @@
             this.acGroupControl2.ResourceID = null;
             this.acGroupControl2.Size = new System.Drawing.Size(441, 629);
             this.acGroupControl2.TabIndex = 0;
-            this.acGroupControl2.Text = "발주처";
+            this.acGroupControl2.Text = "생산구분";
             this.acGroupControl2.ToolTipID = null;
             this.acGroupControl2.UseResourceID = false;
             this.acGroupControl2.UseToolTipID = false;
@@ -1283,9 +1106,6 @@
             // 
             this.acLayoutControl4.AllowCustomization = false;
             this.acLayoutControl4.ContainerName = null;
-            this.acLayoutControl4.Controls.Add(this.btnVenUnLock);
-            this.acLayoutControl4.Controls.Add(this.btnVenLock);
-            this.acLayoutControl4.Controls.Add(this.btnAddVendor);
             this.acLayoutControl4.Controls.Add(this.btnSaveVendor);
             this.acLayoutControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.acLayoutControl4.EnterMoveNextControl = false;
@@ -1298,51 +1118,6 @@
             this.acLayoutControl4.Size = new System.Drawing.Size(437, 40);
             this.acLayoutControl4.TabIndex = 0;
             this.acLayoutControl4.Text = "acLayoutControl4";
-            // 
-            // btnVenUnLock
-            // 
-            this.btnVenUnLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnVenUnLock.Location = new System.Drawing.Point(192, 5);
-            this.btnVenUnLock.Name = "btnVenUnLock";
-            this.btnVenUnLock.ResourceID = null;
-            this.btnVenUnLock.Size = new System.Drawing.Size(80, 30);
-            this.btnVenUnLock.StyleController = this.acLayoutControl4;
-            this.btnVenUnLock.TabIndex = 7;
-            this.btnVenUnLock.Text = "잠금해제";
-            this.btnVenUnLock.ToolTipID = null;
-            this.btnVenUnLock.UseResourceID = false;
-            this.btnVenUnLock.UseToolTipID = false;
-            this.btnVenUnLock.Click += new System.EventHandler(this.btnVenUnLock_Click);
-            // 
-            // btnVenLock
-            // 
-            this.btnVenLock.ImageOptions.Image = global::STD.Resource.emblem_readonly_2x;
-            this.btnVenLock.Location = new System.Drawing.Point(112, 5);
-            this.btnVenLock.Name = "btnVenLock";
-            this.btnVenLock.ResourceID = null;
-            this.btnVenLock.Size = new System.Drawing.Size(70, 30);
-            this.btnVenLock.StyleController = this.acLayoutControl4;
-            this.btnVenLock.TabIndex = 6;
-            this.btnVenLock.Text = "잠금";
-            this.btnVenLock.ToolTipID = null;
-            this.btnVenLock.UseResourceID = false;
-            this.btnVenLock.UseToolTipID = false;
-            this.btnVenLock.Click += new System.EventHandler(this.btnVenLock_Click);
-            // 
-            // btnAddVendor
-            // 
-            this.btnAddVendor.ImageOptions.Image = global::STD.Resource.add_data_2x;
-            this.btnAddVendor.Location = new System.Drawing.Point(282, 5);
-            this.btnAddVendor.Name = "btnAddVendor";
-            this.btnAddVendor.ResourceID = null;
-            this.btnAddVendor.Size = new System.Drawing.Size(70, 30);
-            this.btnAddVendor.StyleController = this.acLayoutControl4;
-            this.btnAddVendor.TabIndex = 5;
-            this.btnAddVendor.Text = "추가";
-            this.btnAddVendor.ToolTipID = null;
-            this.btnAddVendor.UseResourceID = false;
-            this.btnAddVendor.UseToolTipID = false;
-            this.btnAddVendor.Click += new System.EventHandler(this.btnAddVendor_Click);
             // 
             // btnSaveVendor
             // 
@@ -1366,10 +1141,7 @@
             this.Root.IsHeader = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.emptySpaceItem4,
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.acLayoutControlItem7,
-            this.acLayoutControlItem10});
+            this.layoutControlItem2});
             this.Root.Name = "Root";
             this.Root.ResourceID = null;
             this.Root.Size = new System.Drawing.Size(437, 40);
@@ -1383,24 +1155,8 @@
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(107, 40);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(357, 40);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.btnAddVendor;
-            this.layoutControlItem1.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem1.CustomizationFormText = "acLayoutControlItem4";
-            this.layoutControlItem1.Location = new System.Drawing.Point(277, 0);
-            this.layoutControlItem1.MaxSize = new System.Drawing.Size(80, 0);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(80, 32);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem1.Size = new System.Drawing.Size(80, 40);
-            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem1.Text = "acLayoutControlItem4";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
@@ -1417,50 +1173,6 @@
             this.layoutControlItem2.Text = "acLayoutControlItem1";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // acLayoutControlItem7
-            // 
-            this.acLayoutControlItem7.Control = this.btnVenLock;
-            this.acLayoutControlItem7.CustomizationFormText = "acLayoutControlItem7";
-            this.acLayoutControlItem7.IsHeader = false;
-            this.acLayoutControlItem7.IsTitle = false;
-            this.acLayoutControlItem7.Location = new System.Drawing.Point(107, 0);
-            this.acLayoutControlItem7.MaxSize = new System.Drawing.Size(80, 0);
-            this.acLayoutControlItem7.MinSize = new System.Drawing.Size(80, 32);
-            this.acLayoutControlItem7.Name = "acLayoutControlItem7";
-            this.acLayoutControlItem7.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem7.ResourceID = null;
-            this.acLayoutControlItem7.Size = new System.Drawing.Size(80, 40);
-            this.acLayoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem7.Text = "acLayoutControlItem7";
-            this.acLayoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem7.TextVisible = false;
-            this.acLayoutControlItem7.ToolTipID = null;
-            this.acLayoutControlItem7.ToolTipStdCode = null;
-            this.acLayoutControlItem7.UseResourceID = false;
-            this.acLayoutControlItem7.UseToolTipID = false;
-            // 
-            // acLayoutControlItem10
-            // 
-            this.acLayoutControlItem10.Control = this.btnVenUnLock;
-            this.acLayoutControlItem10.CustomizationFormText = "acLayoutControlItem10";
-            this.acLayoutControlItem10.IsHeader = false;
-            this.acLayoutControlItem10.IsTitle = false;
-            this.acLayoutControlItem10.Location = new System.Drawing.Point(187, 0);
-            this.acLayoutControlItem10.MaxSize = new System.Drawing.Size(90, 0);
-            this.acLayoutControlItem10.MinSize = new System.Drawing.Size(90, 32);
-            this.acLayoutControlItem10.Name = "acLayoutControlItem10";
-            this.acLayoutControlItem10.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.acLayoutControlItem10.ResourceID = null;
-            this.acLayoutControlItem10.Size = new System.Drawing.Size(90, 40);
-            this.acLayoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.acLayoutControlItem10.Text = "acLayoutControlItem10";
-            this.acLayoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.acLayoutControlItem10.TextVisible = false;
-            this.acLayoutControlItem10.ToolTipID = null;
-            this.acLayoutControlItem10.ToolTipStdCode = null;
-            this.acLayoutControlItem10.UseResourceID = false;
-            this.acLayoutControlItem10.UseToolTipID = false;
             // 
             // popupMenu4
             // 
@@ -1504,8 +1216,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acSplitContainerControl2.Panel1)).EndInit();
             this.acSplitContainerControl2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.acSplitContainerControl2.Panel2)).EndInit();
@@ -1522,8 +1232,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acGroupControl4)).EndInit();
             this.acGroupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.acGridControl3)).EndInit();
@@ -1550,10 +1258,7 @@
             this.acLayoutControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.acLayoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1628,24 +1333,10 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private ControlManager.acGridControl acGridControl4;
         private ControlManager.acGridView acGridView4;
-        private ControlManager.acSimpleButton btnAddVendor;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private ControlManager.acSimpleButton btnSaveVendor;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private ControlManager.acBarStaticItem statusBarLog;
         private ControlManager.acBarButtonItem barItemDeleteVendor;
         private DevExpress.XtraBars.PopupMenu popupMenu4;
-        private ControlManager.acSimpleButton btnVenLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem7;
-        private ControlManager.acSimpleButton btnModelLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem8;
-        private ControlManager.acSimpleButton btnDetailModelLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem9;
-        private ControlManager.acSimpleButton btnVenUnLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem10;
-        private ControlManager.acSimpleButton btnModelUnLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem11;
-        private ControlManager.acSimpleButton btnDetailModelUnLock;
-        private ControlManager.acLayoutControlItem acLayoutControlItem12;
     }
 }

@@ -42,7 +42,7 @@
       <Value Profile="(Default)">http://192.168.10.4:7863/api/QueryApi</Value>
     </Setting>
     <Setting Name="SERVER_IP" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.219.107</Value>
+      <Value Profile="(Default)">192.168.0.21</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -276,7 +276,7 @@ namespace BSTD
             {
                 UTIL.SetBizAddColumnToValue(paramDS.Tables["RQSTDT"], "DATA_FLAG", 0, typeof(Byte));
 
-                DataTable dt = DLSE.LSE_STD_PART_QUERY.LSE_STD_PART_QUERY2(paramDS.Tables["RQSTDT"],  bizExecute);
+                DataTable dt = DLSE.LSE_STD_PART_QUERY_AJB.LSE_STD_PART_QUERY2(paramDS.Tables["RQSTDT"],  bizExecute);
                 dt.Columns.Add("SEL", typeof(string));
                 dt.TableName = "RSLTDT";
 

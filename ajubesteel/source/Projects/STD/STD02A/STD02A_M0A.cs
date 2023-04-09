@@ -61,158 +61,183 @@ namespace STD
 
             acGridView1.GridType = acGridView.emGridType.SEARCH_SEL;
 
-            //acGridView1.AddCheckEdit("SEL", "선택", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
-
-            acGridView1.AddTextEdit("PART_CODE", "부품코드", "40239", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            acGridView1.AddTextEdit("PART_NAME", "부품명", "40234", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("STD_PT_NUM", "품번", "40743", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddLookUpEdit("MAT_TYPE1", "자재구분", "40132", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M001");
-
-            //acGridView1.AddLookUpEdit("MAT_TYPE2", "자재유형", "40630", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M002");
-
-
-            acGridView1.AddLookUpEdit("MAT_LTYPE", "대분류", "40132", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M014");
-
-            acGridView1.AddLookUpEdit("MAT_MTYPE", "중분류", "40630", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M015");
-
-            acGridView1.AddLookUpEdit("MAT_STYPE", "소분류", "40338", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M016");
-
-            //acGridView1.AddTextEdit("PART_ENAME", "부품명(영문)", "40235", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddLookUpEdit("PART_PRODTYPE", "부품제작구분", "40238", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M007");
-
-            acGridView1.AddLookUpEdit("MAT_UNIT", "단위", "40123", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M003");
-
-            acGridView1.AddLookUpEdit("PACK_UNIT", "포장단위", "40123", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M003");
-
-            //acGridView1.AddLookUpEdit("SPEC_TYPE", "규격입력형태", "42540", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S062");
-
-            acGridView1.AddTextEdit("CUTTING_CNT", "절단가능수량", "42545", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.NUMERIC);
-            
-            acGridView1.AddTextEdit("MAT_SPEC", "규격", "42544", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-
-            acGridView1.AddTextEdit("DRAW_NO", "도면번호", "42545", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            //PART_PRODTYPE
-            //MAT_TYPE S016
-            //MAIN_VND, SUPP_VND
-
-            acGridView1.AddLookUpEdit("PART_PRODTYPE", "분류", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, "M007");
-            acGridView1.AddLookUpEdit("MAT_TYPE", "구매 분류", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, "S016");
-
-            acGridView1.AddLookUpEdit("STK_LOCATION", "기본창고", "NO1T1YEG", false, DevExpress.Utils.HorzAlignment.Center, false, false, false, "M005");
-
-            acGridView1.AddTextEdit("SAFE_STK_QTY", "안전재고수량", "SJVKEWA8", true, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.QTY);
-
-            acGridView1.AddTextEdit("BALJU_QTY", "발주수량", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.QTY);
-
-            acGridView1.AddTextEdit("MNG_FLAG", "관리유무", "", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            
-            acGridView1.AddLookUpVendor("SUPP_VND", "공급사", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
-            //acGridView1.AddTextEdit("AUTO_MARGIN_SPEC", "여유사양", "1AW7AFGL", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddLookUpEdit("LOAD_FLAG", "BOP 부품", "M920A2XO", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S024");
-
-            //acGridView1.AddLookUpEdit("SCH_METHOD", "스케줄 방법", "42462", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S060");
-
-            //acGridView1.AddLookUpEdit("MAT_TYPE", "자재형태", "N05MMEKM", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "S016");
-
-            // acGridView1.AddTextEdit("MAIN_VND", "기본 거래처코드", "Z8OA566Z", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("MAIN_VND_NAME", "기본 거래처명", "1NSUG8A3", true, DevExpress.Utils.HorzAlignment.Near, false, false, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("MAT_QLTY", "재질코드", "QGD6SY0U", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
-
-            //acGridView1.AddTextEdit("MAT_QLTY_NAME", "재질명", "40572", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-
-            acGridView1.AddLookUpEdit("INS_FLAG", "입고검사여부", "42560", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "S063");
-
-            //acGridView1.AddLookUpEdit("USE_FLAG", "사영여부", "42560", false, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S063");
-
-            acGridView1.AddTextEdit("MAT_COST", "자재단가", "40121", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
-
-            acGridView1.AddTextEdit("PROC_COST", "가공 외주단가", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
-
-            acGridView1.AddLookUpVendor("MAIN_VND", "가공 외주업체", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
-
-            acGridView1.AddTextEdit("PROC_COST2", "도금 외주단가", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
-
-            acGridView1.AddLookUpVendor("MAIN_VND2", "도금 외주업체", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
-
-            //acGridView1.AddLookUpEdit("ACT_CODE", "회계계정", "42569", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "C600");
-
-            //acGridView1.AddTextEdit("PART_SEQ", "표시순서", "40723", true, DevExpress.Utils.HorzAlignment.Far, false, false, false, acGridView.emTextEditMask.NONE);
-
-            acGridView1.AddCheckEdit("IS_MAIN_PART", "자재관리 대표자재", "", false, false, true, acGridView.emCheckEditDataType._BYTE);
-            acGridView1.AddCheckEdit("IS_MAIN_SEARCH", "주요부품", "", false, false, true, acGridView.emCheckEditDataType._BYTE);
-
-            acGridView1.AddLookUpEdit("PART_CAT", "품목유형", "", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "P030");
-
-            acGridView1.AddTextEdit("CAM_TIME", "CAM시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-            acGridView1.AddTextEdit("MIL_TIME", "밀링시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-            acGridView1.AddTextEdit("MC_TIME", "가공시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-            acGridView1.AddTextEdit("MID_INS_TIME", "중간검사 시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-            acGridView1.AddTextEdit("ASSEY_TIME", "조립시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-            acGridView1.AddTextEdit("SHIP_INS_TIME", "출하검사 시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
-
-            acGridView1.AddTextEdit("SCOMMENT", "비고", "ARYZ726K", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-
-            acGridView1.AddTextEdit("DWG_NAME", "도면명", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("PROJECT_NAME", "프로젝트명", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CMS_NO", "CMS NO", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("ORDERCOUNT", "수량", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("SPECIFICATION", "규격", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONNECTOR_NO", "커넥터 NO", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONNECTOR_ANGLE", "커넥터 각도", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONTACT_PIN1", "적용핀1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONTACT_PIN2", "적용핀2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONTACT_PIN3", "적용핀3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONTACT_PIN4", "적용핀4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CORE_HOUSING1", "코어 하우징1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CORE_HOUSING2", "코어 하우징2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CORE_HOUSING3", "코어 하우징3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CORE_HOUSING4", "코어 하우징4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONTACT_DIRECTION", "커텍 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("CONNECTOR_DIRECTION", "커넥터 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("IMAGE_DIRECTION", "화상 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("APPLY_INTERFACE", "인터페이스 적용 유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("INTERFACE_PIN", "인터페이스 핀", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("APPLY_INTERFACE_PIN", "GND 핀 적용 유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("GND_PIN", "GND 핀", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("IMAGE_ANGLE1", "화각1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("IMAGE_ANGLE2", "화각2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("IMAGE_ANGLE3", "화각3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("IMAGE_ANGLE4", "화각4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("PART_REV_ID", "파트 리비전 아이디", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("PART_PUID", "파트 PUID", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("DIVISION_P", "제작구분", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("DIVISION", "제품구분", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("MARTERIAL", "재질", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("SURFACE_TREAT", "표면처리/도장", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("AFTER_TREAT", "후처리", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("MAKESIDEHOLE", "추가가공", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("TAB_MACHINE", "탭유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
-            acGridView1.AddTextEdit("MACHINE_TIME", "가공시간", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_CODE", "표준부품코드", "AB_L0055", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_NAME", "표준부품명", "AB_L0056", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_NAME2", "품목명2", "AB_L0057", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_INOUT", "내수구분", "AB_L0058", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SPEC1", "품목유형", "AB_L0059", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SPEC2", "형태코드", "AB_L0060", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SPEC3", "품목구분", "AB_L0061", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SPEC4", "품명_중분류", "AB_L0062", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_QC", "검사기준", "AB_L0063", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_COMP", "재질", "AB_L0064", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MILL", "MILL", "AB_L0065", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SPEC", "제작규격", "AB_L0066", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_WAY", "관단처리방법", "AB_L0067", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MAT_UNIT", "단위", "AB_L0068", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_USE", "배관용도", "AB_L0069", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("OUT_SIZE", "외경", "AB_L0070", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("OUT_SIZE2", "외경_각관", "AB_L0071", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SIZE", "두께", "AB_L0072", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_SIZE2", "이론두께", "AB_L0073", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_LENGTH", "길이_스켈프폭", "AB_L0074", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_TITLE", "호칭", "AB_L0075", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_WEIGHT", "실중량", "AB_L0076", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_WEIGHT2", "이론중량", "AB_L0077", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MAT_COST", "일반단가", "AB_L0078", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("MAT_COST_TYPE", "단가유형", "AB_L0079", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_ENAME", "수출품명", "AB_L0080", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_WIDTH", "폭", "AB_L0081", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_MARKING", "마킹내역", "AB_L0082", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("PART_TAG", "Tag사양", "AB_L0083", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+            acGridView1.AddTextEdit("SCOMMENT", "비고", "AB_L0084", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
 
 
+            //acGridView1.AddTextEdit("PART_CODE", "부품코드", "40239", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
 
-            //acGridView1.AddTextEdit("IF_PART_CODE", "IF 코드", "K8GKZPXM", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
+            ////acGridView1.AddCheckEdit("SEL", "선택", "40290", true, true, true, acGridView.emCheckEditDataType._STRING);
+
+            //acGridView1.AddTextEdit("PART_CODE", "부품코드", "40239", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+            //acGridView1.AddTextEdit("PART_NAME", "부품명", "40234", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddTextEdit("STD_PT_NUM", "품번", "40743", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddLookUpEdit("MAT_TYPE1", "자재구분", "40132", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M001");
+
+            ////acGridView1.AddLookUpEdit("MAT_TYPE2", "자재유형", "40630", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M002");
+
+
+            //acGridView1.AddLookUpEdit("MAT_LTYPE", "대분류", "40132", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M014");
+
+            //acGridView1.AddLookUpEdit("MAT_MTYPE", "중분류", "40630", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M015");
+
+            //acGridView1.AddLookUpEdit("MAT_STYPE", "소분류", "40338", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M016");
+
+            ////acGridView1.AddTextEdit("PART_ENAME", "부품명(영문)", "40235", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddLookUpEdit("PART_PRODTYPE", "부품제작구분", "40238", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M007");
+
+            //acGridView1.AddLookUpEdit("MAT_UNIT", "단위", "40123", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M003");
+
+            //acGridView1.AddLookUpEdit("PACK_UNIT", "포장단위", "40123", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "M003");
+
+            ////acGridView1.AddLookUpEdit("SPEC_TYPE", "규격입력형태", "42540", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S062");
+
+            //acGridView1.AddTextEdit("CUTTING_CNT", "절단가능수량", "42545", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.NUMERIC);
+
+            //acGridView1.AddTextEdit("MAT_SPEC", "규격", "42544", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+
+            //acGridView1.AddTextEdit("DRAW_NO", "도면번호", "42545", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            ////PART_PRODTYPE
+            ////MAT_TYPE S016
+            ////MAIN_VND, SUPP_VND
+
+            //acGridView1.AddLookUpEdit("PART_PRODTYPE", "분류", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, "M007");
+            //acGridView1.AddLookUpEdit("MAT_TYPE", "구매 분류", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, "S016");
+
+            //acGridView1.AddLookUpEdit("STK_LOCATION", "기본창고", "NO1T1YEG", false, DevExpress.Utils.HorzAlignment.Center, false, false, false, "M005");
+
+            //acGridView1.AddTextEdit("SAFE_STK_QTY", "안전재고수량", "SJVKEWA8", true, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.QTY);
+
+            //acGridView1.AddTextEdit("BALJU_QTY", "발주수량", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.QTY);
+
+            //acGridView1.AddTextEdit("MNG_FLAG", "관리유무", "", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+
+            //acGridView1.AddLookUpVendor("SUPP_VND", "공급사", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
+            ////acGridView1.AddTextEdit("AUTO_MARGIN_SPEC", "여유사양", "1AW7AFGL", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddLookUpEdit("LOAD_FLAG", "BOP 부품", "M920A2XO", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S024");
+
+            ////acGridView1.AddLookUpEdit("SCH_METHOD", "스케줄 방법", "42462", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S060");
+
+            ////acGridView1.AddLookUpEdit("MAT_TYPE", "자재형태", "N05MMEKM", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "S016");
+
+            //// acGridView1.AddTextEdit("MAIN_VND", "기본 거래처코드", "Z8OA566Z", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddTextEdit("MAIN_VND_NAME", "기본 거래처명", "1NSUG8A3", true, DevExpress.Utils.HorzAlignment.Near, false, false, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddTextEdit("MAT_QLTY", "재질코드", "QGD6SY0U", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
+
+            ////acGridView1.AddTextEdit("MAT_QLTY_NAME", "재질명", "40572", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+
+            //acGridView1.AddLookUpEdit("INS_FLAG", "입고검사여부", "42560", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, "S063");
+
+            ////acGridView1.AddLookUpEdit("USE_FLAG", "사영여부", "42560", false, DevExpress.Utils.HorzAlignment.Center, false, false, false, "S063");
+
+            //acGridView1.AddTextEdit("MAT_COST", "자재단가", "40121", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
+
+            //acGridView1.AddTextEdit("PROC_COST", "가공 외주단가", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
+
+            //acGridView1.AddLookUpVendor("MAIN_VND", "가공 외주업체", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
+
+            //acGridView1.AddTextEdit("PROC_COST2", "도금 외주단가", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.MONEY);
+
+            //acGridView1.AddLookUpVendor("MAIN_VND2", "도금 외주업체", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false);
+
+            ////acGridView1.AddLookUpEdit("ACT_CODE", "회계계정", "42569", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, "C600");
+
+            ////acGridView1.AddTextEdit("PART_SEQ", "표시순서", "40723", true, DevExpress.Utils.HorzAlignment.Far, false, false, false, acGridView.emTextEditMask.NONE);
+
+            //acGridView1.AddCheckEdit("IS_MAIN_PART", "자재관리 대표자재", "", false, false, true, acGridView.emCheckEditDataType._BYTE);
+            //acGridView1.AddCheckEdit("IS_MAIN_SEARCH", "주요부품", "", false, false, true, acGridView.emCheckEditDataType._BYTE);
+
+            //acGridView1.AddLookUpEdit("PART_CAT", "품목유형", "", false, DevExpress.Utils.HorzAlignment.Center, false, true, false, "P030");
+
+            //acGridView1.AddTextEdit("CAM_TIME", "CAM시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+            //acGridView1.AddTextEdit("MIL_TIME", "밀링시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+            //acGridView1.AddTextEdit("MC_TIME", "가공시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+            //acGridView1.AddTextEdit("MID_INS_TIME", "중간검사 시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+            //acGridView1.AddTextEdit("ASSEY_TIME", "조립시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+            //acGridView1.AddTextEdit("SHIP_INS_TIME", "출하검사 시간(분)", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.TIME);
+
+            //acGridView1.AddTextEdit("SCOMMENT", "비고", "ARYZ726K", true, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+
+            //acGridView1.AddTextEdit("DWG_NAME", "도면명", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("PROJECT_NAME", "프로젝트명", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CMS_NO", "CMS NO", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("ORDERCOUNT", "수량", "", false, DevExpress.Utils.HorzAlignment.Far, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("SPECIFICATION", "규격", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONNECTOR_NO", "커넥터 NO", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONNECTOR_ANGLE", "커넥터 각도", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONTACT_PIN1", "적용핀1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONTACT_PIN2", "적용핀2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONTACT_PIN3", "적용핀3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONTACT_PIN4", "적용핀4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CORE_HOUSING1", "코어 하우징1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CORE_HOUSING2", "코어 하우징2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CORE_HOUSING3", "코어 하우징3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CORE_HOUSING4", "코어 하우징4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONTACT_DIRECTION", "커텍 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("CONNECTOR_DIRECTION", "커넥터 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("IMAGE_DIRECTION", "화상 방향", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("APPLY_INTERFACE", "인터페이스 적용 유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("INTERFACE_PIN", "인터페이스 핀", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("APPLY_INTERFACE_PIN", "GND 핀 적용 유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("GND_PIN", "GND 핀", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("IMAGE_ANGLE1", "화각1", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("IMAGE_ANGLE2", "화각2", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("IMAGE_ANGLE3", "화각3", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("IMAGE_ANGLE4", "화각4", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("PART_REV_ID", "파트 리비전 아이디", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("PART_PUID", "파트 PUID", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("DIVISION_P", "제작구분", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("DIVISION", "제품구분", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("MARTERIAL", "재질", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("SURFACE_TREAT", "표면처리/도장", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("AFTER_TREAT", "후처리", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("MAKESIDEHOLE", "추가가공", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("TAB_MACHINE", "탭유무", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView1.AddTextEdit("MACHINE_TIME", "가공시간", "", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            ////acGridView1.AddTextEdit("IF_PART_CODE", "IF 코드", "K8GKZPXM", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
 
             acGridView1.AddDateEdit("REG_DATE", "최초 등록일", "UL1O77MB", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emDateMask.LONG_DATE);
-
             acGridView1.AddTextEdit("REG_EMP", "최초 등록자코드", "P72K0SQJ", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
-
             acGridView1.AddTextEdit("REG_EMP_NAME", "최초 등록자", "GPQHG8QQ", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
-
             acGridView1.AddDateEdit("MDFY_DATE", "최근 수정일", "6RXQO0B2", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emDateMask.LONG_DATE);
-
             acGridView1.AddTextEdit("MDFY_EMP", "최근 수정자코드", "WDHSCE72", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
-
             acGridView1.AddTextEdit("MDFY_EMP_NAME", "최근 수정자", "FHJDO4F0", true, DevExpress.Utils.HorzAlignment.Center, false, false, false, acGridView.emTextEditMask.NONE);
-
 
             acGridView1.KeyColumn = new string[] { "PART_CODE" };
 
@@ -225,7 +250,7 @@ namespace STD
 
             acGridView2.AddTextEdit("PART_NAME", "부품명", "40234", true, DevExpress.Utils.HorzAlignment.Center, false, true, false, acGridView.emTextEditMask.NONE);
 
-            acGridView2.AddTextEdit("MAT_SPEC", "규격", "42544", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
+            //acGridView2.AddTextEdit("MAT_SPEC", "규격", "42544", false, DevExpress.Utils.HorzAlignment.Near, false, true, false, acGridView.emTextEditMask.NONE);
 
             this._dtProcList = ExtensionMethods.GetProcList(this);
 
@@ -332,33 +357,33 @@ namespace STD
             {
                 //this._dicProcStat.Clear();
 
-                DataTable dtTemp = new DataTable();
+                //DataTable dtTemp = new DataTable();
 
-                dtTemp.Columns.Add("PART_CODE", typeof(string));
-                dtTemp.Columns.Add("PART_NAME", typeof(string));
-                dtTemp.Columns.Add("MAT_SPEC", typeof(string));
+                //dtTemp.Columns.Add("PART_CODE", typeof(string));
+                //dtTemp.Columns.Add("PART_NAME", typeof(string));
+                //dtTemp.Columns.Add("MAT_SPEC", typeof(string));
 
-                DataRow focusRow = acGridView1.GetFocusedDataRow();
+                //DataRow focusRow = acGridView1.GetFocusedDataRow();
 
-                foreach (DataRow row in this._dtProcList.Rows)
-                {
-                    dtTemp.Columns.Add(row["PROC_CODE"].ToString(), typeof(string));
-                }
+                //foreach (DataRow row in this._dtProcList.Rows)
+                //{
+                //    dtTemp.Columns.Add(row["PROC_CODE"].ToString(), typeof(string));
+                //}
 
-                DataRow newRow = dtTemp.NewRow();
-                newRow["PART_CODE"] = focusRow["PART_CODE"];
-                newRow["PART_NAME"] = focusRow["PART_NAME"];
-                newRow["MAT_SPEC"] = focusRow["MAT_SPEC"];
-                foreach (DataRow row in e.result.Tables["RSLTDT"].Rows)
-                {
-                    newRow[row["PROC_CODE"].ToString()] = 1;
-                }
+                //DataRow newRow = dtTemp.NewRow();
+                //newRow["PART_CODE"] = focusRow["PART_CODE"];
+                //newRow["PART_NAME"] = focusRow["PART_NAME"];
+                //newRow["MAT_SPEC"] = focusRow["MAT_SPEC"];
+                //foreach (DataRow row in e.result.Tables["RSLTDT"].Rows)
+                //{
+                //    newRow[row["PROC_CODE"].ToString()] = 1;
+                //}
 
-                dtTemp.Rows.Add(newRow);
+                //dtTemp.Rows.Add(newRow);
 
-                acGridView2.GridControl.DataSource = dtTemp;
+                //acGridView2.GridControl.DataSource = dtTemp;
 
-                acGridView2.BestFitColumns();
+                //acGridView2.BestFitColumns();
 
             }
             catch (Exception ex)

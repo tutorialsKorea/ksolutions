@@ -1315,6 +1315,118 @@ namespace DLSE
         }
     }
 
+    public class LSE_STD_PART_QUERY_AJB
+    {
+
+        public static DataTable LSE_STD_PART_QUERY2(DataTable dtParam, BizExecute.BizExecute bizExecute)
+        {
+            try
+            {
+
+                DataSet dsResult = new DataSet();
+
+                if (dtParam.Rows.Count > 0)
+                {
+                    StringBuilder sbQuery = new StringBuilder();
+
+                    sbQuery.Append(" SELECT ");
+                    sbQuery.Append(" P.PLT_CODE ");
+                    sbQuery.Append(" , P.PART_CODE ");
+                    sbQuery.Append(" , P.PART_NAME ");
+                    sbQuery.Append(" , P.PART_NAME2 ");
+                    sbQuery.Append(" , P.PART_INOUT ");
+                    sbQuery.Append(" , P.PART_SPEC1 ");
+                    sbQuery.Append(" , P.PART_SPEC2 ");
+                    sbQuery.Append(" , P.PART_SPEC3 ");
+                    sbQuery.Append(" , P.PART_SPEC4 ");
+                    sbQuery.Append(" , P.PART_QC ");
+                    sbQuery.Append(" , P.PART_COMP ");
+                    sbQuery.Append(" , P.MILL ");
+                    sbQuery.Append(" , P.PART_SPEC ");
+                    sbQuery.Append(" , P.PART_WAY ");
+                    sbQuery.Append(" , P.MAT_UNIT ");
+                    sbQuery.Append(" , P.PART_USE ");
+                    sbQuery.Append(" , P.OUT_SIZE ");
+                    sbQuery.Append(" , P.OUT_SIZE2 ");
+                    sbQuery.Append(" , P.PART_SIZE ");
+                    sbQuery.Append(" , P.PART_SIZE2 ");
+                    sbQuery.Append(" , P.PART_LENGTH ");
+                    sbQuery.Append(" , P.PART_TITLE ");
+                    sbQuery.Append(" , P.PART_WEIGHT ");
+                    sbQuery.Append(" , P.PART_WEIGHT2 ");
+                    sbQuery.Append(" , P.MAT_COST ");
+                    sbQuery.Append(" , P.MAT_COST_TYPE ");
+                    sbQuery.Append(" , P.PART_ENAME ");
+                    sbQuery.Append(" , P.PART_WIDTH ");
+                    sbQuery.Append(" , P.PART_MARKING ");
+                    sbQuery.Append(" , P.PART_TAG ");
+                    sbQuery.Append(" , P.SCOMMENT ");
+                    sbQuery.Append(" , STK.STK_QTY ");
+                    sbQuery.Append(" , REG_EMP.EMP_NAME AS REG_EMP_NAME ");
+                    sbQuery.Append(" , MDFY_EMP.EMP_NAME AS MDFY_EMP_NAME ");
+                    sbQuery.Append(" FROM LSE_STD_PART P ");
+                    sbQuery.Append(" LEFT JOIN TSTD_EMPLOYEE REG_EMP ");
+                    sbQuery.Append(" 	ON P.PLT_CODE = REG_EMP.PLT_CODE ");
+                    sbQuery.Append(" 	AND P.REG_EMP = REG_EMP.EMP_CODE ");
+                    sbQuery.Append(" LEFT JOIN TSTD_EMPLOYEE MDFY_EMP ");
+                    sbQuery.Append(" 	ON P.PLT_CODE = MDFY_EMP.PLT_CODE ");
+                    sbQuery.Append(" 	AND P.MDFY_EMP = MDFY_EMP.EMP_CODE ");
+                    sbQuery.Append(" LEFT JOIN ");
+                    sbQuery.Append(" ( ");
+                    sbQuery.Append(" 	SELECT ");
+                    sbQuery.Append(" 	PLT_CODE ");
+                    sbQuery.Append(" 	, PART_CODE ");
+                    sbQuery.Append(" 	, SUM(PART_QTY) AS STK_QTY ");
+                    sbQuery.Append(" 	FROM TMAT_STOCK ");
+                    sbQuery.Append(" 	GROUP BY PLT_CODE, PART_CODE ");
+                    sbQuery.Append(" ) STK ");
+                    sbQuery.Append(" 	ON STK.PLT_CODE = P.PLT_CODE ");
+                    sbQuery.Append(" 	AND STK.PART_CODE = P.PART_CODE ");
+
+                    foreach (DataRow row in dtParam.Rows)
+                    {
+                        StringBuilder sbWhere = new StringBuilder(" WHERE P.PLT_CODE = " + UTIL.GetValidValue(row, "PLT_CODE").ToString());
+
+                        sbWhere.Append(UTIL.GetWhere(row, "@PART_CODE", "P.PART_CODE = @PART_CODE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@S_REG_DATE,@E_REG_DATE", "(CONVERT(nvarchar(8),P.REG_DATE,112) BETWEEN @S_REG_DATE AND @E_REG_DATE)"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@PART_LIKE", "(P.PART_CODE LIKE '%' +  @PART_LIKE + '%' OR P.PART_NAME  LIKE '%' +  @PART_LIKE + '%')"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@FILTER_LIKE", "(P.PART_CODE LIKE '%' +  @FILTER_LIKE + '%' OR P.PART_NAME  LIKE '%' +  @FILTER_LIKE + '%')"));
+                        //sbWhere.Append(UTIL.GetWhere(row, "@PART_PRODTYPE_LIKE", "(P.PART_PRODTYPE LIKE '%' +  @PART_PRODTYPE_LIKE + '%' OR P.PART_NAME  LIKE '%' +  @PART_PRODTYPE_LIKE + '%')"));//모델
+                        sbWhere.Append(UTIL.GetWhere(row, "@PART_PRODTYPE", "P.PART_PRODTYPE = @PART_PRODTYPE"));//부품제작구분
+                        sbWhere.Append(UTIL.GetWhere(row, "@STD_PT_NUM_LIKE", "(P.STD_PT_NUM LIKE '%' + @STD_PT_NUM_LIKE + '%')"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@SPEC_LIKE", "(P.MAT_SPEC LIKE '%' + @SPEC_LIKE + '%' OR P.MAT_SPEC1 LIKE '%' + @SPEC_LIKE + '%')"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@MAT_TYPE", "P.MAT_TYPE = @MAT_TYPE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@MAT_LTYPE", "P.MAT_LTYPE = @MAT_LTYPE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@MAT_MTYPE", "P.MAT_MTYPE = @MAT_MTYPE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@MAT_STYPE", "P.MAT_STYPE = @MAT_STYPE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@STK_MNG", "P.STK_MNG = @STK_MNG"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@IS_TURNING", "P.IS_TURNING = @IS_TURNING"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@MAT_LTYPE_IN", "P.MAT_LTYPE IN (@MAT_LTYPE_IN)"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@DRAW_NO", "P.DRAW_NO LIKE '%' + @DRAW_NO + '%'"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@FILTER", "P.PART_NAME LIKE '%' + @FILTER + '%'"));
+
+                        sbWhere.Append(UTIL.GetWhere(row, "@IS_MAIN_PART", "ISNULL(P.IS_MAIN_PART, '0') = @IS_MAIN_PART"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@VEN_CODE", "P.SUPP_VND = @VEN_CODE"));
+                        sbWhere.Append(UTIL.GetWhere(row, "@DATA_FLAG", "P.DATA_FLAG = @DATA_FLAG"));
+
+                        DataTable sourceTable = bizExecute.executeSelectQuery(sbQuery.ToString() + sbWhere.ToString()).Copy();
+
+                        sourceTable.TableName = "RSLTDT";
+                        dsResult.Merge(sourceTable);
+                    }
+                }
+
+
+                return UTIL.GetDsToDt(dsResult);
+            }
+            catch (Exception ex)
+            {
+                throw UTIL.SetException(ex, new System.Diagnostics.StackFrame().GetMethod().Name);
+            }
+
+        }
+    }
+
     public class LSE_STD_PART_QUERY
     {
 
